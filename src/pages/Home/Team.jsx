@@ -26,7 +26,7 @@ export default function Team() {
             const images = snap.docs.map((doc) => {
                 return { ...doc.data(), id: doc.id }
             })
-            setData(images)
+            setData(images.sort((a,b) => a.Order - b.Order));
         }).catch(err => {
             console.log(err.message)
         })
