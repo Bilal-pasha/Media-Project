@@ -4,7 +4,7 @@ import Navbar from "../../components/Navbar.astro";
 ---
 
 <Fragment>
-    <Navbar />
+    <Navbar client:load />
     <slot />
     <Footer client:load />
 </Fragment>

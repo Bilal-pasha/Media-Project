@@ -11,6 +11,9 @@ module.exports = {
 			'white' : 'white',
 			'gray' : 'gray',
 			'skyblue' : '#6CB4EE',
+			'black': 'black',
+			'semiblack' : '#000000ba',
+			'lightWhite' : '#e9e1e1'
 		},
 		screens: {
 			'sm': '320px',

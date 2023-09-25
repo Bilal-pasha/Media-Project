@@ -7,8 +7,6 @@ import Consulting from "../../assets/Consulting.jpg";
 import ContactImage from "../../assets/Contact.jpg";
 import Team from "./Team";
 const imagestyle = "w-full h-[250px]";
-const href = 'www.google.com'
-
 ---
 
 <Fragment>
@@ -18,26 +16,31 @@ const href = 'www.google.com'
                         <h2>
                                 Our <span
                                         class="text-blue border-blue border-b-[1px]"
-                                        >Services</span>
+                                        >Services</span
+                                >
                         </h2>
                 </div>
-                <div class="flex flex-wrap justify-evenly py-16 sm:space-y-16 lg:space-y-0">
+                
+                <div
+                        class="flex flex-wrap justify-evenly py-16 sm:space-y-16 lg:space-y-0"
+                >
                         <div
-                                class="max-w-sm rounded overflow-hidden shadow-xl grayscale hover:grayscale-0 cursor-pointer hover:text-blue hover:scale-[1.1] ease-in-out transition-all duration-[1000ms]"
+                                class="max-w-sm rounded overflow-hidden shadow-xl cursor-pointer hover:text-blue hover:scale-[1.1] ease-in-out transition-all duration-[600ms]"
                         >
                                 <Image
-                                        src={VideoProduction}
+                                        src={Consulting}
                                         alt="showcase"
                                         class:list={imagestyle}
                                 />
                                 <div
                                         class="flex justify-center text-xl font-semibold py-2"
                                 >
-                                        <h2>VIDEO PRODUCTION</h2>
+                                        <h2>STRATEGIC CONSULTING</h2>
                                 </div>
                         </div>
+
                         <div
-                                class="max-w-sm rounded overflow-hidden shadow-xl grayscale hover:grayscale-0 cursor-pointer hover:text-blue hover:scale-[1.1] ease-in-out transition-all duration-[1000ms]"
+                                class="max-w-sm rounded overflow-hidden shadow-xl cursor-pointer hover:text-blue hover:scale-[1.1] ease-in-out transition-all duration-[600ms]"
                         >
                                 <Image
                                         src={MediaTraning}
@@ -51,36 +54,21 @@ const href = 'www.google.com'
                                 </div>
                         </div>
                         <div
-                                class="max-w-sm rounded overflow-hidden shadow-xl grayscale hover:grayscale-0 cursor-pointer hover:text-blue hover:scale-[1.1] ease-in-out transition-all duration-[1000ms]"
+                                class="max-w-sm rounded overflow-hidden shadow-xl cursor-pointer hover:text-blue hover:scale-[1.1] ease-in-out transition-all duration-[600ms]"
                         >
                                 <Image
-                                        src={Consulting}
+                                        src={VideoProduction}
                                         alt="showcase"
                                         class:list={imagestyle}
                                 />
                                 <div
                                         class="flex justify-center text-xl font-semibold py-2"
                                 >
-                                        <h2>STRATEGIC CONSULTING</h2>
+                                        <h2>VIDEO PRODUCTION</h2>
                                 </div>
                         </div>
-                        <!-- <div
-                                class="max-w-sm rounded overflow-hidden shadow-xl grayscale hover:grayscale-0 cursor-pointer hover:text-blue hover:scale-[1.1] ease-in-out transition-all duration-[1000ms]"
-                        >
-                                <Image
-                                        src={ContactImage}
-                                        alt="showcase"
-                                        class:list={imagestyle}
-                                />
-                                <div
-                                        class="flex justify-center text-xl font-semibold py-2"
-                                >
-                                        <h2>CONTACT</h2>
-                                </div>
-                        </div> -->
                 </div>
         </section>
-        <Team client:load/>
+
+        <!-- <Team client:load /> -->
 </Fragment>
-
-
