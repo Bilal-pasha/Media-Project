@@ -7,12 +7,12 @@ module.exports = {
 			"gradient": 'linear-gradient(109.6deg, rgb(245, 239, 249) 30.1%, rgb(207, 211, 236) 100.2%)'
 		},
 		colors:{
-			'blue' : 'blue',
+			'blue' : '#1E90FF',
 			'white' : 'white',
 			'gray' : 'gray',
 			'skyblue' : '#6CB4EE',
 			'black': 'black',
-			'semiblack' : '#000000ba',
+			'semiblack' : '#0000007d',
 			'lightWhite' : '#e9e1e1'
 		},
 		screens: {
@@ -22,7 +22,7 @@ module.exports = {
 			'md': '760px',
 			// => @media (min-width: 768px) { ... }
 	  
-			'lg': '1200px',
+			'lg': '1340px',
 			// => @media (min-width: 1024px) { ... }
 	  
 			'xl': '1480px',
@@ -32,5 +32,5 @@ module.exports = {
 			// => @media (min-width: 1536px) { ... }
 		  } 
 	},
-	plugins: [],
+	plugins: [require("tw-elements/dist/plugin.cjs")],
 }
