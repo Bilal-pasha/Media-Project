@@ -1,74 +1,64 @@
 ---
 import Movie from "../../components/Movie";
 import { Image } from "astro:assets";
-import VideoProduction from "../../assets/Camera.jpg";
+import VideoProduction from "../../assets/CorporateVideos3.jpg";
 import MediaTraning from "../../assets/MediaTraning.jpg";
 import Consulting from "../../assets/Consulting.jpg";
-import ContactImage from "../../assets/Contact.jpg";
-import Team from "./Team";
-const imagestyle = "w-full lg:h-[250px] md:h-[200px] sm:h-[150px]";
+// import ContactImage from "../../assets/Contact.jpg";
+// import Team from "./Team";
+const imagestyle =
+  "w-full lg:h-[250px] md:h-[200px] md:w-full sm:h-[150px] sm:w-full";
 ---
 
 <Fragment>
-        <Movie />
-        <section class="py-12">
-                <div class="flex justify-center items-center lg:text-3xl md:text-2xl font-semibold">
-                        <h2>
-                                Our <span
-                                        class="text-blue border-blue border-b-[1px]"
-                                        >Services</span
-                                >
-                        </h2>
-                </div>
-                
-                <div
-                        class="flex lg:flex-row lg:justify-evenly md:flex-col md:justify-center md:items-center sm:items-center  sm:flex-col md:space-y-12 py-16 sm:space-y-16 md:space-y-0 lg:space-y-0"
-                >
-                        <div
-                                class="md:block max-w-sm rounded overflow-hidden shadow-xl cursor-pointer hover:text-blue hover:scale-[1.1] ease-in-out transition-all duration-[600ms]"
-                        >
-                                <Image
-                                        src={Consulting}
-                                        alt="showcase"
-                                        class:list={imagestyle}
-                                />
-                                <div
-                                        class="flex justify-center lg:text-xl sm:text-sm font-semibold py-2"
-                                >
-                                        <h2>STRATEGIC CONSULTING</h2>
-                                </div>
-                        </div>
+  <Movie />
+  <section class="lg:py-20 md:py-10 sm:py-20">
+    <div
+      class="flex justify-center items-center lg:text-3xl md:text-2xl sm:text-2xl font-bold sm:pb-10"
+    >
+      <h2 class="font-[Poppins] text-4xl">Our Services</h2>
+    </div>
 
-                        <div
-                                class="max-w-sm rounded overflow-hidden shadow-xl cursor-pointer hover:text-blue hover:scale-[1.1] ease-in-out transition-all duration-[600ms]"
-                        >
-                                <Image
-                                        src={MediaTraning}
-                                        alt="showcase"
-                                        class:list={imagestyle}
-                                />
-                                <div
-                                        class="flex justify-center lg:text-xl sm:text-sm font-semibold py-2"
-                                >
-                                        <h2>MEDIA TRAINING</h2>
-                                </div>
-                        </div>
-                        <div
-                                class="max-w-sm rounded overflow-hidden shadow-xl cursor-pointer hover:text-blue hover:scale-[1.1] ease-in-out transition-all duration-[600ms]"
-                        >
-                                <Image
-                                        src={VideoProduction}
-                                        alt="showcase"
-                                        class:list={imagestyle}
-                                />
-                                <div
-                                        class="flex justify-center lg:text-xl sm:text-sm font-semibold py-2"
-                                >
-                                        <h2>VIDEO PRODUCTION</h2>
-                                </div>
-                        </div>
-                </div>
-        </section>
+    <div
+      class="flex lg:flex-row lg:justify-evenly md:flex-col md:justify-center md:items-center sm:items-center sm:flex-col md:space-y-12 lg:py-16 md:py-10 sm:py-8 sm:space-y-16 md:space-y-0 lg:space-y-0"
+    >
+      <div
+        class="md:block max-w-sm rounded overflow-hidden shadow-xl cursor-pointer hover:text-blue hover:scale-[1.1] ease-in-out transition-all duration-[600ms]"
+      >
+        <Image src={Consulting} alt="showcase" class:list={imagestyle} />
+        <div
+          class="flex justify-center lg:text-xl sm:text-sm font-semibold py-2"
+        >
+          <h2 class="font-[Poppins] lg:text-2xl sm:text-lg">
+            STRATEGIC CONSULTING
+          </h2>
+        </div>
+      </div>
 
-        <!-- <Team client:load /> -->
+      <div
+        class="max-w-sm rounded overflow-hidden shadow-xl cursor-pointer hover:text-blue hover:scale-[1.1] ease-in-out transition-all duration-[600ms]"
+      >
+        <Image src={MediaTraning} alt="showcase" class:list={imagestyle} />
+        <div
+          class="flex justify-center lg:text-xl sm:text-sm font-semibold py-2"
+        >
+          <h2 class="font-[Poppins] lg:text-2xl sm:text-lg">MEDIA TRAINING</h2>
+        </div>
+      </div>
+      <div
+        class="sm:max-w-sm rounded overflow-hidden shadow-xl cursor-pointer hover:text-blue hover:scale-[1.1] ease-in-out transition-all duration-[600ms]"
+      >
+        <Image src={VideoProduction} alt="showcase" class:list={imagestyle} />
+        <div
+          class="flex justify-center lg:text-xl sm:text-sm font-semibold py-2"
+        >
+          <h2 class="font-[Poppins] lg:text-2xl sm:text-lg">
+            VIDEO PRODUCTION
+          </h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <Team client:load /> -->
 </Fragment>

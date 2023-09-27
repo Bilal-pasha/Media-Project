@@ -1,7 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
-	theme: {
+content: [
+		'./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}',
+		'./node_modules/flowbite/**/*.js'
+	],	theme: {
 		extend: {},
 		backgroundImage:{
 			"gradient": 'linear-gradient(109.6deg, rgb(245, 239, 249) 30.1%, rgb(207, 211, 236) 100.2%)'
@@ -13,10 +15,11 @@ module.exports = {
 			'skyblue' : '#6CB4EE',
 			'black': 'black',
 			'semiblack' : '#0000007d',
-			'lightWhite' : '#e9e1e1'
+			'lightWhite' : '#e9e1e1',
+			 'red' : 'red',
 		},
 		screens: {
-			'sm': '320px',
+			'sm': '300px',
 			// => @media (min-width: 640px) { ... }
 	  
 			'md': '760px',
@@ -32,5 +35,19 @@ module.exports = {
 			// => @media (min-width: 1536px) { ... }
 		  } 
 	},
-	plugins: [require("tw-elements/dist/plugin.cjs")],
+	plugins: [require("tw-elements/dist/plugin.cjs")]
 }
+
+// /** @type {import('tailwindcss').Config} */
+// module.exports = {
+// 	content: [
+// 		'./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}',
+// 		'./node_modules/flowbite/**/*.js'
+// 	],
+// 	theme: {
+// 		extend: {},
+// 	},
+// 	plugins: [
+// 		require('flowbite/plugin')
+// 	],
+// }

@@ -1,0 +1,294 @@
+---
+import HTML from "../../layouts/HTML/HTML.astro";
+import { Image } from "astro:assets";
+import VideoProduction from "../../assets/VideoProduction.jpg";
+import CorporateVideos1 from "../../assets/CorporateVideos1.jpg";
+import CorporateVideos2 from "../../assets/CorporateVideos2.jpg";
+import CorporateVideos3 from "../../assets/CorporateVideos3.jpg";
+import SupremeCourt from "../../assets/SupremeCourt.jpg";
+---
+
+<Fragment>
+  <HTML>
+    <section class="pb-10">
+      <div class="w-full relative h-[40vh]">
+        <Image
+          src={VideoProduction}
+          alt="about pic"
+          class="absolute top-0 w-full h-full"
+        />
+        <div
+          class="absolute w-full h-full flex flex-col justify-center top-0 max-w-[100%] items-center bg-semiblack"
+        >
+          <h2
+            class="text-white font-[Poppins] lg:text-5xl md:text-4xl sm:text-4xl font-bold border-blue border-b-2"
+          >
+            Video Production
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-10">
+      <h2
+        class="lg:text-3xl md:text-3xl sm:text-2xl sm:pt-10 md:pt-0 font-semibold font-[Poppins] text-blue text-center"
+      >
+        CORPORATE VIDEOS
+      </h2>
+      <div
+        class="container mx-auto flex lg:flex-row-reverse md:flex-col-reverse sm:flex-col-reverse sm:items-center lg:justify-between"
+      >
+        <div
+          id="default-carousel"
+          class="relative lg:w-[50%] md:w-[90%] sm:w-[90%] md:py-16 h-full lg:py-40 sm:py-0"
+          data-carousel="slide"
+        >
+          <!-- Carousel wrapper -->
+          <div class="relative overflow-hidden rounded-lg md:h-96">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <Image
+                src={CorporateVideos1}
+                alt="about pic"
+                class="absolute w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              />
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <Image
+                src={CorporateVideos2}
+                alt="about pic"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              />
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <Image
+                src={CorporateVideos3}
+                alt="about pic"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              />
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <Image
+                src={CorporateVideos1}
+                alt="about pic"
+                class="absolute w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              />
+            </div>
+            <!-- Item 5 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <Image
+                src={CorporateVideos2}
+                alt="about pic"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              />
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <Image
+                src={CorporateVideos3}
+                alt="about pic"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              />
+            </div>
+            <!-- Slider indicators -->
+            <div
+              class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2"
+            >
+              <button
+                type="button"
+                class="w-3 h-3 rounded-full"
+                aria-current="true"
+                aria-label="Slide 1"
+                data-carousel-slide-to="0"></button>
+              <button
+                type="button"
+                class="w-3 h-3 rounded-full"
+                aria-current="false"
+                aria-label="Slide 2"
+                data-carousel-slide-to="1"></button>
+              <button
+                type="button"
+                class="w-3 h-3 rounded-full"
+                aria-current="false"
+                aria-label="Slide 3"
+                data-carousel-slide-to="2"></button>
+              <button
+                type="button"
+                class="w-3 h-3 rounded-full"
+                aria-current="false"
+                aria-label="Slide 4"
+                data-carousel-slide-to="3"></button>
+              <button
+                type="button"
+                class="w-3 h-3 rounded-full"
+                aria-current="false"
+                aria-label="Slide 5"
+                data-carousel-slide-to="4"></button>
+            </div>
+            <!-- Slider controls -->
+            <button
+              type="button"
+              class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+              data-carousel-prev
+            >
+              <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+              >
+                <svg
+                  class="w-4 h-4 text-white dark:text-gray-800"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 6 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 1 1 5l4 4"></path>
+                </svg>
+                <span class="sr-only">Previous</span>
+              </span>
+            </button>
+            <button
+              type="button"
+              class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+              data-carousel-next
+            >
+              <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+              >
+                <svg
+                  class="w-4 h-4 text-white dark:text-gray-800"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 6 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 9 4-4-4-4"></path>
+                </svg>
+                <span class="sr-only">Next</span>
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="font-[Roboto] text-lg lg:max-w-[40%] md:max-w-[80%] sm:max-w-[100%] sm:text-center py-20 space-y-5 font-bold"
+        >
+          <h2 class="lg:text-3xl md:text-2xl sm:text-2xl font-[Poppins]">
+            Media Advisory Experts
+          </h2>
+          <p>
+            can harness decades of experience across the United States to
+            conceptualize, storyboard, shoot, edit and deliver professional
+            videos for corporate clients of any size and budget, from small
+            firms to Fortune 500 brands.
+          </p>
+           We can produce: <br />
+          <ul>
+            <li>
+              <span class="text-xl text-blue font-bold">•</span> Internal
+              marketing, training, and inspirational videos
+            </li>
+            <li>
+              <span class="text-xl text-blue font-bold">•</span> Videos for an
+              external audience, including proof-of-performance, customer
+              messaging, and crisis response
+            </li>
+            <li>
+              <span class="text-xl text-blue font-bold">•</span> Videos to be
+              utilized in investor communications and pitch decks
+            </li>
+            <li>
+              <span class="text-xl text-blue font-bold">•</span> Product
+              announcements
+            </li>
+            <li>
+              <span class="text-xl text-blue font-bold">•</span> Digital video
+              campaigns
+            </li>
+            <li>
+              <span class="text-xl text-blue font-bold">•</span>
+               Aspirational videos
+            </li>
+          </ul>
+          <p>
+            Trust these critical business video needs to the experts at MAX
+            Solutions: Media Advisory EXperts. Contact us today:
+            <span
+              class="lg:text-xl sm:text-sm font-semibold font-[Raleway] text-blue"
+              ><a href="mailto:contact@mediaadvisoryexperts.com"
+                >contact@mediaadvisoryexperts.com</a
+              >
+            </span>
+          </p>
+          <p>
+            <span class="text-red font-bold text-2xl">*</span> Please indicate
+            level of urgency in your initial message so that we may best meet
+            your needs.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mx-auto sm:text-center sm:py-10">
+      <h2
+        class="lg:text-3xl md:text-3xl sm:text-2xl sm:pt-10 sm:pb-5 md:pt-0 font-semibold font-[Poppins] text-blue text-center"
+      >
+        LEGAL VIDEOS
+      </h2>
+      <div
+        class="flex lg:flex-row lg:items-center md:flex-col sm:flex-col-reverse justify-between lg:py-[150px]"
+      >
+        <div class="max-w-[40rem] font-bold text-lg">
+          <h2
+            class="lg:text-3xl md:text-2xl lg:pb-5 sm:text-2xl font-[Poppins]"
+          >
+            Media Advisory Experts
+          </h2>
+          <p>
+            can produce videos for early litigation or pre-filing purposes, case
+            settlement, trials, and other steps of the legal process.
+            Day-in-the-life videos and settlement documentaries can be powerful
+            tools to accurately convey how clients, plaintiffs and defendants
+            have been impacted by traumatic, life-changing events. Firm founder
+            Mark Albert is a Peabody Award-winning former on-air CBS News
+            network correspondent, who has covered cases before the U.S. Supreme
+            Court and been honored with the Wade H. McCree ‘Award for Excellence
+            in Legal Journalism and the Advancement of Justice’ from the State
+            Bar of Michigan. He’s covered legal issues and frequently used
+            PACER, CMF/ECF as a member of the media for more than 20 years. So
+            Media Advisory EXperts knows the vast scope of cases where
+            compelling, emotional storytelling videos can resonate for litigants
+            across the legal landscape.
+          </p>
+          <p class="font-bold text-lg py-5">
+            Contact us to schedule a free consultation: <span
+              class="lg:text-xl sm:text-sm font-semibold font-[Raleway] text-blue"
+              ><a href="mailto:contact@mediaadvisoryexperts.com"
+                >contact@mediaadvisoryexperts.com</a
+              >
+            </span>
+          </p>
+          <p>
+            <span class="text-red font-bold text-2xl">*</span> Please indicate
+            the status of your client’s case in your initial message so that we
+            may best meet your needs on an expedited basis, if needed
+          </p>
+        </div>
+        <div class="max-w-[50rem] sm:py-12">
+          <Image src={SupremeCourt} alt="supreme-court" class="rounded-lg" />
+        </div>
+      </div>
+    </section>
+  </HTML>
+</Fragment>
