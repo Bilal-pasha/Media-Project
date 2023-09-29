@@ -2,9 +2,9 @@
 module.exports = {
 content: [
 		'./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}',
-		// "./node_modules/tw-elements/dist/js/**/*.js"
+		"./node_modules/tw-elements/dist/js/**/*.js"
 		,
-		'./node_modules/flowbite/**/*.js'
+		// './node_modules/flowbite/**/*.js'
 	],	theme: {
 		extend: {},
 		backgroundImage:{
@@ -37,9 +37,9 @@ content: [
 			// => @media (min-width: 1536px) { ... }
 		  } 
 	},
-	plugins: [
-        require('flowbite/plugin')
-    ]
+	// plugins: [
+    //     require('flowbite/plugin')
+    // ]
 }
 
 // /** @type {import('tailwindcss').Config} */
