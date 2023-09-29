@@ -1,10 +1,11 @@
 ---
 import Footer from "../../components/Footer";
-import Navbar from "../../components/Navbar.astro";
+// import Navbar from "../../components/Navbar.astro";
+import Navbar from "../../components/Navbar";
 ---
 
 <Fragment>
-    <Navbar />
-    <slot />
-    <Footer />
+  <Navbar client:only />
+  <slot />
+  <Footer />
 </Fragment>

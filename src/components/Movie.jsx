@@ -1,16 +1,16 @@
-import React from "@astrojs/react";
+// import React from "@astrojs/react";
 import { Fragment, useEffect, useState } from "react";
 import Moviebg from "../assets/videoBg.mp4";
 // import { useState, useEffect } from "@astrojs/react";
 
 export default function Movie() {
-  const [text, setText] = useState("");
+  const [text, setText] = useState(" ");
   const [text2, setText2] = useState("");
   let [currentIndex, setCurrentIndex] = useState(0);
   let [currentIndex2, setCurrentIndex2] = useState(0);
-  const typingSpeed = 50; // Adjust the typing speed (milliseconds per character)
-  const headingText = ``;
-  const headingText2 = "";
+  const typingSpeed = 80; // Adjust the typing speed (milliseconds per character)
+  const headingText = "Welcome to";
+  const headingText2 = "MEDIA ADVISORY EXPERTS";
 
   useEffect(() => {
     if (currentIndex < headingText.length) {
@@ -56,10 +56,10 @@ export default function Movie() {
         </video>
         <div className="absolute text-white font-base justify-end items-center lg:py-20 sm:py-16 w-full h-full flex flex-col lg:top-0 lg:left-0 lg:px-[100px] sm:px-[50px] max-w-[100%] lg:space-y-5 sm:space-y-2">
           <p className="lg:text-3xl sm:text-xl font-[Poppins] font-black">
-            Welcome to
+            {text}
           </p>
           <p className="lg:text-5xl sm:text-3xl sm:text-center font-[Poppins] font-black">
-            MEDIA ADVISORY EXPERTS
+            {text2}
           </p>
         </div>
         {/* <div className="max-w-[40rem] space-y-2">

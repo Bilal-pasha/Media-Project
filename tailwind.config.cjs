@@ -2,6 +2,8 @@
 module.exports = {
 content: [
 		'./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}',
+		// "./node_modules/tw-elements/dist/js/**/*.js"
+		,
 		'./node_modules/flowbite/**/*.js'
 	],	theme: {
 		extend: {},
@@ -35,7 +37,9 @@ content: [
 			// => @media (min-width: 1536px) { ... }
 		  } 
 	},
-	plugins: [require("tw-elements/dist/plugin.cjs")]
+	plugins: [
+        require('flowbite/plugin')
+    ]
 }
 
 // /** @type {import('tailwindcss').Config} */
