@@ -1,9 +1,123 @@
 ---
 import HTML from "../../layouts/HTML/HTML.astro";
+import { Image } from "astro:assets";
+import VideoProduction from "../../assets/VideoProduction.jpg";
+import MediaTraning from "../../assets/MediaTraning.jpg";
+import { ViewTransitions } from "astro:transitions";
 ---
 
-<Fragment>
-  <HTML>
-    <h2>Strategic Consulting</h2>
-  </HTML>
-</Fragment>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <ViewTransitions transition:name="img" />
+  </head>
+  <body>
+    <Fragment>
+      <HTML>
+        <section class="pb-10">
+          <div class="w-full relative h-[40vh]">
+            <Image
+              src={VideoProduction}
+              alt="about pic"
+              class="absolute top-0 w-full h-full"
+            />
+            <div
+              class="absolute w-full h-full flex flex-col justify-center top-0 max-w-[100%] items-center bg-semiblack"
+            >
+              <h2
+                class="text-white font-[Poppins] lg:text-5xl md:text-4xl sm:text-4xl font-bold border-blue border-b-2"
+              >
+                Consulting
+              </h2>
+            </div>
+          </div>
+        </section>
+
+        <section class="lg:py-10 sm:py-0">
+          <!-- <h2
+          class="lg:text-3xl md:text-3xl sm:text-2xl sm:pt-10 md:pt-0 font-semibold font-[Poppins] text-blue text-center"
+        >
+          CORPORATE VIDEOS
+        </h2> -->
+          <div
+            class="container mx-auto flex lg:flex-row-reverse md:flex-col-reverse sm:flex-col-reverse sm:items-center lg:justify-between"
+          >
+            <div class="lg:max-w-[40%]">
+              <Image
+                src={MediaTraning}
+                alt="Consulting image"
+                class="object-content"
+              />
+            </div>
+            <div
+              class="font-[Roboto] text-lg lg:max-w-[40%] md:max-w-[80%] sm:max-w-[100%] lg:text-left md:text-center sm:text-left py-20 space-y-5 font-bold"
+            >
+              <!-- <h2 class="lg:text-3xl md:text-2xl sm:text-2xl font-[Poppins]">
+              Media Advisory Experts
+            </h2> -->
+              <p>
+                Having covered politics, criminal justice, and business for
+                decades, the team at <span class="text-2xl">
+                  Media Advisory Experts</span
+                >
+                 can offer C-suite executives, leaders in law enforcement, and
+                local to multi - national corporations strategic consulting,
+                crisis communications, news industry insight, public relations,
+                and media coaching services to prepare them for an always - on
+                media ecosystem that demands lightning, accurate respon se and
+                accountability — while also ensuring their vital context breaks
+                through the noise and is heard by their target audience
+              </p>
+              <!-- We can produce: <br /> -->
+              <!-- <ul>
+              <li>
+                <span class="text-xl text-blue font-bold">•</span> Internal
+                marketing, training, and inspirational videos
+              </li>
+              <li>
+                <span class="text-xl text-blue font-bold">•</span> Videos for an
+                external audience, including proof-of-performance, customer
+                messaging, and crisis response
+              </li>
+              <li>
+                <span class="text-xl text-blue font-bold">•</span> Videos to be
+                utilized in investor communications and pitch decks
+              </li>
+              <li>
+                <span class="text-xl text-blue font-bold">•</span> Product
+                announcements
+              </li>
+              <li>
+                <span class="text-xl text-blue font-bold">•</span> Digital video
+                campaigns
+              </li>
+              <li>
+                <span class="text-xl text-blue font-bold">•</span>
+                 Aspirational videos
+              </li>
+            </ul>
+            <p>
+              Trust these critical business video needs to the experts at MAX
+              Solutions: Media Advisory EXperts. Contact us today:
+              <span
+                class="lg:text-xl sm:text-sm font-semibold font-[Raleway] text-blue"
+                ><a href="mailto:contact@mediaadvisoryexperts.com"
+                  >contact@mediaadvisoryexperts.com</a
+                >
+              </span>
+            </p>
+            <p>
+              <span class="text-red font-bold text-2xl">*</span> Please indicate
+              level of urgency in your initial message so that we may best meet
+              your needs.
+            </p> -->
+            </div>
+          </div>
+        </section>
+      </HTML>
+    </Fragment>
+  </body>
+</html>
