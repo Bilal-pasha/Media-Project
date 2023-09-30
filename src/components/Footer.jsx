@@ -3,12 +3,12 @@ import { AiOutlineCopyrightCircle } from "@react-icons/all-files/ai/AiOutlineCop
 
 export default function Footer() {
   return (
-    <footer className="bg-whitr">
+    <footer className="bg-black text-white py-5">
       <div className="flex items-center justify-center">
-        <h2 className="flex items-center space-x-4 lg:text-base sm:text-xs sm:font-semibold">
+        <h2 className="flex items-center space-x-6 lg:text-base sm:text-xs lg:font-medium sm:font-semibold">
           {" "}
-          <AiOutlineCopyrightCircle />
-          2023 The Travel Lede LLC dba Media Advisory Experts LLC
+          <AiOutlineCopyrightCircle className="mx-1" />
+          2023 Media Advisory Experts
         </h2>
       </div>
     </footer>
