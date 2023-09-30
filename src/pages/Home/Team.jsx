@@ -26,14 +26,14 @@ export default function Team() {
             const images = snap.docs.map((doc) => {
                 return { ...doc.data(), id: doc.id }
             })
-            setData(images.sort((a,b) => a.Order - b.Order));
+            setData(images.sort((a, b) => a.Order - b.Order));
         }).catch(err => {
             console.log(err.message)
         })
     }, [])
     console.log(data)
     return (
-        <section> 
+        <section>
             <div className="flex flex-wrap container mx-auto max-w-[70rem]  justify-center">
                 <div className="flex flex-wrap justify-center text-center lg:px-0 sm:px-20 space-y-10">
                     <h2 className="text-3xl">Our <span className="text-blue  border-blue border-b-[1px]">Team</span></h2>
