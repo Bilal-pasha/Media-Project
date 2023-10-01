@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { initializeApp } from "firebase/app";
-// import { getStorage, ref, listAll } from "firebase/storage";
 import { getFirestore, collection, getDocs } from 'firebase/firestore'
 
 const firebaseConfig = {
@@ -43,7 +42,6 @@ const Testinomials = () => {
         const colRef = collection(db, 'testimonials')
         getDocs(colRef).then((review) => {
             const reviews = review.docs.map((doc) => {
-                // console.log(data)
                 return { ...doc.data(), id: doc.id }
             })
             setData(reviews.sort((a, b) => a.Order - b.Order));
@@ -54,7 +52,7 @@ const Testinomials = () => {
     // console.log(data)
     return (
 
-        <section className="bg-[#f1f1f1] lg:my-20">
+        <section className="bg-[#f1f1f1] lg:my-20 sm:my-0 lg:py-20 sm:py-0">
             <div className="container mx-auto py-5 ">
                 <div className="space-y-2 pt-10 font-[Poppins] font-black lg:text-4xl sm:text-3xl text-center">
                     <h2>
@@ -74,11 +72,11 @@ const Testinomials = () => {
                     {data.map((data, index) => {
                         return (
                             <>
-                                <div className="max-h-[40vh] px-5 py-8 bg-white mx-5 rounded-lg my-20" key={index}>
-                                    <p>{data.Review}</p>
+                                <div className="flex flex-col px-5 py-10 my-10 lg:h-[90%] sm:h-auto bg-white mx-5 rounded-lg " key={index}>
+                                    <p className="text-lg">{data.Review}</p>
                                     <div className="flex justify-start py-5">
                                         <div>
-                                            <h2 className="font-[Poppins] text-lg">{data.Client}</h2>
+                                            <h2 className="font-[Poppins] text-lg font-black">{data.Client}</h2>
                                             <p className="">{data.ClientOrganization}</p>
                                         </div>
                                     </div>
