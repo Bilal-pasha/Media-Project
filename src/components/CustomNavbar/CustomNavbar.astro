@@ -1,0 +1,143 @@
+---
+import { RxHamburgerMenu } from "react-icons/rx";
+---
+
+<Fragment>
+    <nav
+        class="flex h-[70px] items-center lg:px-5 lg:justify-between md:justify-between sm:justify-between dark-mode:text-gray-200 py-4 dark-mode:bg-gray-800 bg-white text-gray-700 sticky top-0 z-10 shadow-lg bg-opacity-95"
+    >
+        <input type="checkbox" id="check" class="hidden peer" checked />
+        <label
+            for="check"
+            class="lg:hidden md:block sm:block md:px-4 sm:px-4 text-4xl cursor-pointer"
+        >
+            <RxHamburgerMenu />
+        </label>
+        <a
+            href="/"
+            class="text-xl lg:px-6 font-semibold font-[Poppins] tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline md:text-center"
+            >Media Advisory <span class="text-blue font-[100px]">Experts</span
+            ></a
+        >
+
+        <!-- <h2 class="text-xl font-bold">LOGO</h2> -->
+        <ul
+            class="lg:flex lg:space-x-10 lg:items-center md:block sm:block lg:static md:fixed sm:fixed md:peer-checked:left-[-100%] sm:peer-checked:left-[-100%] md:left-0 sm:left-0 md:transition-all sm:transition-all md:duration-[500ms] sm:duration-[500ms] md:top-[70px] sm:top-[70px]
+            lg:w-auto lg:h-auto md:w-full sm:w-full md:h-[100vh] sm:h-[100vh] lg:text-black md:text-black sm:text-black md:px-5 sm:px-5 md:bg-[#ccc9c9] sm:bg-[#ccc9c9] lg:bg-white lg:space-y-0 md:space-y-5 sm:space-y-5 lg:py-0 md:py-10 sm:py-10 md:z-20 sm:z-20"
+        >
+            <li>
+                <a
+                    class="lg:px-4 md:px-4 py-2 mt-2 text-lg font-semibold text-gray-900 rounded-lg hover:border-blue hover:text-blue dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="/About">ABOUT</a
+                >
+            </li>
+            <li>
+                <div class="relative">
+                    <button
+                        class="peer lg:px-5 md:px-0 lg:py-2 lg:text-black md:text-black"
+                    >
+                        <a
+                            class="lg:px-4 md:px-4 py-2 mt-2 text-lg font-semibold text-gray-900 rounded-lg hover:border-blue hover:text-blue dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                            href="/About">VIDEO PRODUCTION</a
+                        ></button
+                    >
+                    <div
+                        class="absolute hidden peer-hover:flex hover:flex
+                     w-[200px]
+                     flex-col bg-white drop-shadow-lg text-black z-10"
+                    >
+                        <a class="px-5 py-3 hover:bg-gray-200" href="#"
+                            >LEGAL VIDEOS</a
+                        >
+                        <a class="px-5 py-3 hover:bg-gray-200" href="#"
+                            >COPERATIVE VIDEOS</a
+                        >
+                        <a class="px-5 py-3 hover:bg-gray-200" href="#"
+                            >Privacy Policy</a
+                        >
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="relative">
+                    <button
+                        class="peer lg:px-5 md:px-0 lg:py-2 lg:text-black md:text-black"
+                    >
+                        <a
+                            class="lg:px-4 md:px-4 py-2 mt-2 text-lg font-semibold text-gray-900 rounded-lg hover:border-blue hover:text-blue dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                            href="/About">MEDIA TRANING/COACHING</a
+                        >
+                    </button>
+                    <div
+                        class="absolute hidden peer-hover:flex hover:flex
+                     w-[200px]
+                     flex-col bg-white drop-shadow-lg text-black z-10"
+                    >
+                        <a class="px-5 py-3 hover:bg-gray-200" href="#"
+                            >About Us</a
+                        >
+                        <a class="px-5 py-3 hover:bg-gray-200" href="#"
+                            >Contact Us</a
+                        >
+                        <a class="px-5 py-3 hover:bg-gray-200" href="#"
+                            >Privacy Policy</a
+                        >
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="relative">
+                    <button
+                        class="peer lg:px-5 md:px-0 lg:py-2 lg:text-black md:text-black"
+                    >
+                        <a
+                            class="lg:px-4 md:px-4 py-2 mt-2 text-lg font-semibold text-gray-900 rounded-lg hover:border-blue hover:text-blue dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                            href="/About">STRATEGIC CONSULTING</a
+                        ></button
+                    >
+                    <div
+                        class="absolute hidden peer-hover:flex hover:flex
+                     w-[200px]
+                     flex-col bg-white drop-shadow-lg text-black z-10"
+                    >
+                        <a class="px-5 py-3 hover:bg-gray-200" href="#"
+                            >About Us</a
+                        >
+                        <a class="px-5 py-3 hover:bg-gray-200" href="#"
+                            >Contact Us</a
+                        >
+                        <a class="px-5 py-3 hover:bg-gray-200" href="#"
+                            >Privacy Policy</a
+                        >
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="relative">
+                    <button
+                        class="peer lg:px-5 md:px-0 lg:py-2 lg:text-black md:text-black"
+                        ><a
+                            class="lg:px-4 md:px-4 py-2 mt-2 text-lg font-semibold text-gray-900 rounded-lg hover:border-blue hover:text-blue dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                            href="/About">CONTACT</a
+                        ></button
+                    >
+                    <div
+                        class="absolute hidden peer-hover:flex hover:flex
+                     w-[200px]
+                     flex-col bg-white drop-shadow-lg text-black z-10"
+                    >
+                        <a class="px-5 py-3 hover:bg-gray-200" href="#"
+                            >About Us</a
+                        >
+                        <a class="px-5 py-3 hover:bg-gray-200" href="#"
+                            >Contact Us</a
+                        >
+                        <a class="px-5 py-3 hover:bg-gray-200" href="#"
+                            >Privacy Policy</a
+                        >
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</Fragment>
