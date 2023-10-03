@@ -5,10 +5,9 @@ import VideoProduction from "../../assets/CorporateVideos3.jpg";
 import MediaTraning from "../../assets/MediaTraning.jpg";
 import Consulting from "../../assets/Consulting.jpg";
 import ServicesBoxes from "@components/ServicesBoxes.astro";
-import Testimonials from "../../components/Testimonials/Testimonials.astro";
+import Testinomials from "../../components/Testimonials/Testimonials.astro";
 import HTML from "../../layouts/HTML/HTML.astro";
-// import ContactImage from "../../assets/Contact.jpg";
-// import Team from "./Team";
+import ContactForm from '../../pages/Contact/ContactForm.astro'
 const imagestyle =
   "w-full object-cover lg:h-[250px] md:h-[200px] md:w-full sm:h-[200px] sm:w-full";
 ---
@@ -59,7 +58,17 @@ const imagestyle =
     </div>
   </section>
 
-  <Testimonials />
+  <Testinomials />
+  <div class="flex justify-center pb-20">
+    <div class="h-auto lg:w-[70%] lg:py-20 py-10 space-y-9 shadow-2xl px-6">
+      <h2
+      class="text-center lg:text-2xl lg:pb-10 sm:pt-14 sm:pb-6 font-[Poppins] font-semibold"
+    >
+      CONTACT US
+    </h2>
+    <ContactForm/>
+    </div>
+  </div>
 </HTML>
 <!-- <div
     class="flex justify-center items-center lg:text-3xl md:text-2xl sm:text-2xl font-bold sm:pb-10"
