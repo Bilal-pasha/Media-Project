@@ -1,18 +1,22 @@
 ---
 import HTML from "../../layouts/HTML/HTML.astro";
 import { Image } from "astro:assets";
-import VideoProduction from "../../assets/VideoProduction.jpg";
 import CorporateVideos1 from "../../assets/CorporateVideos1.jpg";
 import CorporateVideos2 from "../../assets/CorporateVideos2.jpg";
 import CorporateVideos3 from "../../assets/CorporateVideos3.jpg";
 import SupremeCourt from "../../assets/SupremeCourt.jpg";
 import BackGroundImage from "@components/BackGroundImage.astro";
 import ImageSlider from "@components/ImageSlider.astro";
+import VideoproductionBanner from "../../assets/Videoproductionbanner.jpg";
 ---
 
 <Fragment>
   <HTML>
-    <BackGroundImage imageSource={VideoProduction} text="VIDEO PRODUCTION" />
+    <BackGroundImage
+      imageSource={VideoproductionBanner}
+      text="VIDEO PRODUCTION"
+      id="CORPORATE"
+    />
 
     <section class="lg:py-10 sm:py-0">
       <h2
@@ -32,10 +36,9 @@ import ImageSlider from "@components/ImageSlider.astro";
           image6={CorporateVideos3}
         />
         <div
-          class="text-2xl lg:max-w-[40%] md:max-w-[80%] sm:max-w-[100%] lg:text-left md:text-center sm:text-left lg:py-20 sm:py-5 space-y-5"
+          class="lg:max-w-[40%] md:max-w-[80%] sm:max-w-[100%] lg:text-left md:text-center sm:text-left lg:py-20 sm:py-5 space-y-5"
         >
-          <h2 class="lg:text-3xl md:text-2xl sm:text-2xl font-[Poppins]"></h2>
-          <p>
+          <p class="lg:text-2xl">
             <span class="font-[Poppins] font-bold">
               Media Advisory Experts</span
             >
@@ -45,20 +48,26 @@ import ImageSlider from "@components/ImageSlider.astro";
             firms to Fortune 500 brands.
           </p>
            We can produce: <br />
-          <ul class="list-disc">
-            <li>Internal marketing, training, and inspirational videos</li>
+          <ul class="list-disc lg:text-2xl">
             <li>
-              Videos for an external audience, including proof-of-performance,
-              customer messaging, and crisis response
+              <ul class="list-disc">
+                <li>Internal marketing, training, and inspirational videos</li>
+                <li>
+                  Videos for an external audience, including
+                  proof-of-performance, customer messaging, and crisis response
+                </li>
+                <li>
+                  Videos to be utilized in investor communications and pitch
+                  decks
+                </li>
+                <li>Product announcements</li>
+                <li>Digital video campaigns</li>
+                <li>Aspirational videos</li>
+              </ul>
             </li>
-            <li>
-              Videos to be utilized in investor communications and pitch decks
-            </li>
-            <li>Product announcements</li>
-            <li>Digital video campaigns</li>
-            <li>Aspirational videos</li>
           </ul>
-          <p>
+
+          <p class="lg:text-2xl">
             Trust these critical business video needs to the experts at <span
               class="font-[Poppins] font-bold"
             >
@@ -71,7 +80,7 @@ import ImageSlider from "@components/ImageSlider.astro";
               >
             </span>
           </p>
-          <i>
+          <i id="Legal">
             Please indicate level of urgency in your initial message so that we
             may best meet your needs.
           </i>
@@ -81,7 +90,6 @@ import ImageSlider from "@components/ImageSlider.astro";
 
     <section
       class="container mx-auto lg:text-left md:text-center sm:text-center sm:py-10"
-      id="Legal-Videos"
     >
       <h2
         class="lg:text-3xl md:text-3xl sm:text-2xl sm:pt-10 sm:pb-5 md:pt-0 font-semibold font-[Poppins] text-center"
@@ -92,7 +100,7 @@ import ImageSlider from "@components/ImageSlider.astro";
         class="flex lg:flex-row lg:items-center md:flex-col sm:flex-col-reverse justify-between lg:py-[50px]"
       >
         <div
-          class="text-2xl lg:max-w-[40%] md:max-w-[80%] sm:max-w-[100%] lg:text-left md:text-center sm:text-left space-y-5"
+          class="lg:text-2xl lg:max-w-[40%] md:max-w-[80%] sm:max-w-[100%] lg:text-left md:text-center sm:text-left space-y-5"
         >
           <!-- <h2 class="lg:text-3xl md:text-2xl sm:text-2xl font-[Poppins]">
             

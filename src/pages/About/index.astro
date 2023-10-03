@@ -2,7 +2,6 @@
 import HTML from "../../layouts/HTML/HTML.astro";
 import { Image } from "astro:assets";
 import MarkPicture from "../../assets/Mark.jpg";
-import About from "../../assets/About-image.jpg";
 import CBS from "../../assets/news-channel-logos/CBS_News_logo.png";
 import Hearttelevision from "../../assets/news-channel-logos/Hearst.jpg";
 import CNN from "../../assets/news-channel-logos/CNN.png";
@@ -17,16 +16,17 @@ import KYW from "../../assets/news-channel-logos/KYW.png";
 import MEDI from "../../assets/news-channel-logos/Medi.jpg";
 import HoldingHands from "../../assets/holdingHands.jpg";
 import BackGroundImage from "@components/BackGroundImage.astro";
+import AboutPagebanner from "../../assets/ABOUTpagebanner.jpg";
 ---
 
 <HTML>
-  <BackGroundImage imageSource={About} text="ABOUT US" />
+  <BackGroundImage imageSource={AboutPagebanner} text="ABOUT US" />
   <section
     class="lg:container mx-auto lg:pt-[100px] lg:pb-[0px] sm:px-[50px] md:py-[100px]"
   >
-    <div class="max-w-full lg:px-[80px] lg:text-left sm:text-left sm:py-20">
-      <p class="text-2xl lg:text-center sm:text-left">
-        <span class="font-[Poppins] font-semibold">
+    <div class="max-w-full lg:py-0 lg:px-[200px] lg:text-left sm:text-left sm:pt-20 sm:pb-0">
+      <p class="lg:text-2xl lg:text-center sm:text-left">
+        <span class="font-[Poppins] sm:text-2xl font-semibold">
           Media Advisory Experts</span
         >
          harnesses decades of journalism and communications experience to
@@ -44,14 +44,10 @@ import BackGroundImage from "@components/BackGroundImage.astro";
     <div
       class="mt-[100px] mb-[50px] w-full h-full overflow-hidden lg:px-[80px]"
     >
-      <iframe
-        class="embed-responsive-item container mx-auto bottom-0 left-0 right-0 top-0 lg:h-[40vh] lg:w-[100%] md:h-[40vh] md:w-[70%] sm:h-[30vh] sm:w-full"
-        src="https://youtube.com/embed/1mSYWFhriuI?si=VBJYNiUHpv6mU1tf"
-        allowfullscreen=""
-        data-gtm-yt-inspected-2340190_699="true"
-        id="240632615"
-      >
-      </iframe>
+    <iframe width="560" height="315" class="embed-responsive-item container mx-auto bottom-0 left-0 right-0 top-0 lg:h-[40vh] lg:w-[60%] md:h-[40vh] md:w-[70%] sm:h-[30vh] sm:w-full"
+     src="https://www.youtube.com/embed/-PALozh28ZI?si=yajMEwDL7N_6H4XC" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+     allowfullscreen></iframe>
     </div>
   </section>
   <!-- <section class="flex flex-col"></section> -->

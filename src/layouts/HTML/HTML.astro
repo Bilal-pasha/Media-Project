@@ -1,7 +1,6 @@
 ---
 import DefaultLayout from "../defaultLayout/defaultLayout.astro";
 // import { ViewTransitions } from "astro:transitions";
-// import "tw-elements-react/dist/css/tw-elements-react.min.css";
 ---
 
 <html lang="en">
@@ -11,6 +10,7 @@ import DefaultLayout from "../defaultLayout/defaultLayout.astro";
     <meta name="generator" content={Astro.generator} />
     <!-- <ViewTransitions transition:animate="slide" /> -->
     <title>Document</title>
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap"
@@ -19,10 +19,13 @@ import DefaultLayout from "../defaultLayout/defaultLayout.astro";
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
       rel="stylesheet"
     />
-
+    <!-- <link
+      href="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+    "
+      rel="stylesheet"
+    /> -->
     <style>
-      /* @import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Raleway:wght@500&display=swap");
-      @import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Raleway:wght@500&family=Roboto:ital,wght@0,300;1,300&display=swap"); */
       @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
       @import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Poppins:wght@500&family=Raleway:wght@500&family=Roboto:ital,wght@0,300;1,300&display=swap");
     </style>
@@ -32,8 +35,11 @@ import DefaultLayout from "../defaultLayout/defaultLayout.astro";
       <slot />
     </DefaultLayout>
     <!-- <script
-      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      src="
+      https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
     ></script> -->
+    <!-- <script src="path-to-the-file/splide.min.js"></script> -->
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"
     ></script>

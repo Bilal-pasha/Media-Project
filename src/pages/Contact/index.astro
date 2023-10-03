@@ -1,9 +1,217 @@
 ---
 import HTML from "../../layouts/HTML/HTML.astro";
+import BackGroundImage from "@components/BackGroundImage.astro";
+import ContactBanner from "../../assets/ContactBanner.jpeg";
+import Calendly from "../../components/Calendly.astro";
+import { Image } from "astro:assets";
+import MineField from "../../assets/MineField.jpg";
 ---
 
 <Fragment>
   <HTML>
-    <h2>Contact</h2>
+    <BackGroundImage imageSource={ContactBanner} text="CONTACT" />
+    <div class="flex flex-row container mx-auto space-x-16">
+      <div class="h-[100vh] w-[30%] py-10 space-y-5">
+        <h2
+          class="lg:text-xl md:text-xl sm:text-xl sm:pt-10 md:pt-0 font-semibold font-[Poppins] text-center"
+        >
+          BOOK A FREE CONSULTATION
+        </h2>
+        <iframe
+          src="https://calendly.com/mediaadvisoryexperts?hide_landing_page_details=1"
+          frameborder="1"
+          class="h-full w-full"></iframe>
+      </div>
+      <div class="h-[100vh] w-[30%] py-10 space-y-9">
+        <h2 class="text-center text-xl font-[Poppins] font-semibold">
+          SPEAKING ENGAGEMENTS
+        </h2>
+        <p class="text-xl">
+          <span class="font-[Poppins] font-bold"> Media Advisory Experts</span>
+           founder Mark Albert is available for speaking engagements. He’s given
+          tailored remarks on current events, media industry analysis, and
+          insightful travel tips gleaned from visiting 83 countries to
+          government leaders, private companie s, and while emceeing community
+          events.
+        </p>
+      </div>
+      <div class="h-[100vh] w-[30%] py-10 space-y-9">
+        <h2 class="text-center text-xl font-[Poppins] font-semibold">
+          SPEAKING ENGAGEMENTS
+        </h2>
+        <form class="container mx-auto w-full max-w-lg sm:px-10 lg:px-0">
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <label
+                class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                for="grid-first-name"
+              >
+                First Name
+              </label>
+              <input
+                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                id="grid-first-name"
+                type="text"
+                placeholder="Jane"
+              />
+            </div>
+            <div class="w-full md:w-1/2 px-3">
+              <label
+                class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                for="grid-last-name"
+              >
+                Last Name
+              </label>
+              <input
+                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                id="grid-last-name"
+                type="text"
+                placeholder="Doe"
+              />
+            </div>
+          </div>
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full px-3">
+              <label
+                class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                for="grid-password"
+              >
+                E-mail
+              </label>
+              <input
+                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                id="email"
+                type="email"
+              />
+            </div>
+          </div>
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full px-3">
+              <label
+                class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                for="grid-password"
+              >
+                Message
+              </label>
+              <textarea
+                class="no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
+                id="message"></textarea>
+            </div>
+          </div>
+          <div class="md:flex md:items-center">
+            <div class="md:w-1/3">
+              <button
+                class="shadow bg-teal-400 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white bg-blue font-bold py-2 px-4 rounded"
+                type="button"
+              >
+                Send
+              </button>
+            </div>
+            <div class="md:w-2/3"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- <section class="lg:py-10 sm:py-10 sm:space-y-5">
+      <h2
+        class="lg:text-xl md:text-3xl sm:text-2xl sm:pt-10 md:pt-0 font-semibold font-[Poppins] text-center lg:py-20"
+      >
+        
+      </h2>
+      <div
+        class="flex lg:flex-col md:block sm:block lg:justify-between sm:space-y-10"
+      >
+        <div
+          class="text-2xl lg:max-w-[60%] md:max-w-[80%] sm:max-w-[100%] lg:text-left md:text-center sm:text-left space-y-5"
+        >
+          
+        </div>
+        <div class="lg:max-w-[20rem]">
+          <Image src={MineField} alt="image" class="rounded-lg" />
+        </div>
+      </div>
+      <p class="text-2xl py-5 container mx-auto text-center">
+        FOR AVAILABILITY, RATES & QUESTIONS: <br />
+        <span
+          class="lg:text-2xl sm:text-sm font-semibold font-[Poppins] text-blue"
+          ><a href="mailto:contact@mediaadvisoryexperts.com"
+            >contact@mediaadvisoryexperts.com</a
+          >
+        </span>
+      </p>
+    </section> -->
+    <!-- <div class="container mx-auto lg:py-10 flex flex-col ">
+     
+      <p class="text-2xl lg:px-[200px] lg:text-center sm:text-left">Reserve a complimentary, 15
+        -
+        minute consultation for your communications,
+        video production,
+        or
+        media training needs</p>
+      <br/>
+      <div class="lg:px-[200px] flex flex-col items-center justify-center">
+        
+      <button class="px-2 py-2 bg-blue text-white ">BOOK NOW</button>
+     
+      
+
+      <h2
+        class="lg:text-3xl md:text-3xl sm:text-2xl sm:pt-10 md:pt-0 font-semibold font-[Poppins] text-center"
+      >
+        SPEAKING ENGAGEMENTS
+      </h2>
+      <div>
+        <Image src={MineField} alt="image"/>
+        
+      </div>
+    </div>
+    
+    </div>
+    <section class="lg:py-10 sm:py-10 sm:space-y-5">
+      <h2
+        class="lg:text-3xl md:text-3xl sm:text-2xl sm:pt-10 md:pt-0 font-semibold font-[Poppins] text-center lg:py-20"
+      >
+      SPEAKING ENGAGEMENTS
+      </h2>
+      <div
+        class="container mx-auto lg:flex lg:items-center lg:flex-row-reverse md:block sm:block lg:justify-between sm:space-y-10"
+      >
+        <div
+          class="text-2xl lg:max-w-[60%] md:max-w-[80%] sm:max-w-[100%] lg:text-left md:text-center sm:text-left space-y-5"
+        >
+        <p class="text-2xl lg:px-[200px] lg:text-left sm:text-left">
+          <span class="font-[Poppins] font-bold"> Media Advisory Experts</span> founder Mark Albert is available for speaking
+          engagements. He’s given tailored remarks on current events, media industry
+          analysis, and insightful travel tips gleaned from visiting 83 countries to
+          government leaders, private companie
+          s, and while emceeing community events.
+        </p>
+        </div>
+        <div class="lg:max-w-[40rem]">
+          <Image src={MineField} alt="image" class="rounded-lg"/>
+        </div>
+        
+      </div>
+      <p class="text-2xl py-5 container mx-auto text-center">
+        FOR AVAILABILITY, RATES & QUESTIONS: <br/>
+ <span
+          class="lg:text-2xl sm:text-sm font-semibold font-[Poppins] text-blue"
+          ><a href="mailto:contact@mediaadvisoryexperts.com"
+            >contact@mediaadvisoryexperts.com</a
+          >
+        </span>
+      </p>
+    </section>
+    <h2
+        class="lg:text-3xl md:text-3xl sm:text-2xl sm:pt-10 md:pt-0 font-semibold font-[Poppins] text-center lg:py-20"
+      >
+      CONTACT US
+      </h2>
+    
+    <br/>
+    <br/>
+    <br/> -->
+
+    <!-- <Calendly /> -->
   </HTML>
 </Fragment>

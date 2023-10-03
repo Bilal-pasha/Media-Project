@@ -16,6 +16,8 @@ module.exports = {
 			'semiblack': '#0000007d',
 			'lightWhite': '#e9e1e1',
 			'red': 'red',
+			'transparent': 'transparent',
+			'lightred' : '#f1f1f1'
 		},
 		screens: {
 			'sm': '300px',

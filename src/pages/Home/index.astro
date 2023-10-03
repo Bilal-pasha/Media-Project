@@ -1,61 +1,70 @@
 ---
-import Movie from "../../components/Movie";
+import Movie from "../../components/Movie/Movie.jsx";
 import { Image } from "astro:assets";
 import VideoProduction from "../../assets/CorporateVideos3.jpg";
 import MediaTraning from "../../assets/MediaTraning.jpg";
 import Consulting from "../../assets/Consulting.jpg";
 import ServicesBoxes from "@components/ServicesBoxes.astro";
-import Testimonials from "../../components/Testimonials ";
+import Testimonials from "../../components/Testimonials/Testimonials.astro";
+import HTML from "../../layouts/HTML/HTML.astro";
 // import ContactImage from "../../assets/Contact.jpg";
 // import Team from "./Team";
 const imagestyle =
   "w-full object-cover lg:h-[250px] md:h-[200px] md:w-full sm:h-[200px] sm:w-full";
 ---
 
-<Movie client:load />
-<section class="lg:py-20 md:py-10 sm:pt-0 sm:pb-10">
-  <div
-    class="container mx-auto lg:px-20 lg:pt-0 lg:pb-20 lg:space-y-4 sm:py-20 sm:space-y-4"
-  >
-    <p class="text-2xl lg:text-center sm:text-left">
-      <span class="font-[Poppins] font-bold"> Media Advisory Experts</span> is
-      an innovative media advisory company offering strategic communications,
-      network television-level video production and targeted media and
-      journalism training to corporate, government and individual clients across
-      the United States and internationally
-    </p>
-  </div>
-  <div
+<HTML>
+  <Movie />
+  <section class="lg:pt-20 lg:pb-10 md:py-10 sm:pt-0 sm:pb-10">
+    <div
+      class="container mx-auto lg:pt-0 lg:pb-20 lg:space-y-4 sm:py-20 sm:space-y-4"
+    >
+      <p class="text-2xl lg:px-[200px] lg:text-center sm:text-left">
+        <span class="font-[Poppins] font-bold"> Media Advisory Experts</span> is
+        an innovative media advisory company offering strategic communications,
+        network television-level video production and targeted media and
+        journalism training to corporate, government and individual clients
+        across the United States and internationally
+      </p>
+    </div>
+    <div
+      class="flex justify-center items-center lg:text-3xl md:text-2xl sm:text-2xl font-bold sm:pb-10"
+    >
+      <h2 class="font-[Poppins] lg:text-4xl sm:text-3xl">Our Services</h2>
+    </div>
+
+    <div
+      class="flex lg:flex-row sm:px-[24px] lg:justify-evenly md:flex-col md:justify-center md:items-center sm:items-center sm:flex-col md:space-y-12 lg:py-16 md:py-10 sm:py-8 sm:space-y-16 md:space-y-0 lg:space-y-0"
+    >
+      <ServicesBoxes
+        imageSource={Consulting}
+        imagestyle={imagestyle}
+        text="STRATEGIC CONSULTING"
+        link="/Strategic_consulting"
+      />
+
+      <ServicesBoxes
+        imageSource={MediaTraning}
+        imagestyle={imagestyle}
+        text="MEDIA TRAINING"
+        link="/Media_training"
+      />
+
+      <ServicesBoxes
+        imageSource={VideoProduction}
+        imagestyle={imagestyle}
+        text="VIDEO PRODUCTION"
+        link="/Video_production"
+      />
+    </div>
+  </section>
+
+  <Testimonials />
+</HTML>
+<!-- <div
     class="flex justify-center items-center lg:text-3xl md:text-2xl sm:text-2xl font-bold sm:pb-10"
   >
     <h2 class="font-[Poppins] lg:text-4xl sm:text-3xl">Our Services</h2>
-  </div>
-
-  <div
-    class="flex lg:flex-row sm:px-[24px] lg:justify-evenly md:flex-col md:justify-center md:items-center sm:items-center sm:flex-col md:space-y-12 lg:py-16 md:py-10 sm:py-8 sm:space-y-16 md:space-y-0 lg:space-y-0"
-  >
-    <ServicesBoxes
-      imageSource={Consulting}
-      imagestyle={imagestyle}
-      text="STRATEGIC CONSULTING"
-      link="/Strategic_consulting"
-    />
-
-    <ServicesBoxes
-      imageSource={MediaTraning}
-      imagestyle={imagestyle}
-      text="MEDIA TRAINING"
-      link="/Media_training"
-    />
-
-    <ServicesBoxes
-      imageSource={VideoProduction}
-      imagestyle={imagestyle}
-      text="VIDEO PRODUCTION"
-      link="/Video_production"
-    />
-  </div>
-</section>
-<Testimonials client:load />
+  </div> -->
 
 <!-- <Team client:load /> -->
