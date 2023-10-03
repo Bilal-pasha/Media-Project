@@ -2,9 +2,6 @@
 import HTML from '../../layouts/HTML/HTML.astro';
 import BackGroundImage from '@components/BackGroundImage.astro';
 import ContactBanner from '../../assets/ContactBanner.jpeg';
-import Calendly from '../../components/Calendly.astro';
-import { Image } from 'astro:assets';
-import MineField from '../../assets/MineField.jpg';
 import FormContact from './FormContact'
 ---
 
@@ -40,7 +37,7 @@ import FormContact from './FormContact'
         <h2 class="text-center text-xl font-[Poppins] font-semibold">
           SPEAKING ENGAGEMENTS
         </h2>
-       <FormContact />
+       <FormContact  client:visible />
       </div>
     </div>
     <!-- <section class="lg:py-10 sm:py-10 sm:space-y-5">
