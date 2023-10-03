@@ -1,11 +1,11 @@
 ---
-import HTML from "../../layouts/HTML/HTML.astro";
-import BackGroundImage from "@components/BackGroundImage.astro";
-import ContactBanner from "../../assets/ContactBanner.jpeg";
-import Calendly from "../../components/Calendly.astro";
-import { Image } from "astro:assets";
-import MineField from "../../assets/MineField.jpg";
-import ContactForm from './ContactForm.astro'
+import HTML from '../../layouts/HTML/HTML.astro';
+import BackGroundImage from '@components/BackGroundImage.astro';
+import ContactBanner from '../../assets/ContactBanner.jpeg';
+
+import { Image } from 'astro:assets';
+import MineField from '../../assets/MineField.jpg';
+import FormContact from './FormContact';
 ---
 
 <Fragment>
@@ -15,7 +15,7 @@ import ContactForm from './ContactForm.astro'
       class="flex lg:flex-row md:flex-col sm:flex-col lg:container md:container sm:px-10 mx-auto lg:space-x-10 lg:py-16 md:py-12 sm:py-12 lg:space-y-0 md:space-y-24 sm:space-y-20"
     >
       <div
-        class="lg:h-auto lg:w-[30%] border border-gray-200 md:min-h-[70vh] sm:w-full  sm:h-[60vh] lg:py-16 md:py-16 sm:py-20 shadow-2xl px-6"
+        class="lg:h-auto lg:w-[30%] border border-gray-200 md:min-h-[70vh] sm:w-full sm:h-[60vh] lg:py-16 md:py-16 sm:py-20 shadow-2xl px-6"
       >
         <h2
           class="lg:text-xl md:text-xl lg:pb-2 sm:text-xl sm:pb-10 md:pt-0 font-semibold font-[Poppins] text-center"
@@ -28,7 +28,7 @@ import ContactForm from './ContactForm.astro'
           class="h-full w-full"></iframe>
       </div>
       <div
-        class="h-auto lg:w-[30%] border border-gray-200 md:min-h-[70vh]  lg:py-10 space-y-9 shadow-2xl px-10 sm:py-16"
+        class="h-auto lg:w-[30%] border border-gray-200 md:min-h-[70vh] lg:py-10 space-y-9 shadow-2xl px-10 sm:py-16"
       >
         <h2 class="text-center text-xl lg:pb-0 font-[Poppins] font-semibold">
           SPEAKING ENGAGEMENTS
@@ -43,16 +43,19 @@ import ContactForm from './ContactForm.astro'
           events.
         </p>
       </div>
-      <div class="h-auto lg:w-[30%] border border-gray-200 py-10 space-y-9 shadow-2xl px-6">
-        <h2
-        class="text-center text-xl lg:pb-0 sm:pt-14 sm:pb-6 font-[Poppins] font-semibold"
+
+      <div
+        class="h-auto lg:w-[50%] w-full border border-gray-200 py-6 space-y-9 shadow-2xl px-6"
       >
-        CONTACT US
-      </h2>
-      <ContactForm />
+        <h2
+          class="text-center text-xl lg:pb-0 sm:pt-14 sm:pb-6 font-[Poppins] font-semibold"
+        >
+          CONTACT US
+        </h2>
+        <FormContact client:visible />
       </div>
-    </div>
-    <!-- <section class="lg:py-10 sm:py-10 sm:space-y-5">
+      <!-- </div> -->
+      <!-- <section class="lg:py-10 sm:py-10 sm:space-y-5">
       <h2
         class="lg:text-xl md:text-3xl sm:text-2xl sm:pt-10 md:pt-0 font-semibold font-[Poppins] text-center lg:py-20"
       >
@@ -80,7 +83,7 @@ import ContactForm from './ContactForm.astro'
         </span>
       </p>
     </section> -->
-    <!-- <div class="container mx-auto lg:py-10 flex flex-col ">
+      <!-- <div class="container mx-auto lg:py-10 flex flex-col ">
      
       <p class="text-2xl lg:px-[200px] lg:text-center sm:text-left">Reserve a complimentary, 15
         -
@@ -152,6 +155,7 @@ import ContactForm from './ContactForm.astro'
     <br/>
     <br/> -->
 
-    <!-- <Calendly /> -->
+      <!-- <Calendly /> -->
+    </div>
   </HTML>
 </Fragment>
