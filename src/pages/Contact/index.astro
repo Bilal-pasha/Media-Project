@@ -2,16 +2,24 @@
 import HTML from '../../layouts/HTML/HTML.astro';
 import BackGroundImage from '@components/BackGroundImage.astro';
 import ContactBanner from '../../assets/ContactBanner.jpeg';
-import FormContact from './FormContact'
+
+import { Image } from 'astro:assets';
+import MineField from '../../assets/MineField.jpg';
+import FormContact from './FormContact';
+import ContactForm from './ContactForm.astro';
 ---
 
 <Fragment>
   <HTML>
     <BackGroundImage imageSource={ContactBanner} text="CONTACT" />
-    <div class="flex flex-row container mx-auto space-x-16">
-      <div class="h-[100vh] w-[30%] py-10 space-y-5">
+    <div
+      class="flex lg:flex-row md:flex-col sm:flex-col lg:container md:container sm:px-10 mx-auto lg:space-x-10 lg:py-16 md:py-12 sm:py-12 lg:space-y-0 md:space-y-24 sm:space-y-20"
+    >
+      <div
+        class="lg:h-auto lg:w-[30%] border border-gray-200 md:min-h-[70vh] sm:w-full sm:h-[60vh] lg:py-16 md:py-16 sm:py-20 shadow-2xl px-6"
+      >
         <h2
-          class="lg:text-xl md:text-xl sm:text-xl sm:pt-10 md:pt-0 font-semibold font-[Poppins] text-center"
+          class="lg:text-xl md:text-xl lg:pb-2 sm:text-xl sm:pb-10 md:pt-0 font-semibold font-[Poppins] text-center"
         >
           BOOK A FREE CONSULTATION
         </h2>
@@ -20,10 +28,13 @@ import FormContact from './FormContact'
           frameborder="1"
           class="h-full w-full"></iframe>
       </div>
-      <div class="h-[100vh] w-[30%] py-10 space-y-9">
-        <h2 class="text-center text-xl font-[Poppins] font-semibold">
+      <div
+        class="h-auto lg:w-[30%] border border-gray-200 md:min-h-[70vh] lg:py-10 space-y-9 shadow-2xl px-10 sm:py-16"
+      >
+        <h2 class="text-center text-xl lg:pb-0 font-[Poppins] font-semibold">
           SPEAKING ENGAGEMENTS
         </h2>
+        <Image src={MineField} alt="image" />
         <p class="text-xl">
           <span class="font-[Poppins] font-bold"> Media Advisory Experts</span>
            founder Mark Albert is available for speaking engagements. He’s given
@@ -33,14 +44,19 @@ import FormContact from './FormContact'
           events.
         </p>
       </div>
-      <div class="h-[100vh] w-[30%] py-10 space-y-9">
-        <h2 class="text-center text-xl font-[Poppins] font-semibold">
-          SPEAKING ENGAGEMENTS
+      <!-- <div class="h-[100vh] w-[30%] space-y-9"> -->
+      <div
+        class="h-auto lg:w-[50%] w-full border border-gray-200 py-6 space-y-9 shadow-2xl px-6"
+      >
+        <h2
+          class="text-center text-xl lg:pb-0 sm:pt-14 sm:pb-6 font-[Poppins] font-semibold"
+        >
+          CONTACT US
         </h2>
-       <FormContact  client:visible />
+        <FormContact client:visible />
       </div>
-    </div>
-    <!-- <section class="lg:py-10 sm:py-10 sm:space-y-5">
+      <!-- </div> -->
+      <!-- <section class="lg:py-10 sm:py-10 sm:space-y-5">
       <h2
         class="lg:text-xl md:text-3xl sm:text-2xl sm:pt-10 md:pt-0 font-semibold font-[Poppins] text-center lg:py-20"
       >
@@ -68,7 +84,7 @@ import FormContact from './FormContact'
         </span>
       </p>
     </section> -->
-    <!-- <div class="container mx-auto lg:py-10 flex flex-col ">
+      <!-- <div class="container mx-auto lg:py-10 flex flex-col ">
      
       <p class="text-2xl lg:px-[200px] lg:text-center sm:text-left">Reserve a complimentary, 15
         -
@@ -89,7 +105,7 @@ import FormContact from './FormContact'
         SPEAKING ENGAGEMENTS
       </h2>
       <div>
-        <Image src={MineField} alt="image"/>
+        
         
       </div>
     </div>
@@ -140,6 +156,7 @@ import FormContact from './FormContact'
     <br/>
     <br/> -->
 
-    <!-- <Calendly /> -->
+      <!-- <Calendly /> -->
+    </div>
   </HTML>
 </Fragment>

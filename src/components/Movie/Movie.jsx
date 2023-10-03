@@ -55,10 +55,9 @@ export default function Movie() {
           <source src={Moviebg} type="video/mp4" />
         </video>
         <div className="absolute text-white font-base justify-end items-center lg:py-20 sm:py-16 w-full h-full flex flex-col lg:top-0 lg:left-0 lg:px-[100px] sm:px-[50px] max-w-[100%] lg:space-y-5 sm:space-y-2 bg-semiblack">
-          {/* <p className="lg:text-3xl sm:text-xl font-[Poppins] font-black"></p> */}
-          <p className="lg:text-5xl sm:text-3xl sm:text-center font-[Poppins] font-black duration-[10ms] animated fadeInDown">
-            <span className="text-blue "> Welcome to </span> <br />
-            MEDIA ADVISORY EXPERTS
+          <p className="lg:text-5xl sm:text-3xl sm:text-center border-t-2 border-[#c3c3c3] pt-10 font-[Poppins] font-black duration-[10ms] animated fadeInDown">
+            Welcome to <br />
+            MEDIA ADVISORY <span className="text-blue">EXPERTS</span>
           </p>
         </div>
       </div>
