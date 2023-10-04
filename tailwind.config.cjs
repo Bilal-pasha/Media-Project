@@ -17,7 +17,8 @@ module.exports = {
 			'lightWhite': '#e9e1e1',
 			'red': 'red',
 			'transparent': 'transparent',
-			'lightred' : '#f1f1f1'
+			'lightred' : '#f1f1f1',
+			'lightgray': '#c3c3c3'
 		},
 		screens: {
 			'sm': '300px',

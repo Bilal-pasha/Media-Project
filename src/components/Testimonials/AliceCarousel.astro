@@ -5,9 +5,7 @@ const { data } = Astro.props;
 ---
 
 <section class="splide testimonial relative" id="second-slider">
-  <div
-    class="splide__track overflow-hidden relative z-0 select-none container mx-auto"
-  >
+  <div class="splide__track overflow-hidden relative z-0 select-none">
     <ul class="splide__list flex h-full m-0 p-0">
       {data?.map((data) => <Card data={data} />)}
     </ul>
@@ -16,10 +14,11 @@ const { data } = Astro.props;
 
 <script>
   import Splide from "@splidejs/splide";
-  var btnClasses = "bg-blue absolute z-[1] cursor-pointer";
+  var btnClasses =
+    "text-6xl text-blue absolute z-[1] cursor-pointer transform-[50]	";
   var splide = new Splide("#second-slider", {
     type: "slide",
-    perPage: 3,
+    perPage: 1,
     perMove: 1,
     clones: 0,
     trimSpace: true,
@@ -27,15 +26,15 @@ const { data } = Astro.props;
     arrowPath:
       "M4,20A16,16,0,1,0,20.1,4,16,16,0,0,0,4,20Zm14.9-7L25,19.1l.5.8c0,.6-.4.8-.6,1.1l-6.1,6c-.3.4-.7,1-1.4.4s.2-1.1.5-1.4,3.4-3.5,5.2-5.2.7-1,0-1.6L18,14c-.4-.3-1.1-.7-.6-1.4S18.5,12.6,18.9,13Z",
     classes: {
-      prev: `${btnClasses} sm:left-[-15px] left-[-40px] top-[45%] rotate-180`,
-      next: `${btnClasses} sm:right-[-15px] right-[-40px] top-[49%]`,
+      prev: `${btnClasses}  sm:left-[40px] sm:top-[43%] md:left-[20px]  lg:left-[303px] left-[80px] lg:top-[150px] rotate-180`,
+      next: `${btnClasses} sm:right-[40px] sm:top-[48%] md:right-[20px] lg:right-[303px] right-[80px] lg:top-[150px]`,
     },
     breakpoints: {
       760: {
         perPage: 1,
       },
       1350: {
-        perPage: 2,
+        perPage: 1,
       },
     },
   });

@@ -39,7 +39,7 @@ const FormContact = () => {
             name="firstName"
             render={({ field: { value, onChange, onBlur } }) => (
               <input
-                className="appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                className="appearance-none block w-full text-gray-700 border border-[#d8d4d4] rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                 id="grid-first-name"
                 type="text"
                 placeholder="Enter your First Name"
@@ -62,7 +62,7 @@ const FormContact = () => {
             name="lastName"
             render={({ field: { value, onChange, onBlur } }) => (
               <input
-                className="appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                className="appearance-none block w-full text-gray-700 border border-[#d8d4d4] rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 id="grid-last-name"
                 type="text"
                 placeholder="Enter your Last Name"
@@ -87,7 +87,7 @@ const FormContact = () => {
             name="email"
             render={({ field: { value, onChange, onBlur } }) => (
               <input
-                className="appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                className="appearance-none block w-full text-gray-700 border border-[#d8d4d4] rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 id="email"
                 type="email"
                 placeholder="Enter your Email"
@@ -112,7 +112,7 @@ const FormContact = () => {
             name="message"
             render={({ field: { value, onChange, onBlur } }) => (
               <textarea
-                className="no-resize appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
+                className="no-resize appearance-none block w-full text-gray-700 border border-[#d8d4d4] rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
                 id="message"
                 placeholder="Enter your Message"
                 value={value}
@@ -131,7 +131,7 @@ const FormContact = () => {
           <button
             type="submit"
             disabled={!isValid}
-            className="bg-skyblue text-white disabled:bg-gray font-bold py-2 px-4 rounded"
+            className="bg-blue hover:bg-skyblue text-white  font-bold py-2 px-4 rounded cursor-pointer"
           >
             Send
           </button>

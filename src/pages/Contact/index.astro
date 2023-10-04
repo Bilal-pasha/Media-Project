@@ -1,21 +1,21 @@
 ---
-import HTML from '../../layouts/HTML/HTML.astro';
-import BackGroundImage from '@components/BackGroundImage.astro';
-import ContactBanner from '../../assets/ContactBanner.jpeg';
-
-import { Image } from 'astro:assets';
-import MineField from '../../assets/MineField.jpg';
-import FormContact from './FormContact';
+import HTML from "../../layouts/HTML/HTML.astro";
+import BackGroundImage from "@components/BackGroundImage.astro";
+import ContactBanner from "../../assets/ContactBanner.jpeg";
+import { Image } from "astro:assets";
+import SpeakingEngagements from "../../assets/SpeakingEngagements.jpeg";
+import FormContact from "./FormContact";
 ---
 
 <Fragment>
   <HTML>
     <BackGroundImage imageSource={ContactBanner} text="CONTACT" />
+    <div id="contact-items"></div>
     <div
       class="flex lg:flex-row md:flex-col sm:flex-col lg:container md:container sm:px-10 mx-auto lg:space-x-10 lg:py-16 md:py-12 sm:py-12 lg:space-y-0 md:space-y-24 sm:space-y-20"
     >
       <div
-        class="lg:h-auto lg:w-[30%] border border-gray-200 md:min-h-[70vh] sm:w-full sm:h-[60vh] lg:py-16 md:py-16 sm:py-20 shadow-2xl px-6"
+        class="lg:h-auto lg:w-[50%] border border-[#d8d4d4] md:min-h-[70vh] sm:w-full sm:h-[60vh] lg:py-16 md:py-16 sm:py-20 shadow-2xl px-6"
       >
         <h2
           class="lg:text-xl md:text-xl lg:pb-2 sm:text-xl sm:pb-10 md:pt-0 font-semibold font-[Poppins] text-center"
@@ -27,13 +27,13 @@ import FormContact from './FormContact';
           frameborder="1"
           class="h-full w-full"></iframe>
       </div>
-      <div
+      <!-- <div
         class="h-auto lg:w-[30%] border border-gray-200 md:min-h-[70vh] lg:py-10 space-y-9 shadow-2xl px-10 sm:py-16"
       >
         <h2 class="text-center text-xl lg:pb-0 font-[Poppins] font-semibold">
           SPEAKING ENGAGEMENTS
         </h2>
-        <Image src={MineField} alt="image" />
+        <Image src={SpeakingEngagements} alt="image" />
         <p class="text-xl">
           <span class="font-[Poppins] font-bold"> Media Advisory Experts</span>
            founder Mark Albert is available for speaking engagements. He’s given
@@ -42,120 +42,18 @@ import FormContact from './FormContact';
           government leaders, private companie s, and while emceeing community
           events.
         </p>
-      </div>
+      </div> -->
 
       <div
-        class="h-auto lg:w-[50%] w-full border border-gray-200 py-6 space-y-9 shadow-2xl px-6"
+        class="h-auto lg:w-[50%] border border-[#d8d4d4] py-6 space-y-9 shadow-2xl px-6"
       >
         <h2
-          class="text-center text-xl lg:pb-0 sm:pt-14 sm:pb-6 font-[Poppins] font-semibold"
+          class="text-center text-xl lg:pb-0 sm:pt-14 sm:pb-6 font-[Poppins] font-semibold pb-0 mt-[-px] mb-[66px]"
         >
-          CONTACT US
+          Send us a message
         </h2>
         <FormContact client:visible />
       </div>
-      <!-- </div> -->
-      <!-- <section class="lg:py-10 sm:py-10 sm:space-y-5">
-      <h2
-        class="lg:text-xl md:text-3xl sm:text-2xl sm:pt-10 md:pt-0 font-semibold font-[Poppins] text-center lg:py-20"
-      >
-        
-      </h2>
-      <div
-        class="flex lg:flex-col md:block sm:block lg:justify-between sm:space-y-10"
-      >
-        <div
-          class="text-2xl lg:max-w-[60%] md:max-w-[80%] sm:max-w-[100%] lg:text-left md:text-center sm:text-left space-y-5"
-        >
-          
-        </div>
-        <div class="lg:max-w-[20rem]">
-          <Image src={MineField} alt="image" class="rounded-lg" />
-        </div>
-      </div>
-      <p class="text-2xl py-5 container mx-auto text-center">
-        FOR AVAILABILITY, RATES & QUESTIONS: <br />
-        <span
-          class="lg:text-2xl sm:text-sm font-semibold font-[Poppins] text-blue"
-          ><a href="mailto:contact@mediaadvisoryexperts.com"
-            >contact@mediaadvisoryexperts.com</a
-          >
-        </span>
-      </p>
-    </section> -->
-      <!-- <div class="container mx-auto lg:py-10 flex flex-col ">
-     
-      <p class="text-2xl lg:px-[200px] lg:text-center sm:text-left">Reserve a complimentary, 15
-        -
-        minute consultation for your communications,
-        video production,
-        or
-        media training needs</p>
-      <br/>
-      <div class="lg:px-[200px] flex flex-col items-center justify-center">
-        
-      <button class="px-2 py-2 bg-blue text-white ">BOOK NOW</button>
-     
-      
-
-      <h2
-        class="lg:text-3xl md:text-3xl sm:text-2xl sm:pt-10 md:pt-0 font-semibold font-[Poppins] text-center"
-      >
-        SPEAKING ENGAGEMENTS
-      </h2>
-      <div>
-        
-        
-      </div>
-    </div>
-    
-    </div>
-    <section class="lg:py-10 sm:py-10 sm:space-y-5">
-      <h2
-        class="lg:text-3xl md:text-3xl sm:text-2xl sm:pt-10 md:pt-0 font-semibold font-[Poppins] text-center lg:py-20"
-      >
-      SPEAKING ENGAGEMENTS
-      </h2>
-      <div
-        class="container mx-auto lg:flex lg:items-center lg:flex-row-reverse md:block sm:block lg:justify-between sm:space-y-10"
-      >
-        <div
-          class="text-2xl lg:max-w-[60%] md:max-w-[80%] sm:max-w-[100%] lg:text-left md:text-center sm:text-left space-y-5"
-        >
-        <p class="text-2xl lg:px-[200px] lg:text-left sm:text-left">
-          <span class="font-[Poppins] font-bold"> Media Advisory Experts</span> founder Mark Albert is available for speaking
-          engagements. He’s given tailored remarks on current events, media industry
-          analysis, and insightful travel tips gleaned from visiting 83 countries to
-          government leaders, private companie
-          s, and while emceeing community events.
-        </p>
-        </div>
-        <div class="lg:max-w-[40rem]">
-          <Image src={MineField} alt="image" class="rounded-lg"/>
-        </div>
-        
-      </div>
-      <p class="text-2xl py-5 container mx-auto text-center">
-        FOR AVAILABILITY, RATES & QUESTIONS: <br/>
- <span
-          class="lg:text-2xl sm:text-sm font-semibold font-[Poppins] text-blue"
-          ><a href="mailto:contact@mediaadvisoryexperts.com"
-            >contact@mediaadvisoryexperts.com</a
-          >
-        </span>
-      </p>
-    </section>
-    <h2
-        class="lg:text-3xl md:text-3xl sm:text-2xl sm:pt-10 md:pt-0 font-semibold font-[Poppins] text-center lg:py-20"
-      >
-      CONTACT US
-      </h2>
-    
-    <br/>
-    <br/>
-    <br/> -->
-
-      <!-- <Calendly /> -->
     </div>
   </HTML>
 </Fragment>

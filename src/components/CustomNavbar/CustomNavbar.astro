@@ -4,6 +4,7 @@ import { Image } from "astro:assets";
 // import logo from "../../assets/Logo.png";
 import logo2 from "../../assets/Logo2.png";
 import Icon from "../../components/CustomNavbar/Hamburger.jsx";
+import Accordian from "./Accordian/Accordian.astro";
 ---
 
 <Fragment>
@@ -17,21 +18,24 @@ import Icon from "../../components/CustomNavbar/Hamburger.jsx";
     >
       <Icon client:only />
     </label>
-    <div class="flex flex-col justify-center items-center ">
+    <div class="flex flex-row justify-center px-4 space-x-2">
       <a href="/">
         <Image
           src={logo2}
           alt="logo"
           height="20"
           width="120"
-          class=" max-w-[100px]"
+          class="max-w-[100px]"
         />
-        
       </a>
-      <i class="text-[10px] font-[Poppins] font-semibold">MEDIA ADVISORY <span class="text-blue"> EXPERTS </span></i>
+      <h2
+        class="text-xl font-[Poppins] font-semibold lg:block md:hidden sm:hidden"
+      >
+        MEDIA ADVISORY <span class="text-blue"> EXPERTS</span>
+      </h2>
     </div>
     <ul
-      class="lg:flex lg:items-center md:block sm:block lg:static md:fixed sm:fixed md:peer-checked:left-[-100%] sm:peer-checked:left-[-100%] md:left-0 sm:left-0 md:transition-all sm:transition-all md:duration-[900ms] sm:duration-[900ms] md:top-[70px] sm:top-[70px]
+      class="lg:flex lg:items-center md:hidden sm:hidden lg:static sm:fixed sm:peer-checked:left-[-100%] sm:left-0 sm:transition-all md:duration-[900ms] sm:duration-[900ms] md:top-[70px] sm:top-[70px]
             lg:w-auto lg:h-auto md:w-full sm:w-full md:h-[100vh] sm:h-[100vh] text-black md:bg-[#fffffff2] sm:bg-[#fffffff2] lg:bg-transparent lg:space-y-0 md:space-y-5 sm:space-y-5 lg:py-0 md:py-10 sm:py-10 md:z-20 sm:z-20
             font-[Poppins]"
     >
@@ -39,7 +43,7 @@ import Icon from "../../components/CustomNavbar/Hamburger.jsx";
         class="lg:border-none md:border-b-[1px] lg:py-0 md:py-4 sm:py-4 md:border-[#cdc6c6] sm:border-b-[1px] sm:border-[#cdc6c6]"
       >
         <a
-          class="lg:px-4 md:px-4 sm:px-4 py-2 mt-2 text-sm font-semibold text-gray-900 rounded-lg hover:border-blue hover:text-blue dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+          class="lg:px-4 md:px-4 sm:px-4 py-2 mt-2 text-sm font-semibold text-gray-900 rounded-lg hover:border-blue hover:text-blue md:mt-0 hover:text-gray-900 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
           href="/About">ABOUT</a
         >
       </li>
@@ -51,7 +55,7 @@ import Icon from "../../components/CustomNavbar/Hamburger.jsx";
             class="peer lg:px-4 md:px-0 lg:py-2 lg:text-black md:text-black"
           >
             <a
-              class="lg:px-4 md:px-4 sm:px-4 py-2 mt-2 text-sm font-semibold text-gray-900 rounded-lg hover:border-blue hover:text-blue dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+              class="lg:px-4 md:px-4 sm:px-4 py-2 mt-2 text-sm font-semibold text-gray-900 rounded-lg hover:border-blue hover:text-blue dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
               href="/Video_production">VIDEO PRODUCTION</a
             ></button
           >
@@ -61,12 +65,11 @@ import Icon from "../../components/CustomNavbar/Hamburger.jsx";
                      flex-col bg-white drop-shadow-lg text-black z-10"
           >
             <a
-              class="px-5 py-3 hover:bg-gray-200 hover:text-blue"
+              class="px-5 py-3 hover:text-blue"
               href="/Video_production#CORPORATE">CORPORATE VIDEOS</a
             >
-            <a
-              class="px-5 py-3 hover:bg-gray-200 hover:text-blue"
-              href="/Video_production#Legal">LEGAL VIDEOS</a
+            <a class="px-5 py-3 hover:text-blue" href="/Video_production#Legal"
+              >LEGAL VIDEOS</a
             >
           </div>
         </div>
@@ -79,8 +82,8 @@ import Icon from "../../components/CustomNavbar/Hamburger.jsx";
             class="peer lg:px-4 md:px-0 lg:py-2 lg:text-black md:text-black"
           >
             <a
-              class="lg:px-4 md:px-4 sm:px-4 py-2 mt-2 text-sm font-semibold text-gray-900 rounded-lg hover:border-blue hover:text-blue dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-              href="/Media_training">MEDIA TRANING/COACHING</a
+              class="lg:px-4 md:px-4 sm:px-4 py-2 mt-2 text-sm font-semibold text-gray-900 rounded-lg hover:border-blue hover:text-blue dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+              href="/Media_training">MEDIA TRAINING/COACHING</a
             >
           </button>
           <div
@@ -88,11 +91,13 @@ import Icon from "../../components/CustomNavbar/Hamburger.jsx";
                      w-[200px]
                      flex-col bg-white drop-shadow-lg text-black z-10"
           >
-            <a class="px-5 py-3 hover:bg-gray-200 hover:text-blue" href="#"
-              >FOR LEADERS</a
+            <a
+              class="px-5 py-3 hover:text-blue"
+              href="/Media_training/#for-leaders">FOR LEADERS</a
             >
-            <a class="px-5 py-3 hover:bg-gray-200 hover:text-blue" href="#"
-              >FOR JOURNALISTS</a
+            <a
+              class="px-5 py-3 hover:text-blue"
+              href="/Media_training/#for-journalists">FOR JOURNALISTS</a
             >
           </div>
         </div>
@@ -105,7 +110,7 @@ import Icon from "../../components/CustomNavbar/Hamburger.jsx";
             class="peer lg:px-4 md:px-0 lg:py-2 lg:text-black md:text-black"
           >
             <a
-              class="lg:px-4 md:px-4 sm:px-4 py-2 mt-2 text-sm font-semibold text-gray-900 rounded-lg hover:border-blue hover:text-blue dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+              class="lg:px-4 md:px-4 sm:px-4 py-2 mt-2 text-sm font-semibold text-gray-900 rounded-lg hover:border-blue hover:text-blue dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
               href="/Strategic_consulting">STRATEGIC CONSULTING</a
             ></button
           >
@@ -114,17 +119,23 @@ import Icon from "../../components/CustomNavbar/Hamburger.jsx";
                      w-[200px]
                      flex-col bg-white drop-shadow-lg text-black z-10"
           >
-            <a class="px-5 py-3 hover:bg-gray-200 hover:text-blue" href="#"
-              >EARNED MEDIA</a
+            <a
+              class="px-5 py-3 hover:text-blue"
+              href="/Strategic_consulting/#Earned-Media">EARNED MEDIA</a
             >
-            <a class="px-5 py-3 hover:bg-gray-200 hover:text-blue" href="#"
+            <a
+              class="px-5 py-3 hover:text-blue"
+              href="/Strategic_consulting/#Crisis-Communication"
               >CRISIS COMMUNICATIONS</a
             >
-            <a class="px-5 py-3 hover:bg-gray-200 hover:text-blue" href="#"
+            <a
+              class="px-5 py-3 hover:text-blue"
+              href="/Strategic_consulting/#new-industry"
               >NEWS INDUSTRY INSIGHT</a
             >
-            <a class="px-5 py-3 hover:bg-gray-200 hover:text-blue" href="#"
-              >MULTI-MEDIA</a
+            <a
+              class="px-5 py-3 hover:text-blue"
+              href="/Strategic_consulting/#multi-media">MULTI-MEDIA</a
             >
           </div>
         </div>
@@ -135,24 +146,29 @@ import Icon from "../../components/CustomNavbar/Hamburger.jsx";
         <div class="relative">
           <button class="peer md:px-0 lg:py-2 lg:text-black md:text-black"
             ><a
-              class="lg:px-4 md:px-4 sm:px-4 py-2 mt-2 text-sm font-semibold text-gray-900 rounded-lg hover:border-blue hover:text-blue dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+              class="lg:px-4 md:px-4 sm:px-4 py-2 mt-2 text-sm font-semibold text-gray-900 rounded-lg hover:border-blue hover:text-blue dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
               href="/Contact">CONTACT</a
             ></button
           >
           <div
-            class="absolute hidden peer-hover:flex hover:flex mx-[-45px]
+            class="absolute hidden peer-hover:flex hover:flex mx-[-85px]
                      w-[200px]
                      flex-col bg-white drop-shadow-lg text-black z-10"
           >
-            <a class="px-5 py-3 hover:bg-gray-200 hover:text-blue" href="#"
+            <a class="px-5 py-3 hover:text-blue" href="/Contact/#contact-items"
               >BOOK FREE CONSULTATION</a
             >
-            <a class="px-5 py-3 hover:bg-gray-200 hover:text-blue" href="#"
-              >SPEAKING ENGAGEMENTS</a
+            <a class="px-5 py-3 hover:text-blue" href="/Contact/#contact-items"
+              >SEND US A MESSAGE</a
             >
           </div>
         </div>
       </li>
     </ul>
+    <div
+      class="md:block md:peer-checked:left-[-100%] md:fixed md:left-0 md:transition-all md:duration-[900ms] md:top-[70px] md:h-[100vh] md:bg-[#fffffff2] w-full md:py-10 md:space-y-10 sm:block sm:peer-checked:left-[-100%] sm:fixed sm:left-0 sm:transition-all sm:duration-[900ms] sm:top-[70px] sm:h-[100vh] sm:bg-[#fffffff2] sm:py-10 sm:space-y-10"
+    >
+      <Accordian />
+    </div>
   </nav>
 </Fragment>

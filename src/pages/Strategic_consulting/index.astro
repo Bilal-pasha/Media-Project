@@ -1,7 +1,7 @@
 ---
 import HTML from "../../layouts/HTML/HTML.astro";
 import { Image } from "astro:assets";
-import VideoProduction from "../../assets/MediaTraningBanner.jpeg";
+import StrategicBanner from "../../assets/Consultingpagebanner.jpg";
 import MediaTraning from "../../assets/MediaTraning.jpg";
 import BackGroundImage from "@components/BackGroundImage.astro";
 import CrisisCommunications from "../../assets/CrisisCommunications1.jpg";
@@ -11,16 +11,19 @@ import MultiMedia from "../../assets/Multi-Media.jpg";
 
 <Fragment>
   <HTML>
-    <BackGroundImage imageSource={VideoProduction} text=" STRATEGIC CONSULTING" />
+    <BackGroundImage
+      imageSource={StrategicBanner}
+      text=" STRATEGIC CONSULTING"
+    />
 
-    <section class="container mx-auto lg:pt-24 sm:py-0">
+    <section class="container mx-auto lg:pt-20 sm:py-0">
       <div
-        class=" flex md:flex-col-reverse lg:px-[200px] sm:flex-col-reverse sm:items-center lg:justify-between"
+        class="flex md:flex-col-reverse lg:px-[200px] sm:flex-col-reverse sm:items-center lg:justify-between"
       >
         <div
-          class="lg:text-2xl lg:max-w-[100%] md:max-w-[80%] sm:max-w-[100%] lg:text-left md:text-center sm:text-left py-20 space-y-5"
+          class="lg:text-2xl lg:max-w-[100%] md:max-w-[80%] sm:max-w-[100%] lg:text-left md:text-center sm:text-left space-y-5"
         >
-          <p class=" lg:text-center sm:text-left">
+          <p class="lg:text-justify sm:text-left">
             Having covered politics, criminal justice, and business for decades,
             the team at <span class="font-[Poppins] font-bold">
               Media Advisory Experts</span
@@ -36,17 +39,20 @@ import MultiMedia from "../../assets/Multi-Media.jpg";
       </div>
     </section>
 
-    <section class="container mx-auto lg:py-10 sm:py-10 sm:space-y-5">
+    <section
+      class="container mx-auto lg:py-10 sm:py-10 sm:space-y-5"
+      id="Earned-Media"
+    >
       <h2
         class="lg:text-3xl md:text-3xl sm:text-2xl sm:pt-10 md:pt-0 font-semibold font-[Poppins] text-center lg:py-20"
       >
         EARNED MEDIA
       </h2>
       <div
-        class=" lg:flex lg:px-[100px] lg:items-center lg:flex-row-reverse md:block sm:block lg:justify-between sm:space-y-10"
+        class="lg:flex lg:px-[100px] lg:items-center lg:flex-row-reverse md:block sm:block lg:justify-between sm:space-y-10"
       >
         <div
-          class="lg:text-2xl lg:max-w-[40%] md:max-w-[80%] sm:max-w-[100%] lg:text-left md:text-center sm:text-left space-y-5"
+          class="lg:text-2xl lg:max-w-[40%] md:max-w-[80%] sm:max-w-[100%] lg:text-justify md:text-center sm:text-left space-y-5"
         >
           <p>
             Our team has experience generating earned media coverage, both for
@@ -54,7 +60,7 @@ import MultiMedia from "../../assets/Multi-Media.jpg";
             blasting a news release to a hundred media outlets will do the
             trick, we know that isn’t an effective ROI. Instead, we’ve:
           </p>
-          <ul class="list-disc">
+          <ul class="list-disc space-y-4">
             <li>
               De signed a database of media contacts to ensure the right target
               audience hears your message
@@ -78,6 +84,7 @@ import MultiMedia from "../../assets/Multi-Media.jpg";
     <section class="container mx-auto lg:py-10 sm:py-10">
       <h2
         class="lg:text-3xl md:text-3xl sm:text-2xl sm:pt-10 md:pt-0 font-semibold font-[Poppins] text-center lg:py-20"
+        id="Crisis-Communication"
       >
         CRISIS COMMUNICATIONS
       </h2>
@@ -85,7 +92,7 @@ import MultiMedia from "../../assets/Multi-Media.jpg";
         class="lg:px-[100px] lg:flex lg:items-center md:block sm:block lg:justify-between"
       >
         <div
-          class="lg:text-2xl lg:max-w-[40%] md:max-w-[80%] sm:max-w-[100%] lg:text-left md:text-center sm:text-left space-y-5"
+          class="lg:text-2xl lg:max-w-[40%] md:max-w-[80%] sm:max-w-[100%] lg:text-justify md:text-center sm:text-left space-y-5"
         >
           <p>
             Using o ur decades of media experience, vast network of contacts,
@@ -109,14 +116,15 @@ import MultiMedia from "../../assets/Multi-Media.jpg";
     <section class="lg:py-10 container mx-auto">
       <h2
         class="lg:text-3xl md:text-3xl sm:text-2xl sm:pt-10 md:pt-0 font-semibold font-[Poppins] text-center lg:py-20"
+        id="new-industry"
       >
         NEWS INDUSTRY INSIGHT
       </h2>
       <div
-        class=" lg:px-[100px] lg:flex lg:items-center lg:flex-row-reverse md:block sm:block lg:justify-between"
+        class="lg:px-[100px] lg:flex lg:items-center lg:flex-row-reverse md:block sm:block lg:justify-between"
       >
         <div
-          class="lg:text-2xl lg:max-w-[40%] md:max-w-[80%] sm:max-w-[100%] lg:text-left md:text-center sm:text-left space-y-5"
+          class="lg:text-2xl lg:max-w-[40%] md:max-w-[80%] sm:max-w-[100%] lg:text-justify md:text-center sm:text-left space-y-5"
         >
           <p>
             With new digital media brands created all the time and legacy
@@ -140,14 +148,15 @@ import MultiMedia from "../../assets/Multi-Media.jpg";
     <section class="lg:pt-10 lg:pb-20 container mx-auto">
       <h2
         class="lg:text-3xl md:text-3xl sm:text-2xl sm:pt-10 md:pt-0 font-semibold font-[Poppins] text-center lg:py-20"
+        id="multi-media"
       >
         MULTI-MEDIA
       </h2>
       <div
-        class=" lg:px-[100px] lg:flex lg:items-center md:block sm:block lg:justify-between"
+        class="lg:px-[100px] lg:flex lg:items-center md:block sm:block lg:justify-between"
       >
         <div
-          class="lg:text-2xl lg:max-w-[40%] md:max-w-[80%] sm:max-w-[100%] lg:text-left md:text-center sm:text-left space-y-5"
+          class="lg:text-2xl lg:max-w-[40%] md:max-w-[80%] sm:max-w-[100%] lg:text-justify md:text-center sm:text-left space-y-5"
         >
           <p>
             The experts at <span class="font-[Poppins] font-bold">

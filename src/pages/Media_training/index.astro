@@ -21,7 +21,8 @@ import ImageSlider from "@components/ImageSlider.astro";
   <HTML>
     <BackGroundImage imageSource={MediaTraningBanner} text="MEDIA TRAINING" />
     <h2
-      class="lg:text-3xl md:text-2xl sm:text-2xl font-[Poppins] sm:text-center lg:py-16 font-black sm:py-16"
+      class="lg:text-3xl md:text-2xl sm:text-2xl font-[Poppins] sm:text-center lg:py-20 font-black sm:py-16"
+      id="for-leaders"
     >
       FOR LEADERS
     </h2>
@@ -50,16 +51,8 @@ import ImageSlider from "@components/ImageSlider.astro";
             class="rounded-2xl hover:scale-[1.1] ease-in-out transition-all duration-[600ms]"
           />
         </div>
-        <!-- <ImageSlider
-          image1={MarkinDetroit}
-          image2={MarkinAirforce}
-          image3={MarkinSheriff}
-          image4={MarkinDetroit}
-          image5={MarkinAirforce}
-          image6={MarkinSheriff}
-        /> -->
         <div
-          class="lg:text-2xl lg:max-w-[40%] md:max-w-[80%] sm:max-w-[100%] lg:text-left md:text-left sm:text-left space-y-5 lg:py-2 sm:py-10 md:py-20"
+          class="lg:text-2xl lg:max-w-[40%] md:max-w-[80%] sm:max-w-[100%] lg:text-justify md:text-left sm:text-left space-y-5 lg:py-2 sm:py-10 md:py-20"
         >
           <p>
             The ever-broadening array of media platforms and news outlets means
@@ -74,7 +67,7 @@ import ImageSlider from "@components/ImageSlider.astro";
             > , using decades of local and national media experience, can train
             you and your team on:
           </p>
-          <ul class="list-disc">
+          <ul class="list-disc space-y-4">
             <li>
               Proven interview techniques and how to establish a rapport with
               your interviewer
@@ -95,15 +88,14 @@ import ImageSlider from "@components/ImageSlider.astro";
               <li>Deep dives into news production to control your own image</li>
             </li>
             <p>When a journalist calls, be ready to master your own story.</p>
-            <p class="pt-4 font-semibold">Contact us today :</p>
-            <span
+            <p class="lg:text-2xl font-[Poppins] pb-4">Contact us today :</p>
+            <a
+              href="mailto:contact@mediaadvisoryexperts.com"
               class="lg:text-2xl sm:text-sm font-semibold font-[Poppins] text-blue"
-              ><a href="mailto:contact@mediaadvisoryexperts.com"
-                >contact@mediaadvisoryexperts.com</a
-              >
-            </span>
-
-            <i>
+              >contact@mediaadvisoryexperts.com</a
+            >
+            <br />
+            <i id="Legal" class="lg:text-xl">
               Please indicate level of urgency in your initial message so that
               we may best meet your needs.
             </i>
@@ -113,6 +105,7 @@ import ImageSlider from "@components/ImageSlider.astro";
     </section>
     <h2
       class="lg:text-3xl md:text-2xl sm:text-2xl font-[Poppins] sm:text-center lg:py-16 font-black sm:py-20"
+      id="for-journalists"
     >
       FOR JOURNALISTS
     </h2>
@@ -141,7 +134,7 @@ import ImageSlider from "@components/ImageSlider.astro";
           />
         </div>
         <div
-          class="lg:text-2xl lg:max-w-[40%] md:max-w-[80%] sm:max-w-[100%] lg:text-left md:text-left sm:text-left lg:py-0 space-y-5 sm:py-10 md:py-20"
+          class="lg:text-2xl lg:max-w-[40%] md:max-w-[80%] sm:max-w-[100%] lg:text-justify md:text-left sm:text-left lg:py-0 space-y-5 sm:py-10 md:py-20"
         >
           <p>
             <span class="font-[Poppins] font-bold">

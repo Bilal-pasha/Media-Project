@@ -1,21 +1,21 @@
 ---
-import { initializeApp } from 'firebase/app';
-import { getFirestore, collection, getDocs } from 'firebase/firestore';
+import { initializeApp } from "firebase/app";
+import { getFirestore, collection, getDocs } from "firebase/firestore";
 // import CarouselSlider from "../Testimonials/CarouselSlider.jsx";
-import AliceCarousel from './AliceCarousel.astro';
+import AliceCarousel from "./AliceCarousel.astro";
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyBq8-RG6mhrMLiziMwTd1Sv67GbJOi_VrY',
-  authDomain: 'composed-world-393911.firebaseapp.com',
-  projectId: 'composed-world-393911',
-  storageBucket: 'composed-world-393911.appspot.com',
-  messagingSenderId: '690324972945',
-  appId: '1:690324972945:web:d6c8b66ff2cffd3745e630',
-  measurementId: 'G-7PRP65ENKB',
+  apiKey: "AIzaSyBq8-RG6mhrMLiziMwTd1Sv67GbJOi_VrY",
+  authDomain: "composed-world-393911.firebaseapp.com",
+  projectId: "composed-world-393911",
+  storageBucket: "composed-world-393911.appspot.com",
+  messagingSenderId: "690324972945",
+  appId: "1:690324972945:web:d6c8b66ff2cffd3745e630",
+  measurementId: "G-7PRP65ENKB",
 };
 initializeApp(firebaseConfig);
 const db = getFirestore();
-const colRef = collection(db, 'testimonials');
+const colRef = collection(db, "testimonials");
 const data = await getDocs(colRef)
   .then((review) => {
     return review.docs.map((doc) => {
@@ -31,14 +31,12 @@ const data = await getDocs(colRef)
 ---
 
 <Fragment>
-  <section
-    class="bg-lightred lg:mb-20 lg:mt-5 sm:my-0 lg:pb-10 lg:pt-10 sm:py-0"
-  >
-    <div class="container mx-auto py-5">
+  <section class="lg:py-20 md:py-20 sm:py-20 sm:my-0 lg:pb-10 lg:pt-10">
+    <div class="lg:container mx-auto">
       <div
-        class="space-y-2 pt-10 font-[Poppins] font-black lg:text-4xl sm:text-3xl text-center mb-4"
+        class="font-[Poppins] font-black lg:text-4xl sm:text-3xl text-center"
       >
-        <h2>Testinomials</h2>
+        <h2 class="pb-8">Testimonials</h2>
       </div>
       <AliceCarousel data={data} />
     </div>

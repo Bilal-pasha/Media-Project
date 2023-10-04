@@ -1,24 +1,22 @@
 ---
-import Movie from '../../components/Movie/Movie.jsx';
-import { Image } from 'astro:assets';
-import VideoProduction from '../../assets/CorporateVideos3.jpg';
-import MediaTraning from '../../assets/MediaTraning.jpg';
-import Consulting from '../../assets/Consulting.jpg';
-import ServicesBoxes from '@components/ServicesBoxes.astro';
-import Testinomials from '../../components/Testimonials/Testimonials.astro';
-import HTML from '../../layouts/HTML/HTML.astro';
-import FormContact from '../../pages/Contact/FormContact';
+import Movie from "../../components/Movie/Movie.jsx";
+import { Image } from "astro:assets";
+import VideoProduction from "../../assets/CorporateVideos3.jpg";
+import MediaTraning from "../../assets/MediaTraning.jpg";
+import Consulting from "../../assets/Consulting.jpg";
+import ServicesBoxes from "@components/ServicesBoxes.astro";
+import Testinomials from "../../components/Testimonials/Testimonials.astro";
+import HTML from "../../layouts/HTML/HTML.astro";
+import FormContact from "../../pages/Contact/FormContact";
 const imagestyle =
-  'w-full object-cover lg:h-[250px] md:h-[200px] md:w-full sm:h-[200px] sm:w-full';
+  "w-full object-cover lg:h-[250px] md:h-[200px] md:w-full sm:h-[200px] sm:w-full";
 ---
 
 <HTML>
   <Movie />
-  <section class="lg:pt-20 lg:pb-10 md:py-10 sm:pt-0 sm:pb-10">
-    <div
-      class="container mx-auto lg:pt-0 lg:pb-20 lg:space-y-4 sm:py-20 sm:space-y-4"
-    >
-      <p class="text-2xl lg:px-[200px] lg:text-center sm:text-left">
+  <section class="lg:pt-20 md:py-10 sm:pt-0 sm:pb-10">
+    <div class="container mx-auto lg:pt-0 sm:py-20 sm:space-y-4">
+      <p class="text-2xl lg:px-[200px] lg:text-justify sm:text-left">
         <span class="font-[Poppins] font-bold"> Media Advisory Experts</span> is
         an innovative media advisory company offering strategic communications,
         network television-level video production and targeted media and
@@ -27,13 +25,13 @@ const imagestyle =
       </p>
     </div>
     <div
-      class="flex justify-center items-center lg:text-3xl md:text-2xl sm:text-2xl font-bold sm:pb-10"
+      class="flex justify-center items-center lg:text-3xl md:text-2xl sm:text-2xl font-bold lg:pb-0 sm:pb-10"
     >
       <h2 class="font-[Poppins] lg:text-4xl sm:text-3xl">Our Services</h2>
     </div>
 
     <div
-      class="flex lg:flex-row sm:px-[24px] lg:justify-evenly md:flex-col md:justify-center md:items-center sm:items-center sm:flex-col md:space-y-12 lg:py-16 md:py-10 sm:py-8 sm:space-y-16 md:space-y-0 lg:space-y-0"
+      class="flex lg:flex-row sm:px-[24px] lg:justify-evenly md:flex-col md:justify-center md:items-center sm:items-center sm:flex-col md:space-y-12 lg:py-20 md:py-10 sm:py-8 sm:space-y-16 lg:space-y-0"
     >
       <ServicesBoxes
         imageSource={Consulting}
@@ -59,21 +57,14 @@ const imagestyle =
   </section>
 
   <Testinomials />
-  <div class="flex justify-center pb-20">
+  <div class="flex justify-center py-20">
     <div class="h-auto lg:w-[70%] lg:py-20 py-10 space-y-9 shadow-2xl px-6">
       <h2
         class="text-center lg:text-2xl lg:pb-10 sm:pt-14 sm:pb-6 font-[Poppins] font-semibold"
       >
-        CONTACT US
+        SEND US A MESSAGE
       </h2>
       <FormContact client:visible />
     </div>
   </div>
 </HTML>
-<!-- <div
-    class="flex justify-center items-center lg:text-3xl md:text-2xl sm:text-2xl font-bold sm:pb-10"
-  >
-    <h2 class="font-[Poppins] lg:text-4xl sm:text-3xl">Our Services</h2>
-  </div> -->
-
-<!-- <Team client:load /> -->
