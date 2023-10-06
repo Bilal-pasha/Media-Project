@@ -1,6 +1,9 @@
+.splide__arrow {
+  background: transparent !important;
+  transform: rotate(180deg) !important;
+}
 
-
-.splide__arrow svg{
-        fill: blue;
-        transform: translateY(40%);
-    }
+.splide__arrow svg {
+  fill: blue !important;
+  transform: translateY(40%) !important;
+}
