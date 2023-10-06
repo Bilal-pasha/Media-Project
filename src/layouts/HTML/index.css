@@ -2,4 +2,5 @@
 
 .splide__arrow svg{
         fill: blue;
+        transform: translateY(40%);
     }

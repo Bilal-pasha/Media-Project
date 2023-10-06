@@ -1,16 +1,103 @@
 ---
-import { AiOutlineCopyrightCircle } from "@react-icons/all-files/ai/AiOutlineCopyrightCircle";
+import MaxLogo from "../../src/assets/Logo2.png";
+import { Image } from "astro:assets";
 ---
 
-<Fragment>
-  <footer class="bg-black text-white py-5">
-    <div class="flex items-center justify-center">
-      <h2
-        class="flex items-center space-x-6 lg:text-lg font-[Poppins] sm:text-xs"
+<section class="text-black border-t-[0.1px] border-lightgray">
+  <div
+    class="lg:container lg:mx-auto md:px-0 lg:grid md:grid lg:grid-cols-4 md:grid-rows-1 sm:flex sm:flex-col text-slate-200 lg:py-16 md:py-10 sm:py-12"
+  >
+    <div
+      class="lg:col-span-1 md:col-span-1 md:justify-items-center sm:row-span-1 lg:mx-[40px] md:pl-8 sm:px-12 m:px-[50px] space-y-5 text-semigray font-[Poppins] md:w-max lg:text-base md:text-sm"
+    >
+      <a href="/"
+        ><Image
+          src={MaxLogo}
+          alt="MaxLogo"
+          height="20"
+          width="120"
+          class="max-w-[150px]"
+        /></a
       >
-        <AiOutlineCopyrightCircle class="mx-1" />
-         2023 Media Advisory Experts
-      </h2>
+
+      <p class="space-x-4">
+        <a href="/terms-of-services" class="hover:text-blue">Terms of service</a
+        >
+        <a href="/private-policies" class="hover:text-blue">Privacy Policy</a>
+      </p>
+      <p class="flex items-center space-x-1">
+        <span>&copy</span>
+        <b>2023 Media Advisory Experts</b>
+      </p>
     </div>
-  </footer>
-</Fragment>
+    <div
+      class="flex lg:flex-row md:flex-row sm:flex-col lg:justify-center lg:text-base md:text-sm lg:items-start md:items-start md:text-left font-[Poppins] lg:px-5 md:px-8 lg:space-x-16 md:space-x-10 lg:col-span-3 sm:w-full sm:px-[50px] lg:py-0 md:py-10 sm:py-3"
+    >
+      <ul class="space-y-10 space-x-1 lg:py-0 md:py-0 lg:mt-0 md:mt-0 sm:mt-8">
+        <li class="hover:text-blue">
+          <a href="/About">ABOUT</a>
+        </li>
+      </ul>
+      <ul
+        class="space-y-5 space-x-1 cursor-pointer hover:text-blue-500 lg:my-0 md:mt-0 sm:my-5"
+      >
+        <li class="hover:text-blue">
+          <a href="/Video_production">VIDEO PRODUCTION</a>
+        </li>
+        <li class="text-semigray hover:text-blue">
+          <a href="/Video_production#CORPORATE">CORPORATE VIDEOS</a>
+        </li>
+        <li class="text-semigray hover:text-blue">
+          <a href="/Video_production/#Legal">LEGAL VIDEOS</a>
+        </li>
+      </ul>
+      <ul
+        class="flex flex-col space-y-5 space-x-1 cursor-pointer hover:text-blue-500 lg:my-0 md:mt-0 sm:my-5"
+      >
+        <li class="hover:text-blue">
+          <a href="/Media_training">MEIDA TRAINING/COACHING</a>
+        </li>
+        <li class="text-semigray hover:text-blue">
+          <a href="/Media_training/#for-leaders">FOR LEADERS</a>
+        </li>
+        <li class="text-semigray hover:text-blue">
+          <a href="/Media_training/#for-journalists">FOR JOURNALISTS</a>
+        </li>
+      </ul>
+      <ul
+        class="flex flex-col space-y-5 space-x-1 cursor-pointer hover:text-blue-500 lg:my-0 md:mt-0 sm:my-5"
+      >
+        <li class="hover:text-blue">
+          <a href="/Strategic_consulting">STRATEGIC CONSULTING</a>
+        </li>
+        <li class="text-semigray hover:text-blue">
+          <a href="/Strategic_consulting/#Earned-Media">EARNED MEDIA</a>
+        </li>
+        <li class="text-semigray hover:text-blue">
+          <a href="/Strategic_consulting/#Crisis-Communication"
+            >CRISIS COMMUNICATION</a
+          >
+        </li>
+        <li class="text-semigray hover:text-blue">
+          <a href="/Strategic_consulting/#new-industry">NEW INDUSTRY INSIGHT</a>
+        </li>
+        <li class="text-semigray hover:text-blue">
+          <a href="/Strategic_consulting/#multi-media">MULTI MEDIA</a>
+        </li>
+      </ul>
+      <ul
+        class="flex flex-col space-y-5 space-x-1 cursor-pointer hover:text-blue-500 lg:my-0 md:mt-0 sm:my-5"
+      >
+        <li class="hover:text-blue">
+          <a href="/Contact">CONTACT</a>
+        </li>
+        <li class="text-semigray hover:text-blue">
+          <a href="/Contact/#contact-items">BOOK FREE CONSULTATION</a>
+        </li>
+        <li class="text-semigray hover:text-blue">
+          <a href="/Contact/#contact-items">SEND US A MESSAGE</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

@@ -11,6 +11,7 @@ module.exports = {
 			'blue': '#1E90FF',
 			'white': 'white',
 			'gray': 'gray',
+			'semigray': "#a09898",
 			'skyblue': '#6CB4EE',
 			'black': 'black',
 			'semiblack': '#0000007d',
@@ -24,7 +25,7 @@ module.exports = {
 			'sm': '300px',
 			// => @media (min-width: 640px) { ... }
 
-			'md': '760px',
+			'md': '900px',
 			// => @media (min-width: 768px) { ... }
 
 			'lg': '1340px',

@@ -21,16 +21,13 @@ import AboutPagebanner from "../../assets/ABOUTpagebanner.jpg";
 
 <HTML>
   <BackGroundImage imageSource={AboutPagebanner} text="ABOUT US" />
-  <section
-    class="lg:container mx-auto lg:pt-20 lg:pb-[0px] sm:px-[50px] md:py-[100px]"
-  >
+
+  <section class="lg:container lg:mx-auto lg:pt-20 md:pt-20 sm:pt-20">
     <div
-      class="max-w-full lg:py-0 lg:px-[200px] lg:text-left sm:text-left sm:pt-20 sm:pb-0"
+      class="grid lg:grid-cols-1 md:grid-cols-1 sm:grid-rows-1 gap-4 lg:mx-[100px] md:mx-[40px] sm:mx-6"
     >
-      <p class="lg:text-2xl lg:text-justify sm:text-left">
-        <span class="font-[Poppins] sm:text-2xl font-semibold">
-          Media Advisory Experts</span
-        >
+      <p class="lg:text-xl md:text-base text-justify">
+        <span class="font-[Poppins] font-bold"> Media Advisory Experts</span>
          harnesses decades of journalism and communications experience to
         deliver insightful and actionable advice and analysis of the media
         landscape and how to get tailored results for its clients. Video
@@ -42,13 +39,111 @@ import AboutPagebanner from "../../assets/ABOUTpagebanner.jpg";
         as well as curriculum and training for journalists.
       </p>
     </div>
+  </section>
+  <!-- <section class="flex flex-col"></section> -->
+  <section class="lg:container lg:mx-auto lg:pt-20 md:pt-20 sm:pt-20 space-y-2">
+    <div
+      class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-rows-1 gap-4 lg:mx-[100px] md:mx-[40px] sm:mx-6"
+    >
+      <div
+        class="sm:flex sm:items-center sm:justify-center lg:max-w-[25rem] sm:max-w-full lg:mt-[100px]"
+      >
+        <Image
+          src={MarkPicture}
+          alt="mark pic"
+          class="rounded-lg lg:w-full lg:h-auto md:w-[80%] sm:w-full sm:h-auto"
+        />
+      </div>
+      <div class="max-w-[50rem] space-y-5 text-justify">
+        <h2 class="text-3xl font-semibold font-[Poppins] text-center sm:pt-5">
+          MARK ALBERT
+        </h2>
+        <p
+          class="lg:text-2xl md:text-2xl sm:text-lg font-semibold font-[Poppins] text-blue text-center"
+        >
+          <a href="mailto:mark@mediaadvisoryexperts.com"
+            >mark@mediaadvisoryexperts.com</a
+          >
+        </p>
+        <p class="lg:text-xl md:text-base">
+          Firm founder Mark Albert is a Peabody-winning journalist whose
+          quarter-century career has been distinguished by investigative
+          reporting, innovative storytelling techniques, and creative
+          communications. He's traveled the world for CBS News; created and led
+          a national investigative unit for Hearst Communications; taught
+          journalists in newsrooms in the U.S., Vietnam, and Pakistan; launched
+          an online news startup and created a media database to drive dozens of
+          earned media appearances; and has been to 83 countries so far. In
+          addition to the Peabody Award for an investigation that changed the
+          way remains of U.S. service members are tracked around the world, Mark
+          has been awarded the 'Wade H. McCree Excellence in Legal Journalism
+          and the Advancement of Justice Award' by the State Bar of Michigan for
+          his coverage of the judiciary, law enforcement, and criminal justice
+          issues. Among other honors, he's the first journalist ever awarded the
+          ’Superior Civilian Service Award’ by the Minnesota National Guard for
+          his body of military reporting and embedded coverage, including from
+          Iraq.
+        </p>
+      </div>
+    </div>
+
+    <h2
+      class="text-3xl font-semibold font-[Poppins] text-center lg:pt-24 lg:pb-8 sm:py-10"
+    >
+      AS SEEN ON
+    </h2>
 
     <div
-      class="mt-[100px] mb-[50px] w-full h-full overflow-hidden lg:px-[80px]"
+      class="flex lg:flex-row md:flex-col lg:mx-[100px] md:mx-[40px] sm:mx-6 sm:flex-col lg:justify-evenly md:gap-8 md:pb-20 md:justify-center md:items-center sm:items-center sm:gap-10 sm:pb-16"
+    >
+      <!-- <div > -->
+      <Image src={CBS} alt="about pic" class="lg:w-[8%] h-auto" />
+      <!-- </div> -->
+
+      <!-- <div class=""> -->
+      <Image src={CNN} alt="about pic" class="lg:w-[8%] h-auto" />
+      <!-- </div> -->
+
+      <!-- <div class=""> -->
+      <Image src={Hearttelevision} alt="about pic" class="lg:w-[8%] h-auto" />
+      <!-- </div> -->
+
+      <!-- <div class=""> -->
+      <Image src={KSTP} alt="about pic" class="lg:w-[8%] h-auto" />
+      <!-- </div> -->
+
+      <!-- <div class=""> -->
+      <Image src={KARE} alt="about pic" class="lg:w-[8%] h-auto" />
+      <!-- </div> -->
+
+      <!-- <div class=""> -->
+      <Image src={CBSsunday} alt="ab" class="lg:w-[8%] h-auto" />
+      <!-- </div> -->
+
+      <!-- <div class=""> -->
+      <Image src={XYZ} alt="about pic" class="lg:w-[8%] h-auto" />
+      <!-- </div> -->
+
+      <!-- <div class=""> -->
+      <Image src={KFI} alt="about pic" class="lg:w-[8%] h-auto" />
+      <!-- </div> -->
+
+      <!-- <div class=""> -->
+
+      <Image src={KYW} alt="about pic" class="lg:w-[8%] h-auto" />
+      <!-- </div> -->
+
+      <!-- <div class=""> -->
+
+      <Image src={MEDI} alt="about pic" class="lg:w-[8%] h-auto" />
+      <!-- </div> -->
+    </div>
+
+    <div
+      class="grid lg:grid-cols-1 md:grid-cols-1 sm:grid-rows-1 lg:mx-[100px] md:mx-[40px] sm:mx-6"
     >
       <iframe
-        width="560"
-        height="315"
+        class="lg:h-[90vh] md:h-[60vh] sm:h-[30vh] w-full"
         class="embed-responsive-item container mx-auto bottom-0 left-0 right-0 top-0 lg:h-[40vh] lg:w-[70vh] md:h-[40vh] md:w-[60vh] sm:h-[30vh] sm:w-full"
         src="https://www.youtube.com/embed/-PALozh28ZI?si=yajMEwDL7N_6H4XC"
         title="YouTube video player"
@@ -56,169 +151,25 @@ import AboutPagebanner from "../../assets/ABOUTpagebanner.jpg";
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
     </div>
-  </section>
-  <!-- <section class="flex flex-col"></section> -->
-  <section class="lg:container mx-auto lg:px-20 sm:px-[50px] pb-[50px]">
-    <div class="space-y-2">
-      <div
-        class="flex lg:flex-row lg:justify-between lg:items-center md:items-center md:space-y-20 md:flex-col sm:flex-col"
-      >
-        <div
-          class="sm:flex sm:items-center sm:justify-center max-w-[25rem] lg:mt-[200px]"
+    <div
+      class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-rows-1 gap-4 lg:mx-[100px] md:mx-[40px] sm:mx-6 lg:pt-20 md:pt-20 sm:pt-20 lg:place-items-end"
+    >
+      <div class="lg:py-20 md:py-10 text-justify">
+        <p class="lg:text-xl md:text-base">
+          Mark is supported by a team of current and former journalists and
+          media professionals with advance expertise in on-demand videography,
+          editing, research, logistics and digital marketing.
+        </p>
+        <p
+          class="lg:text-2xl md:text-xl py-5 sm:text-lg font-semibold font-[Poppins] text-blue"
         >
-          <Image
-            src={MarkPicture}
-            alt="mark pic"
-            class="rounded-lg lg:w-[80%] lg:h-[85%] md:w-[30%] sm:h-[50%] sm:w-[50%]"
-          />
-        </div>
-        <div class="max-w-[50rem] space-y-5 lg:text-justify sm:text-left">
-          <h2 class="text-3xl font-semibold font-[Poppins] text-center sm:pt-5">
-            MARK ALBERT
-          </h2>
-          <p
-            class="lg:text-2xl md:text-2xl sm:text-lg font-semibold font-[Poppins] text-blue text-center"
+          <a href="mailto:contact@mediaadvisoryexperts.com"
+            >contact@mediaadvisoryexperts.com</a
           >
-            <a href="mailto:mark@mediaadvisoryexperts.com"
-              >mark@mediaadvisoryexperts.com</a
-            >
-          </p>
-          <p class="lg:text-2xl">
-            Firm founder Mark Albert is a Peabody-winning journalist whose
-            quarter-century career has been distinguished by investigative
-            reporting, innovative storytelling techniques, and creative
-            communications. He's traveled the world for CBS News; created and
-            led a national investigative unit for Hearst Communications; taught
-            journalists in newsrooms in the U.S., Vietnam, and Pakistan;
-            launched an online news startup and created a media database to
-            drive dozens of earned media appearances; and has been to 83
-            countries so far. In addition to the Peabody Award for an
-            investigation that changed the way remains of U.S. service members
-            are tracked around the world, Mark has been awarded the 'Wade H.
-            McCree Excellence in Legal Journalism and the Advancement of Justice
-            Award' by the State Bar of Michigan for his coverage of the
-            judiciary, law enforcement, and criminal justice issues. Among other
-            honors, he's the first journalist ever awarded the ’Superior
-            Civilian Service Award’ by the Minnesota National Guard for his body
-            of military reporting and embedded coverage, including from Iraq.
-          </p>
-        </div>
+        </p>
       </div>
-
-      <h2
-        class="text-3xl font-semibold font-[Poppins] text-center lg:pt-24 lg:pb-8 sm:py-10"
-      >
-        AS SEEN ON
-      </h2>
-      <div class="flex gap-10 py-0">
-        <div
-          class="flex lg:flex-row md:flex-col sm:flex-col lg:gap-10 md:gap-8 lg:justify-evenly md:pb-20 md:justify-center md:items-center sm:items-center sm:gap-10 sm:pb-16"
-        >
-          <!-- <div > -->
-          <Image
-            src={CBS}
-            alt="about pic"
-            class="lg:w-[10%] lg:h-[40%] md:w-[40%] md:h-[10%] sm:w-[30%] sm:h-[10%] object-contain"
-          />
-          <!-- </div> -->
-
-          <!-- <div class=""> -->
-          <Image
-            src={CNN}
-            alt="about pic"
-            class="lg:w-[10%] lg:h-[40%] md:w-[40%] md:h-[10%] sm:w-[30%] sm:h-[10%] object-contain"
-          />
-          <!-- </div> -->
-
-          <!-- <div class=""> -->
-          <Image
-            src={Hearttelevision}
-            alt="about pic"
-            class="lg:w-[10%] lg:h-[40%] md:w-[40%] md:h-[10%] sm:w-[30%] sm:h-[10%] object-contain"
-          />
-          <!-- </div> -->
-
-          <!-- <div class=""> -->
-          <Image
-            src={KSTP}
-            alt="about pic"
-            class="lg:w-[10%] lg:h-[40%] md:w-[40%] md:h-[10%] sm:w-[30%] sm:h-[10%] object-contain"
-          />
-          <!-- </div> -->
-
-          <!-- <div class=""> -->
-          <Image
-            src={KARE}
-            alt="about pic"
-            class="lg:w-[10%] lg:h-[40%] md:w-[40%] md:h-[10%] sm:w-[30%] sm:h-[10%] object-contain"
-          />
-          <!-- </div> -->
-
-          <!-- <div class=""> -->
-          <Image
-            src={CBSsunday}
-            alt="ab"
-            class="lg:w-[10%] lg:h-[40%] md:w-[40%] md:h-[10%] sm:w-[30%] sm:h-[10%] object-contain"
-          />
-          <!-- </div> -->
-
-          <!-- <div class=""> -->
-          <Image
-            src={XYZ}
-            alt="about pic"
-            class="lg:w-[10%] lg:h-[40%] md:w-[40%] md:h-[10%] sm:w-[30%] sm:h-[10%] object-contain"
-          />
-          <!-- </div> -->
-
-          <!-- <div class=""> -->
-          <Image
-            src={KFI}
-            alt="about pic"
-            class="lg:w-[10%] lg:h-[40%] md:w-[40%] md:h-[10%] sm:w-[30%] sm:h-[10%] object-contain"
-          />
-          <!-- </div> -->
-
-          <!-- <div class=""> -->
-
-          <Image
-            src={KYW}
-            alt="about pic"
-            class="lg:w-[10%] lg:h-[40%] md:w-[40%] md:h-[10%] sm:w-[30%] sm:h-[10%] object-contain"
-          />
-          <!-- </div> -->
-
-          <!-- <div class=""> -->
-
-          <Image
-            src={MEDI}
-            alt="about pic"
-            class="lg:w-[10%] lg:h-[40%] md:w-[40%] md:h-[10%] sm:w-[30%] sm:h-[10%] object-contain"
-          />
-          <!-- </div> -->
-        </div>
-      </div>
-      <div
-        class="flex lg:flex-row lg:justify-between md:flex-col-reverse sm:flex-col-reverse items-center lg:space-x-10 md:space-x-0 sm:space-x-0 lg:py-[50px] md:py-0"
-      >
-        <div
-          class="max-w-[40rem] lg:py-20 md:py-10 lg:text-justify sm:text-left"
-        >
-          <p class="lg:text-2xl">
-            Mark is supported by a team of current and former journalists and
-            media professionals with advance expertise in on-demand videography,
-            editing, research, logistics and digital marketing.
-          </p>
-          <p
-            class="lg:text-2xl md:text-xl py-5 sm:text-lg font-semibold font-[Poppins] text-blue"
-          >
-            <a href="mailto:contact@mediaadvisoryexperts.com"
-              >contact@mediaadvisoryexperts.com</a
-            >
-          </p>
-        </div>
-        <div class="max-w-[60rem] flex justify-end pb-10">
-          <Image src={HoldingHands} alt="mark pic" class="h-full w-full" />
-        </div>
+      <div class="flex justify-end pb-10">
+        <Image src={HoldingHands} alt="mark pic" class="h-full w-full" />
       </div>
     </div>
   </section>

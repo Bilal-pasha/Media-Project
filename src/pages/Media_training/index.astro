@@ -2,7 +2,7 @@
 import HTML from "../../layouts/HTML/HTML.astro";
 import { Image } from "astro:assets";
 import MediaTraningBanner from "../../assets/MediaTraningBanner.jpeg";
-import MarkinDetroit from "../../assets/MarkinDetroit.jpg";
+import MarkinDetroit from "../../assets/MarkinDetroit.jpeg";
 import MarkinAirforce from "../../assets/MarkinAirForce.jpg";
 import MarkinSheriff from "../../assets/MarkInterviewSheriff.jpeg";
 import MarkTeaching1 from "../../assets/MarkAlbertTeaching1.jpg";
@@ -21,15 +21,15 @@ import ImageSlider from "@components/ImageSlider.astro";
   <HTML>
     <BackGroundImage imageSource={MediaTraningBanner} text="MEDIA TRAINING" />
     <h2
-      class="lg:text-3xl md:text-2xl sm:text-2xl font-[Poppins] sm:text-center lg:py-20 font-black sm:py-16"
+      class="lg:text-3xl md:text-2xl sm:text-2xl font-[Poppins] sm:text-center lg:pt-20 lg:pb-10 font-black sm:py-16"
       id="for-leaders"
     >
       FOR LEADERS
     </h2>
 
-    <section class="">
+    <section class="lg:container lg:mx-auto">
       <div
-        class="container mx-auto flex lg:flex-row md:flex-col sm:flex-col lg:items-start sm:items-center lg:justify-evenly lg:py-10"
+        class="flex lg:flex-row md:flex-col sm:flex-col lg:items-start sm:items-center lg:justify-between lg:py-10 lg:mx-[100px] md:mx-[40px] sm:mx-6"
       >
         <div class="flex flex-col gap-10 lg:py-4">
           <Image
@@ -52,7 +52,7 @@ import ImageSlider from "@components/ImageSlider.astro";
           />
         </div>
         <div
-          class="lg:text-2xl lg:max-w-[40%] md:max-w-[80%] sm:max-w-[100%] lg:text-justify md:text-left sm:text-left space-y-5 lg:py-2 sm:py-10 md:py-20"
+          class="lg:text-xl md:text-base lg:max-w-[40%] md:max-w-[80%] sm:max-w-[100%] text-justify space-y-5 lg:py-2 sm:py-10 md:py-20"
         >
           <p>
             The ever-broadening array of media platforms and news outlets means
@@ -67,7 +67,7 @@ import ImageSlider from "@components/ImageSlider.astro";
             > , using decades of local and national media experience, can train
             you and your team on:
           </p>
-          <ul class="list-disc space-y-4">
+          <ul class="list-disc space-y-4 ml-6">
             <li>
               Proven interview techniques and how to establish a rapport with
               your interviewer
@@ -104,16 +104,18 @@ import ImageSlider from "@components/ImageSlider.astro";
       </div>
     </section>
     <h2
-      class="lg:text-3xl md:text-2xl sm:text-2xl font-[Poppins] sm:text-center lg:py-16 font-black sm:py-20"
+      class="lg:text-3xl md:text-2xl sm:text-2xl font-[Poppins] sm:text-center lg:pt-20 lg:pb-10 font-black sm:py-20"
       id="for-journalists"
     >
       FOR JOURNALISTS
     </h2>
-    <section class="py-0">
+    <section class="lg:container lg:mx-auto">
       <div
-        class="container mx-auto flex lg:flex-row-reverse md:flex-col sm:flex-col lg:items-start sm:items-center lg:justify-evenly lg:py-10"
+        class="flex lg:flex-row-reverse md:flex-col sm:flex-col lg:items-start sm:items-center lg:justify-evenly lg:py-10"
       >
-        <div class="flex flex-col gap-10 lg:py-2">
+        <div
+          class="flex flex-col gap-10 lg:py-2 lg:mx-[100px] md:mx-[40px] sm:mx-6 justify-end"
+        >
           <Image
             src={MarkTeaching1}
             alt="image"
@@ -134,7 +136,7 @@ import ImageSlider from "@components/ImageSlider.astro";
           />
         </div>
         <div
-          class="lg:text-2xl lg:max-w-[40%] md:max-w-[80%] sm:max-w-[100%] lg:text-justify md:text-left sm:text-left lg:py-0 space-y-5 sm:py-10 md:py-20"
+          class="lg:text-xl md:text-base lg:max-w-[40%] md:max-w-[80%] sm:max-w-[100%] text-justify lg:py-0 space-y-5 sm:py-10 md:py-20 lg:mx-[100px] md:mx-[40px] sm:mx-6"
         >
           <p>
             <span class="font-[Poppins] font-bold">
@@ -162,41 +164,47 @@ import ImageSlider from "@components/ImageSlider.astro";
             size of the newsroom. Media Advisory Experts can customize the
             curriculum to fit your beat, needs, and newsroom size.
           </p>
-          <div class="flex container mx-auto justify-evenly py-10">
-            <div class="max-w-[10%]">
-              <Image
-                src={Logo1}
-                alt="image"
-                class="w-full h-full object-contain"
-              />
-            </div>
-            <div class="max-w-[10%]">
-              <Image
-                src={Logo2}
-                alt="image"
-                class="w-full h-full object-contain"
-              />
-            </div>
-            <div class="max-w-[10%]">
-              <Image
-                src={Logo3}
-                alt="image"
-                class="w-full h-full object-contain"
-              />
-            </div>
-            <div class="max-w-[10%]">
-              <Image
-                src={University}
-                alt="image"
-                class="w-full h-full object-contain"
-              />
-            </div>
+        </div>
+      </div>
+      <div class="lg:container lg:mx-auto lg:py-20 md:pt-0 sm:pt-0">
+        <div
+          class="flex flex-row justify-between lg:mx-[100px] md:mx-[40px] sm:mx-6"
+        >
+          <div class="lg:max-w-[15%] sm:w-[20%]">
+            <Image
+              src={Logo1}
+              alt="image"
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <div class="lg:max-w-[15%] sm:w-[20%]">
+            <Image
+              src={Logo2}
+              alt="image"
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <div class="lg:max-w-[15%] sm:w-[20%]">
+            <Image
+              src={Logo3}
+              alt="image"
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <div class="lg:max-w-[15%] sm:w-[20%]">
+            <Image
+              src={University}
+              alt="image"
+              class="w-full h-full object-contain"
+            />
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="container mx-auto py-10 flex md:justify-center">
-        <p class="text-2xl">
+    <div class="lg:container lg:mx-auto py-10 flex md:justify-center">
+      <div class="lg:mx-[100px] md:mx-[40px] sm:mx-6">
+        <p class="lg:text-xl sm:text-base">
           Contact us to schedule an introductory consultation: <br />
           <span
             class="lg:text-2xl sm:text-sm font-semibold font-[Poppins] text-blue"
@@ -206,6 +214,6 @@ import ImageSlider from "@components/ImageSlider.astro";
           </span>
         </p>
       </div>
-    </section>
+    </div>
   </HTML>
 </Fragment>
