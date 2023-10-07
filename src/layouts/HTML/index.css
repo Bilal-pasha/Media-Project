@@ -1,8 +1,9 @@
 .splide__arrow {
   background: transparent !important;
+}
+.splide__arrow:nth-child(1) {
   transform: rotate(180deg) !important;
 }
-
 .splide__arrow svg {
   fill: blue !important;
   transform: translateY(40%) !important;
