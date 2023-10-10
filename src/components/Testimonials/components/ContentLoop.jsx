@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ContentLoop({ data }) {
   return (
-    <div className="lg:space-y-10 sm:space-y-4 sm:h-[50vh]">
+    <div className="lg:space-y-4 sm:space-y-4  sm:text-center">
       <i className="leading-5 text-xl text-justify">{data.Review}</i>
       <div className="flex flex-col items-end space-y-3">
         <h3 className="text-2xl font-[Poppins]">{data.Client}</h3>

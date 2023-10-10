@@ -11,12 +11,13 @@ import WSOC from "../../assets/news-channel-logos/WSOC.png";
 import KARE from "../../assets/news-channel-logos/Kare.png";
 import CBSsunday from "../../assets/news-channel-logos/CBS_SUNDAY.jpg";
 import XYZ from "../../assets/news-channel-logos/WXYZ-TV_logo.svg.png";
-import KFI from "../../assets/news-channel-logos/KFI.webp";
+import KFI from "../../assets/news-channel-logos/KFI.jpg";
 import KYW from "../../assets/news-channel-logos/KYW.png";
 import MEDI from "../../assets/news-channel-logos/Medi.jpg";
 import HoldingHands from "../../assets/holdingHands.jpg";
 import BackGroundImage from "@components/BackGroundImage.astro";
 import AboutPagebanner from "../../assets/ABOUTpagebanner.jpg";
+import SpeakingEngagement from "@components/SpeakingEngagement.astro";
 ---
 
 <HTML>
@@ -43,10 +44,10 @@ import AboutPagebanner from "../../assets/ABOUTpagebanner.jpg";
   <!-- <section class="flex flex-col"></section> -->
   <section class="lg:container lg:mx-auto lg:pt-20 md:pt-20 sm:pt-20 space-y-2">
     <div
-      class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-rows-1 gap-4 lg:mx-[100px] md:mx-[40px] sm:mx-6"
+      class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-rows-1 gap-4 lg:mx-[100px] md:mx-[40px] sm:mx-6"
     >
       <div
-        class="sm:flex sm:items-center sm:justify-center lg:max-w-[25rem] sm:max-w-full lg:mt-[100px]"
+        class="lg:items-start col-span-2 sm:flex sm:items-center sm:justify-center lg:max-w-[25rem] sm:max-w-full lg:mt-[100px]"
       >
         <Image
           src={MarkPicture}
@@ -54,12 +55,12 @@ import AboutPagebanner from "../../assets/ABOUTpagebanner.jpg";
           class="rounded-lg lg:w-full lg:h-auto md:w-[80%] sm:w-full sm:h-auto"
         />
       </div>
-      <div class="max-w-[50rem] space-y-5 text-justify">
+      <div class="col-span-2 max-w-[80rem] space-y-5 text-justify">
         <h2 class="text-3xl font-semibold font-[Poppins] text-center sm:pt-5">
           MARK ALBERT
         </h2>
         <p
-          class="lg:text-2xl md:text-2xl sm:text-lg font-semibold font-[Poppins] text-blue text-center"
+          class="lg:text-xl md:text-2xl sm:text-lg font-semibold font-[Poppins] text-blue text-center"
         >
           <a href="mailto:mark@mediaadvisoryexperts.com"
             >mark@mediaadvisoryexperts.com</a
@@ -94,62 +95,107 @@ import AboutPagebanner from "../../assets/ABOUTpagebanner.jpg";
     </h2>
 
     <div
-      class="flex lg:flex-row md:flex-col lg:mx-[100px] md:mx-[40px] sm:mx-6 sm:flex-col lg:justify-evenly md:gap-8 md:pb-20 md:justify-center md:items-center sm:items-center sm:gap-10 sm:pb-16"
+      class="flex lg:flex-row md:flex-row lg:mx-[100px] md:mx-[40px] sm:mx-6 sm:flex-col lg:justify-evenly lg:gap-8 md:gap-4 md:pb-20 md:justify-center md:items-center sm:items-center sm:gap-10 sm:pb-16"
     >
       <!-- <div > -->
-      <Image src={CBS} alt="about pic" class="lg:w-[8%] h-auto" />
+      <Image
+        src={CBS}
+        alt="about pic"
+        class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
+      />
       <!-- </div> -->
 
       <!-- <div class=""> -->
-      <Image src={CNN} alt="about pic" class="lg:w-[8%] h-auto" />
+      <Image
+        src={CNN}
+        alt="about pic"
+        class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
+      />
       <!-- </div> -->
 
       <!-- <div class=""> -->
-      <Image src={Hearttelevision} alt="about pic" class="lg:w-[8%] h-auto" />
+      <Image
+        src={Hearttelevision}
+        alt="about pic"
+        class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
+      />
       <!-- </div> -->
 
       <!-- <div class=""> -->
-      <Image src={KSTP} alt="about pic" class="lg:w-[8%] h-auto" />
+      <Image
+        src={KSTP}
+        alt="about pic"
+        class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
+      />
       <!-- </div> -->
 
       <!-- <div class=""> -->
-      <Image src={KARE} alt="about pic" class="lg:w-[8%] h-auto" />
+      <Image
+        src={KARE}
+        alt="about pic"
+        class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
+      />
       <!-- </div> -->
 
       <!-- <div class=""> -->
-      <Image src={CBSsunday} alt="ab" class="lg:w-[8%] h-auto" />
+      <Image
+        src={CBSsunday}
+        alt="ab"
+        class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
+      />
       <!-- </div> -->
 
       <!-- <div class=""> -->
-      <Image src={XYZ} alt="about pic" class="lg:w-[8%] h-auto" />
+      <Image
+        src={XYZ}
+        alt="about pic"
+        class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
+      />
       <!-- </div> -->
 
       <!-- <div class=""> -->
-      <Image src={KFI} alt="about pic" class="lg:w-[8%] h-auto" />
+      <Image
+        src={KFI}
+        alt="about pic"
+        class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
+      />
       <!-- </div> -->
 
       <!-- <div class=""> -->
 
-      <Image src={KYW} alt="about pic" class="lg:w-[8%] h-auto" />
+      <Image
+        src={KYW}
+        alt="about pic"
+        class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
+      />
       <!-- </div> -->
 
       <!-- <div class=""> -->
 
-      <Image src={MEDI} alt="about pic" class="lg:w-[8%] h-auto" />
+      <Image
+        src={MEDI}
+        alt="about pic"
+        class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
+      />
       <!-- </div> -->
     </div>
 
     <div
-      class="grid lg:grid-cols-1 md:grid-cols-1 sm:grid-rows-1 lg:mx-[100px] md:mx-[40px] sm:mx-6"
+      class="grid lg:grid-cols-9 md:grid-cols-2 sm:grid-rows-1 lg:mx-[100px] md:mx-[40px] sm:mx-6 lg:justify-between"
     >
-      <iframe
-        class="lg:h-[90vh] md:h-[60vh] sm:h-[30vh] w-full"
-        class="embed-responsive-item container mx-auto bottom-0 left-0 right-0 top-0 lg:h-[40vh] lg:w-[70vh] md:h-[40vh] md:w-[60vh] sm:h-[30vh] sm:w-full"
-        src="https://www.youtube.com/embed/-PALozh28ZI?si=yajMEwDL7N_6H4XC"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
+      <div class="col-span-4">
+        <SpeakingEngagement />
+      </div>
+      <div class="col-span-1"></div>
+      <div class="col-span-4 pt-14">
+        <iframe
+          class="embed-responsive-item lg:container lg:mx-auto bottom-0 left-0 right-0 top-0 lg:h-[40vh] lg:w-full md:h-[40vh] md:w-full sm:h-[30vh] sm:w-full"
+          src="https://www.youtube.com/embed/-PALozh28ZI?si=yajMEwDL7N_6H4XC"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
     </div>
     <div
       class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-rows-1 gap-4 lg:mx-[100px] md:mx-[40px] sm:mx-6 lg:pt-20 md:pt-20 sm:pt-20 lg:place-items-end"
@@ -161,7 +207,7 @@ import AboutPagebanner from "../../assets/ABOUTpagebanner.jpg";
           editing, research, logistics and digital marketing.
         </p>
         <p
-          class="lg:text-2xl md:text-xl py-5 sm:text-lg font-semibold font-[Poppins] text-blue"
+          class="lg:text-xl md:text-xl py-5 sm:text-lg font-semibold font-[Poppins] text-blue"
         >
           <a href="mailto:contact@mediaadvisoryexperts.com"
             >contact@mediaadvisoryexperts.com</a

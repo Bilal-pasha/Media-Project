@@ -5,10 +5,10 @@ import { Image } from "astro:assets";
 
 <section class="text-black border-t-[0.1px] border-lightgray">
   <div
-    class="lg:container lg:mx-auto md:px-0 lg:grid md:grid lg:grid-cols-4 md:grid-rows-1 sm:flex sm:flex-col text-slate-200 lg:py-16 md:py-10 sm:py-12"
+    class="md:px-0 lg:grid md:grid lg:grid-cols-4 md:grid-rows-1 sm:flex sm:flex-col text-slate-200 lg:py-16 md:py-10 sm:py-12"
   >
     <div
-      class="lg:col-span-1 md:col-span-1 md:justify-items-center sm:row-span-1 lg:mx-[40px] md:pl-8 sm:px-12 m:px-[50px] space-y-5 text-semigray font-[Poppins] md:w-max lg:text-base md:text-sm"
+      class="lg:col-span-1 md:col-span-1 md:justify-items-center sm:row-span-1 lg:pl-6 lg:pr-0 md:pl-8 sm:px-12 md:px-[50px] space-y-3 text-semigray font-[Poppins] md:w-max text-xs"
     >
       <a href="/"
         ><Image
@@ -25,21 +25,23 @@ import { Image } from "astro:assets";
         >
         <a href="/private-policies" class="hover:text-blue">Privacy Policy</a>
       </p>
-      <p class="flex items-center space-x-1">
+      <div class="flex items-center space-x-1">
         <span>&copy</span>
-        <b>2023 Media Advisory Experts</b>
-      </p>
+        <p>2023 Media Advisory Experts</p>
+      </div>
     </div>
     <div
-      class="flex lg:flex-row md:flex-row sm:flex-col lg:justify-center lg:text-base md:text-sm lg:items-start md:items-start md:text-left font-[Poppins] lg:px-5 md:px-8 lg:space-x-16 md:space-x-10 lg:col-span-3 sm:w-full sm:px-[50px] lg:py-0 md:py-10 sm:py-3"
+      class="flex lg:flex-row md:flex-row sm:flex-col lg:justify-end lg:text-xs md:text-xs lg:items-start md:items-start md:text-left font-[Poppins] lg:pl-0 lg:pr-[1.5%] md:px-8 lg:space-x-10 md:space-x-10 lg:col-span-3 sm:w-full sm:px-[50px] lg:py-0 md:py-10 sm:py-3"
     >
-      <ul class="space-y-10 space-x-1 lg:py-0 md:py-0 lg:mt-0 md:mt-0 sm:mt-8">
+      <ul
+        class="space-y-5 space-x-1 lg:py-0 md:py-0 lg:mt-0 lg:pl-10 md:mt-0 sm:mt-8"
+      >
         <li class="hover:text-blue">
           <a href="/About">ABOUT</a>
         </li>
       </ul>
       <ul
-        class="space-y-5 space-x-1 cursor-pointer hover:text-blue-500 lg:my-0 md:mt-0 sm:my-5"
+        class="space-y-3 space-x-1 cursor-pointer hover:text-blue-500 lg:my-0 md:mt-0 sm:my-5"
       >
         <li class="hover:text-blue">
           <a href="/Video_production">VIDEO PRODUCTION</a>
@@ -52,10 +54,10 @@ import { Image } from "astro:assets";
         </li>
       </ul>
       <ul
-        class="flex flex-col space-y-5 space-x-1 cursor-pointer hover:text-blue-500 lg:my-0 md:mt-0 sm:my-5"
+        class="flex flex-col space-y-3 space-x-1 cursor-pointer hover:text-blue-500 lg:my-0 md:mt-0 sm:my-5"
       >
         <li class="hover:text-blue">
-          <a href="/Media_training">MEIDA TRAINING/COACHING</a>
+          <a href="/Media_training">MEDIA TRAINING/COACHING</a>
         </li>
         <li class="text-semigray hover:text-blue">
           <a href="/Media_training/#for-leaders">FOR LEADERS</a>
@@ -65,18 +67,16 @@ import { Image } from "astro:assets";
         </li>
       </ul>
       <ul
-        class="flex flex-col space-y-5 space-x-1 cursor-pointer hover:text-blue-500 lg:my-0 md:mt-0 sm:my-5"
+        class="flex flex-col space-y-3 space-x-1 cursor-pointer hover:text-blue-500 lg:my-0 md:mt-0 sm:my-5"
       >
         <li class="hover:text-blue">
           <a href="/Strategic_consulting">STRATEGIC CONSULTING</a>
         </li>
         <li class="text-semigray hover:text-blue">
-          <a href="/Strategic_consulting/#Earned-Media">EARNED MEDIA</a>
+          <a href="/Strategic_consulting/#Earned">EARNED MEDIA</a>
         </li>
         <li class="text-semigray hover:text-blue">
-          <a href="/Strategic_consulting/#Crisis-Communication"
-            >CRISIS COMMUNICATION</a
-          >
+          <a href="/Strategic_consulting/#crisis">CRISIS COMMUNICATION</a>
         </li>
         <li class="text-semigray hover:text-blue">
           <a href="/Strategic_consulting/#new-industry">NEW INDUSTRY INSIGHT</a>
@@ -86,10 +86,10 @@ import { Image } from "astro:assets";
         </li>
       </ul>
       <ul
-        class="flex flex-col space-y-5 space-x-1 cursor-pointer hover:text-blue-500 lg:my-0 md:mt-0 sm:my-5"
+        class="flex flex-col space-y-3 space-x-1 cursor-pointer hover:text-blue-500 lg:my-0 md:mt-0 sm:my-5"
       >
         <li class="hover:text-blue">
-          <a href="/Contact">CONTACT</a>
+          <a href="/Contact">CONTACT US</a>
         </li>
         <li class="text-semigray hover:text-blue">
           <a href="/Contact/#contact-items">BOOK FREE CONSULTATION</a>

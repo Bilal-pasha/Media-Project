@@ -4,11 +4,13 @@ import "./accordion.css";
 ---
 
 <div class="accordion-container">
-  <div
-    class="border-t-[0.1px] border-lightgray font-bold text-[16px] text-black py-[16px] px-[32px]"
+  <a href="/About" class=""
+    ><div
+      class="border-t-[0.1px] border-lightgray hover:text-blue font-medium text-[14px] text-black py-[10px] px-[32px]"
+    >
+      ABOUT
+    </div></a
   >
-    <a href="/About" class="hover:text-blue">ABOUT</a>
-  </div>
   <div class="ac">
     <h2 class="ac-header">
       <button type="button" class="ac-trigger hover:text-blue">
@@ -16,14 +18,16 @@ import "./accordion.css";
       >
     </h2>
     <div class="ac-panel">
-      <p
-        class="ac-text hover:text-blue cursor-pointer border-y-[0.1px] border-lightgray"
+      <a href="/Video_production">
+        <p
+          class="ac-text hover:text-blue cursor-pointer border-y-[0.1px] border-lightgray"
+        >
+          CORPORATE VIDEOS
+        </p></a
       >
-        <a href="/Video_production">CORPORATE VIDEOS</a>
-      </p>
-      <p class="ac-text hover:text-blue">
-        <a href="/Video_production/#Legal"> LEGAL VIDEOS</a>
-      </p>
+      <a href="/Video_production/#Legal">
+        <p class="ac-text hover:text-blue">LEGAL VIDEOS</p></a
+      >
     </div>
   </div>
 
@@ -34,12 +38,14 @@ import "./accordion.css";
       >
     </h2>
     <div class="ac-panel">
-      <p class="ac-text hover:text-blue border-y-[0.1px] border-lightgray">
-        <a href="/Media_training">FOR LEADERS</a>
-      </p>
-      <p class="ac-text hover:text-blue">
-        <a href="/Media_training/#for-journalists">FOR JOURNALISTS</a>
-      </p>
+      <a href="/Media_training"
+        ><p class="ac-text hover:text-blue border-y-[0.1px] border-lightgray">
+          FOR LEADERS
+        </p></a
+      >
+      <a href="/Media_training/#for-journalists">
+        <p class="ac-text hover:text-blue">FOR JOURNALISTS</p></a
+      >
     </div>
   </div>
 
@@ -50,31 +56,39 @@ import "./accordion.css";
       >
     </h2>
     <div class="ac-panel">
-      <p class="ac-text hover:text-blue border-y-[0.1px] border-lightgray">
-        <a href="/Strategic_consulting/#Earned "> EARNED MEDIA</a>
-      </p>
-      <p class="ac-text hover:text-blue">
-        <a href="/Strategic_consulting#crisis">CRISIS COMMUNICATIONS</a>
-      </p>
-      <p class="ac-text hover:text-blue border-y-[0.1px] border-lightgray">
-        <a href="/Strategic_consulting/#new-industry"> NEW INDUSTRY INSIGHT</a>
-      </p>
-      <p class="ac-text hover:text-blue">
-        <a href="/Strategic_consulting#multi-media"> MULTI-MEDIA</a>
-      </p>
+      <a href="/Strategic_consulting/#Earned ">
+        <p class="ac-text hover:text-blue border-y-[0.1px] border-lightgray">
+          EARNED MEDIA
+        </p></a
+      >
+      <a href="/Strategic_consulting#crisis">
+        <p class="ac-text hover:text-blue">CRISIS COMMUNICATIONS</p></a
+      >
+      <a href="/Strategic_consulting/#new-industry">
+        <p class="ac-text hover:text-blue border-y-[0.1px] border-lightgray">
+          NEW INDUSTRY INSIGHT
+        </p></a
+      >
+      <a href="/Strategic_consulting#multi-media">
+        <p class="ac-text hover:text-blue">MULTI-MEDIA</p></a
+      >
     </div>
   </div>
   <div class="ac">
     <h2 class="ac-header border-b-[0.1px] border-lightgray">
-      <button type="button" class="ac-trigger hover:text-blue">CONTACT</button>
+      <button type="button" class="ac-trigger hover:text-blue"
+        >CONTACT US</button
+      >
     </h2>
     <div class="ac-panel">
-      <p class="ac-text hover:text-blue border-y-[0.1px] border-lightgray">
-        <a href="/Contact ">BOOK FREE CONSULTATION</a>
-      </p>
-      <p class="ac-text hover:text-blue">
-        <a href="/Contact/#send-message"> SEND US A MESSAGE</a>
-      </p>
+      <a href="/Contact ">
+        <p class="ac-text hover:text-blue border-y-[0.1px] border-lightgray">
+          BOOK FREE CONSULTATION
+        </p></a
+      >
+      <a href="/Contact/#send-message">
+        <p class="ac-text hover:text-blue">SEND US A MESSAGE</p></a
+      >
     </div>
   </div>
 </div>

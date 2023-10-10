@@ -1,7 +1,7 @@
 ---
 import HTML from "../../layouts/HTML/HTML.astro";
 import { Image } from "astro:assets";
-import VideoProduction from "../../assets/MediaTraningBanner.jpeg";
+import Consultingpagebanner from "../../assets/Consultingpagebanner.jpg";
 import MediaTraning from "../../assets/MediaTraning.jpg";
 import BackGroundImage from "@components/BackGroundImage.astro";
 import CrisisCommunications from "../../assets/CrisisCommunications1.jpg";
@@ -12,7 +12,7 @@ import MultiMedia from "../../assets/Multi-Media.jpg";
 <Fragment>
   <HTML>
     <BackGroundImage
-      imageSource={VideoProduction}
+      imageSource={Consultingpagebanner}
       heading1="STRATEGIC"
       text="CONSULTING"
     />
@@ -26,10 +26,11 @@ import MultiMedia from "../../assets/Multi-Media.jpg";
           <div
             class="lg:text-xl sm:text-base lg:max-w-5/6 md:max-w-full text-justify pb-10 space-y-5"
           >
-            <p id="Earned">
+            <p>
               Having covered politics, criminal justice, and business for
-              decades, the team at <span class="font-[Poppins] font-bold"
-                >Media Advisory Experts</span
+              decades, the team at <span
+                class="font-[Poppins] font-bold"
+                id="Earned">Media Advisory Experts</span
               > can offer C-suite executives, leaders in law enforcement, and
               local to multi - national corporations strategic consulting,
               crisis communications, news industry insight, public relations,
@@ -49,7 +50,7 @@ import MultiMedia from "../../assets/Multi-Media.jpg";
           EARNED MEDIA
         </h2>
         <div
-          class="lg:flex lg:px-[100px] lg:items-center lg:flex-row-reverse md:block sm:block lg:justify-between sm:space-y-10"
+          class="lg:flex lg:px-[100px] lg:items-start lg:flex-row-reverse md:block sm:block lg:justify-between sm:space-y-10"
         >
           <div
             class="lg:text-xl lg:max-w-[40%] md:max-w-full sm:max-w-[100%] lg:text-justify text-justify space-y-5"
@@ -75,7 +76,7 @@ import MultiMedia from "../../assets/Multi-Media.jpg";
               </li>
             </ul>
           </div>
-          <div class="lg:max-w-[40rem]" id="crisis">
+          <div class="lg:max-w-[25rem]" id="crisis">
             <Image src={MediaTraning} alt="image" class="rounded-lg" />
           </div>
         </div>
@@ -88,7 +89,7 @@ import MultiMedia from "../../assets/Multi-Media.jpg";
           CRISIS COMMUNICATIONS
         </h2>
         <div
-          class="lg:px-[100px] lg:flex lg:items-center md:block sm:block lg:justify-between space-y-5"
+          class="lg:px-[100px] lg:flex lg:items-start md:block sm:block lg:justify-between space-y-5"
         >
           <div class="lg:text-xl lg:max-w-[40%] md:max-w-full text-justify">
             <p>
@@ -104,7 +105,7 @@ import MultiMedia from "../../assets/Multi-Media.jpg";
               contact us today
             </p>
           </div>
-          <div class="lg:max-w-[40rem]" id="new-industry">
+          <div class="lg:max-w-[25rem]" id="new-industry">
             <Image src={CrisisCommunications} alt="image" class="rounded-lg" />
           </div>
         </div>
@@ -117,7 +118,7 @@ import MultiMedia from "../../assets/Multi-Media.jpg";
           NEWS INDUSTRY INSIGHT
         </h2>
         <div
-          class="lg:px-[100px] lg:flex lg:items-center lg:flex-row-reverse md:block sm:block lg:justify-between space-y-5"
+          class="lg:px-[100px] lg:flex lg:items-start lg:flex-row-reverse md:block sm:block lg:justify-between space-y-5"
         >
           <div class="lg:text-xl lg:max-w-[40%] md:max-w-full text-justify">
             <p>
@@ -133,7 +134,7 @@ import MultiMedia from "../../assets/Multi-Media.jpg";
               news industry to position your brand for success.
             </p>
           </div>
-          <div class="lg:max-w-[40rem]" id="multi-media">
+          <div class="lg:max-w-[25rem]" id="multi-media">
             <Image src={Industry} alt="image" class="rounded-lg" />
           </div>
         </div>
@@ -146,7 +147,7 @@ import MultiMedia from "../../assets/Multi-Media.jpg";
           MULTI-MEDIA
         </h2>
         <div
-          class="lg:px-[100px] lg:flex lg:items-center md:block sm:block lg:justify-between space-y-5"
+          class="lg:px-[100px] lg:flex lg:items-start md:block sm:block lg:justify-between space-y-5"
         >
           <div class="lg:text-xl lg:max-w-[40%] md:max-w-full text-justify">
             <p>
@@ -160,7 +161,7 @@ import MultiMedia from "../../assets/Multi-Media.jpg";
               their media.
             </p>
           </div>
-          <div class="lg:max-w-[40rem]">
+          <div class="lg:max-w-[25rem]">
             <Image src={MultiMedia} alt="image" class="rounded-lg" />
           </div>
         </div>

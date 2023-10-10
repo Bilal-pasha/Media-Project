@@ -5,6 +5,9 @@
   transform: rotate(180deg) !important;
 }
 .splide__arrow svg {
-  fill: blue !important;
+  fill: #00aef0 !important;
   transform: translateY(40%) !important;
+}
+html {
+  scroll-behavior: smooth;
 }

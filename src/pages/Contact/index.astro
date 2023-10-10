@@ -5,6 +5,7 @@ import ContactBanner from "../../assets/ContactBanner.jpeg";
 import { Image } from "astro:assets";
 import SpeakingEngagements from "../../assets/SpeakingEngagements.jpeg";
 import FormContact from "./FormContact";
+import FreeConsultation from "@components/FreeConsultation.astro";
 ---
 
 <Fragment>
@@ -15,10 +16,15 @@ import FormContact from "./FormContact";
       class="flex lg:flex-row md:flex-col sm:flex-col lg:container md:container sm:px-10 mx-auto lg:space-x-10 lg:py-16 md:py-12 sm:py-12 lg:space-y-0 md:space-y-24 sm:space-y-20"
     >
       <div
+        class="lg:h-[65vh] object-contain lg:w-[50%] sm:h-[65vh] md:w-full md:h-[60vh] sm:pt-0 sm:py-12 lg:py-0 lg:pb-0 sm:w-full md:py-10 space-y-9 lg:px-20 md:px-6 sm:px-4 shadow-2xl border border-[#d8d4d4]"
+      >
+        <FreeConsultation />
+      </div>
+      <!-- <div
         class="lg:h-auto lg:w-[50%] border border-[#d8d4d4] md:min-h-[70vh] sm:w-full sm:h-[60vh] lg:py-16 md:py-16 sm:py-20 shadow-2xl px-6"
       >
         <h2
-          class="lg:text-xl md:text-xl lg:pb-2 sm:text-xl sm:pb-10 md:pt-0 font-semibold font-[Poppins] text-center"
+          class="text-center lg:text-2xl md:text-2xl sm:text-2xl font-[Poppins] font-semibold"
         >
           BOOK A FREE CONSULTATION
         </h2>
@@ -26,7 +32,7 @@ import FormContact from "./FormContact";
           src="https://calendly.com/mediaadvisoryexperts?hide_landing_page_details=1"
           frameborder="1"
           class="h-full w-full"></iframe>
-      </div>
+      </div> -->
       <!-- <div
         class="h-auto lg:w-[30%] border border-gray-200 md:min-h-[70vh] lg:py-10 space-y-9 shadow-2xl px-10 sm:py-16"
       >
@@ -45,16 +51,12 @@ import FormContact from "./FormContact";
       </div> -->
 
       <div
-        class="h-auto lg:w-[50%] border border-[#d8d4d4] py-6 space-y-9 shadow-2xl px-6"
+        class="lg:h-[65vh] lg:w-[50%] border border-[#d8d4d4] py-6 space-y-9 shadow-2xl px-6"
         id="send-message"
       >
-        <h2
-          class="text-center text-xl lg:pb-0 sm:pt-14 sm:pb-6 font-[Poppins] font-semibold pb-0 mt-[-px] mb-[66px]"
-        >
-          Send us a message
-        </h2>
         <FormContact client:visible />
       </div>
     </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </HTML>
 </Fragment>

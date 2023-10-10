@@ -18,11 +18,12 @@ const db = getFirestore();
 const colRef = collection(db, "testimonials");
 const data = await getDocs(colRef)
   .then((review) => {
-    return review.docs.map((doc) => {
+    const updatedData = review.docs.map((doc) => {
       return { ...doc.data(), id: doc.id };
     });
 
-    // setData(reviews.sort((a, b) => a.Order - b.Order));
+    const sortedvalue = updatedData.sort((a, b) => a.Order - b.Order);
+    return sortedvalue;
   })
   .catch((err) => {
     console.log(err.message);
@@ -31,7 +32,7 @@ const data = await getDocs(colRef)
 ---
 
 <Fragment>
-  <section class="lg:py-20 md:py-20 sm:py-20 sm:my-0 lg:pb-10 lg:pt-10">
+  <section class="lg:py-20 md:py-0 sm:pt-20 sm:pb-0 sm:my-0 lg:pb-10 lg:pt-10">
     <div class="lg:container mx-auto">
       <div
         class="font-[Poppins] font-black lg:text-4xl sm:text-3xl text-center"
