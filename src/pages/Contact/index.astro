@@ -1,11 +1,11 @@
 ---
-import HTML from "../../layouts/HTML/HTML.astro";
-import BackGroundImage from "@components/BackGroundImage.astro";
-import ContactBanner from "../../assets/ContactBanner.jpeg";
-import { Image } from "astro:assets";
-import SpeakingEngagements from "../../assets/SpeakingEngagements.jpeg";
-import FormContact from "./FormContact";
-import FreeConsultation from "@components/FreeConsultation.astro";
+import { ContactBanner } from "@utils/images";
+import {
+  BackGroundImage,
+  HTML,
+  FreeConsultation,
+  FormContact,
+} from "@utils/Components";
 ---
 
 <Fragment>
@@ -13,45 +13,15 @@ import FreeConsultation from "@components/FreeConsultation.astro";
     <BackGroundImage imageSource={ContactBanner} text="CONTACT" />
     <div id="contact-items"></div>
     <div
-      class="flex lg:flex-row md:flex-col sm:flex-col lg:container md:container sm:px-10 mx-auto lg:space-x-10 lg:py-16 md:py-12 sm:py-12 lg:space-y-0 md:space-y-24 sm:space-y-20"
+      class="flex lg:flex-col md:flex-col sm:flex-col lg:container justify-center items-center md:container lg:px-0 mx-auto lg:py-16 lg:space-y-24 md:py-12 sm:py-12 md:space-y-24 sm:space-y-20"
     >
       <div
-        class="lg:h-[65vh] object-contain lg:w-[50%] sm:h-[65vh] md:w-full md:h-[60vh] sm:pt-0 sm:py-12 lg:py-0 lg:pb-0 sm:w-full md:py-10 space-y-9 lg:px-20 md:px-6 sm:px-4 shadow-2xl border border-[#d8d4d4]"
+        class="object-contain lg:w-[80%] md:w-full border border-[#d8d4d4] shadow-xl sm:pt-0 sm:py-12 lg:py-0 lg:pb-0 sm:w-full md:py-10 space-y-9"
       >
         <FreeConsultation />
       </div>
-      <!-- <div
-        class="lg:h-auto lg:w-[50%] border border-[#d8d4d4] md:min-h-[70vh] sm:w-full sm:h-[60vh] lg:py-16 md:py-16 sm:py-20 shadow-2xl px-6"
-      >
-        <h2
-          class="text-center lg:text-2xl md:text-2xl sm:text-2xl font-[Poppins] font-semibold"
-        >
-          BOOK A FREE CONSULTATION
-        </h2>
-        <iframe
-          src="https://calendly.com/mediaadvisoryexperts?hide_landing_page_details=1"
-          frameborder="1"
-          class="h-full w-full"></iframe>
-      </div> -->
-      <!-- <div
-        class="h-auto lg:w-[30%] border border-gray-200 md:min-h-[70vh] lg:py-10 space-y-9 shadow-2xl px-10 sm:py-16"
-      >
-        <h2 class="text-center text-xl lg:pb-0 font-[Poppins] font-semibold">
-          SPEAKING ENGAGEMENTS
-        </h2>
-        <Image src={SpeakingEngagements} alt="image" />
-        <p class="text-xl">
-          <span class="font-[Poppins] font-bold"> Media Advisory Experts</span>
-           founder Mark Albert is available for speaking engagements. He’s given
-          tailored remarks on current events, media industry analysis, and
-          insightful travel tips gleaned from visiting 83 countries to
-          government leaders, private companie s, and while emceeing community
-          events.
-        </p>
-      </div> -->
-
       <div
-        class="lg:h-[65vh] lg:w-[50%] border border-[#d8d4d4] py-6 space-y-9 shadow-2xl px-6"
+        class="lg:w-[80%] lg:px-[200px] border border-[#d8d4d4] py-6 space-y-9 shadow-xl px-6"
         id="send-message"
       >
         <FormContact client:visible />

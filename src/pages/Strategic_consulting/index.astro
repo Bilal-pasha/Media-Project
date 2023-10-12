@@ -1,12 +1,17 @@
 ---
-import HTML from "../../layouts/HTML/HTML.astro";
-import { Image } from "astro:assets";
-import Consultingpagebanner from "../../assets/Consultingpagebanner.jpg";
-import MediaTraning from "../../assets/MediaTraning.jpg";
-import BackGroundImage from "@components/BackGroundImage.astro";
-import CrisisCommunications from "../../assets/CrisisCommunications1.jpg";
-import Industry from "../../assets/Industry.jpg";
-import MultiMedia from "../../assets/Multi-Media.jpg";
+import { BackGroundImage, Image, HTML } from "@utils/Components";
+import {
+  Consultingpagebanner,
+  MediaTraining,
+  CrisisCommunications,
+  Industry,
+  MultiMedia,
+  ConsultingHeading,
+  EarnedMedia,
+  CrisisCommunication,
+  NewIndustryInsight,
+  MultiMediaText,
+} from "@utils/images";
 ---
 
 <Fragment>
@@ -18,92 +23,50 @@ import MultiMedia from "../../assets/Multi-Media.jpg";
     />
     <div class="lg:container lg:mx-auto sm:px-5 mx-auto space-y-5 mb-5">
       <section
-        class="lg:pt-20 md:py-10 sm:pt-20 lg:py-10 lg:mx-[100px] md:mx-[40px]"
+        class="lg:pt-20 md:py-10 sm:pt-20 lg:py-6 lg:mx-[100px] md:mx-[40px]"
       >
         <div
-          class="flex md:flex-col-reverse sm:flex-col-reverse sm:items-center lg:justify-between"
+          class="flex md:flex-col-reverse sm:flex-col-reverse sm:items-center lg:justify-evenly"
         >
           <div
-            class="lg:text-xl sm:text-base lg:max-w-5/6 md:max-w-full text-justify pb-10 space-y-5"
+            class="lg:text-xl sm:text-base lg:max-w-5/6 md:max-w-full text-justify space-y-5"
           >
-            <p>
-              Having covered politics, criminal justice, and business for
-              decades, the team at <span
-                class="font-[Poppins] font-bold"
-                id="Earned">Media Advisory Experts</span
-              > can offer C-suite executives, leaders in law enforcement, and
-              local to multi - national corporations strategic consulting,
-              crisis communications, news industry insight, public relations,
-              and media coaching services to prepare them for an always - on
-              media ecosystem that demands lightning, accurate respon se and
-              accountability — while also ensuring their vital context breaks
-              through the noise and is heard by their target audience
-            </p>
+            <ConsultingHeading />
           </div>
         </div>
       </section>
 
-      <section class="lg:py-10 sm:py-0 sm:space-y-5">
+      <section class="lg:py-6 sm:py-0 sm:space-y-5">
         <h2
           class="lg:text-3xl md:text-3xl sm:text-2xl sm:pt-10 md:pt-0 font-semibold font-[Poppins] text-center lg:py-5"
         >
           EARNED MEDIA
         </h2>
         <div
-          class="lg:flex lg:px-[100px] lg:items-start lg:flex-row-reverse md:block sm:block lg:justify-between sm:space-y-10"
+          class="lg:flex lg:px-[100px] lg:items-start lg:flex-row-reverse md:block sm:block lg:justify-evenly sm:space-y-10"
         >
           <div
             class="lg:text-xl lg:max-w-[40%] md:max-w-full sm:max-w-[100%] lg:text-justify text-justify space-y-5"
           >
-            <p>
-              Our team has experience generating earned media coverage, both for
-              an individual and for business. While some other firms believe
-              blasting a news release to a hundred media outlets will do the
-              trick, we know that isn’t an effective ROI. Instead, we’ve:
-            </p>
-            <ul class="list-disc space-y-4 ml-6">
-              <li>
-                De signed a database of media contacts to ensure the right
-                target audience hears your message
-              </li>
-              <li>
-                Built an agility to respond to a 24/7 digital media environment
-              </li>
-              <li>Developed tools to ensure media placement</li>
-              <li>
-                Created a process to streamline your message so it doesn’t get
-                lost
-              </li>
-            </ul>
+            <EarnedMedia />
           </div>
           <div class="lg:max-w-[25rem]" id="crisis">
-            <Image src={MediaTraning} alt="image" class="rounded-lg" />
+            <Image src={MediaTraining} alt="image" class="rounded-lg" />
           </div>
         </div>
       </section>
 
-      <section class="lg:py-10 sm:py-10 space-y-5">
+      <section class="lg:py-6 sm:py-10 space-y-5">
         <h2
           class="lg:text-3xl md:text-3xl sm:text-2xl sm:pt-10 md:pt-0 font-semibold font-[Poppins] text-center lg:py-5"
         >
           CRISIS COMMUNICATIONS
         </h2>
         <div
-          class="lg:px-[100px] lg:flex lg:items-start md:block sm:block lg:justify-between space-y-5"
+          class="lg:px-[100px] lg:flex lg:items-start md:block sm:block lg:justify-evenly space-y-5"
         >
           <div class="lg:text-xl lg:max-w-[40%] md:max-w-full text-justify">
-            <p>
-              Using o ur decades of media experience, vast network of contacts,
-              and innovative methods, <span class="font-[Poppins] font-bold">
-                Media Advisory Experts</span
-              > can help prepare today’s leaders for tomorrow’s media storm — or
-              respond in an instant when it lands at your doorstep. Sometimes,
-              despite your best efforts, you can’t head off adverse publicity.
-              But often, clients can get in front of the headline, crafting a
-              message that limits reputational damage and busines s impact. The
-              key is speed. Don’t wait to prepare your business or brand ;
-              contact us today
-            </p>
+            <CrisisCommunication />
           </div>
           <div class="lg:max-w-[25rem]" id="new-industry">
             <Image src={CrisisCommunications} alt="image" class="rounded-lg" />
@@ -111,28 +74,17 @@ import MultiMedia from "../../assets/Multi-Media.jpg";
         </div>
       </section>
 
-      <section class="lg:py-10 space-y-5">
+      <section class="lg:py-6 space-y-5">
         <h2
           class="lg:text-3xl md:text-3xl sm:text-2xl sm:pt-10 md:pt-0 font-semibold font-[Poppins] text-center lg:py-5"
         >
           NEWS INDUSTRY INSIGHT
         </h2>
         <div
-          class="lg:px-[100px] lg:flex lg:items-start lg:flex-row-reverse md:block sm:block lg:justify-between space-y-5"
+          class="lg:px-[100px] lg:flex lg:items-start lg:flex-row-reverse md:block sm:block lg:justify-evenly space-y-5"
         >
           <div class="lg:text-xl lg:max-w-[40%] md:max-w-full text-justify">
-            <p>
-              With new digital media brands created all the time and legacy
-              properties reinventing themselves or fading , <span
-                class="font-[Poppins] font-bold"
-              >
-                Media Advisory Experts
-              </span>can provide key context into the current media landscape –
-              and insight what it will look like in the quarters ahead. With
-              information and knowledge comes an ability to adapt, to mold your
-              message for maximum effect and impact. Use our knowledge of the
-              news industry to position your brand for success.
-            </p>
+            <NewIndustryInsight />
           </div>
           <div class="lg:max-w-[25rem]" id="multi-media">
             <Image src={Industry} alt="image" class="rounded-lg" />
@@ -140,26 +92,17 @@ import MultiMedia from "../../assets/Multi-Media.jpg";
         </div>
       </section>
 
-      <section class="lg:pt-10 lg:pb-20 container mx-auto space-y-5">
+      <section class="lg:pt-10 lg:pb-10 container mx-auto space-y-5">
         <h2
           class="lg:text-3xl md:text-3xl sm:text-2xl sm:pt-10 md:pt-0 font-semibold font-[Poppins] text-center lg:py-5"
         >
           MULTI-MEDIA
         </h2>
         <div
-          class="lg:px-[100px] lg:flex lg:items-start md:block sm:block lg:justify-between space-y-5"
+          class="lg:px-[100px] lg:flex lg:items-start md:block sm:block lg:justify-evenly space-y-5"
         >
           <div class="lg:text-xl lg:max-w-[40%] md:max-w-full text-justify">
-            <p>
-              The experts at <span class="font-[Poppins] font-bold">
-                Media Advisory Experts
-              </span> can advise you on a multi-media strategy to generate broad
-              exposure for your message, brand, or crisis response. With
-              innovative techniques and a shrewd understanding of the evolving
-              digital media landscape, our team can expertly position you for
-              success across platforms, no matter where your audience consumes
-              their media.
-            </p>
+            <MultiMediaText />
           </div>
           <div class="lg:max-w-[25rem]">
             <Image src={MultiMedia} alt="image" class="rounded-lg" />

@@ -1,23 +1,38 @@
 ---
-import HTML from "../../layouts/HTML/HTML.astro";
-import { Image } from "astro:assets";
-import MarkPicture from "../../assets/Mark.jpg";
-import CBS from "../../assets/news-channel-logos/CBS_News_logo.png";
-import Hearttelevision from "../../assets/news-channel-logos/Hearst.jpg";
-import CNN from "../../assets/news-channel-logos/CNN.png";
-import WUSA9 from "../../assets/news-channel-logos/WUSA9.png";
-import KSTP from "../../assets/news-channel-logos/KSTP.webp";
-import WSOC from "../../assets/news-channel-logos/WSOC.png";
-import KARE from "../../assets/news-channel-logos/Kare.png";
-import CBSsunday from "../../assets/news-channel-logos/CBS_SUNDAY.jpg";
-import XYZ from "../../assets/news-channel-logos/WXYZ-TV_logo.svg.png";
-import KFI from "../../assets/news-channel-logos/KFI.jpg";
-import KYW from "../../assets/news-channel-logos/KYW.png";
-import MEDI from "../../assets/news-channel-logos/Medi.jpg";
-import HoldingHands from "../../assets/holdingHands.jpg";
-import BackGroundImage from "@components/BackGroundImage.astro";
-import AboutPagebanner from "../../assets/ABOUTpagebanner.jpg";
-import SpeakingEngagement from "@components/SpeakingEngagement.astro";
+import {
+  SpeakingEngagement,
+  BackGroundImage,
+  HeadingText,
+  MarkText,
+  TeamSupport,
+  HTML,
+  Image,
+} from "@utils/Components";
+import {
+  MarkPicture,
+  CBS,
+  Hearttelevision,
+  CNN,
+  KSTP,
+  KARE,
+  CBSsunday,
+  XYZ,
+  KFI,
+  KYW,
+  MEDI,
+  HoldingHands,
+  AboutPagebanner,
+  WCCO,
+  KNXV,
+  WInkTV,
+  TCL,
+  WJR,
+  wwl,
+  WSOCTV,
+  kstp,
+  CBSNEWSRADIO,
+  WUSA_9_logo,
+} from "@utils/images";
 ---
 
 <HTML>
@@ -27,24 +42,15 @@ import SpeakingEngagement from "@components/SpeakingEngagement.astro";
     <div
       class="grid lg:grid-cols-1 md:grid-cols-1 sm:grid-rows-1 gap-4 lg:mx-[100px] md:mx-[40px] sm:mx-6"
     >
-      <p class="lg:text-xl md:text-base text-justify">
-        <span class="font-[Poppins] font-bold"> Media Advisory Experts</span>
-         harnesses decades of journalism and communications experience to
-        deliver insightful and actionable advice and analysis of the media
-        landscape and how to get tailored results for its clients. Video
-        production services are available for corporate messagin g; judicial
-        videos, including for early litigation, case settlement, trials, and day
-        - in - the - life segments; for training purposes, and more. In
-        addition, we offer media trainings for executives, thought leaders and
-        anyone who wants to prepare themselves f or on - camera availabilities,
-        as well as curriculum and training for journalists.
-      </p>
+      <div class="lg:text-xl md:text-base text-justify">
+        <HeadingText />
+      </div>
     </div>
   </section>
   <!-- <section class="flex flex-col"></section> -->
   <section class="lg:container lg:mx-auto lg:pt-20 md:pt-20 sm:pt-20 space-y-2">
     <div
-      class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-rows-1 gap-4 lg:mx-[100px] md:mx-[40px] sm:mx-6"
+      class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-rows-1 gap-4 lg:mx-[100px] md:mx-[40px] md:py-10 sm:py-10 sm:mx-6 lg:pb-24"
     >
       <div
         class="lg:items-start col-span-2 sm:flex sm:items-center sm:justify-center lg:max-w-[25rem] sm:max-w-full lg:mt-[100px]"
@@ -56,132 +62,157 @@ import SpeakingEngagement from "@components/SpeakingEngagement.astro";
         />
       </div>
       <div class="col-span-2 max-w-[80rem] space-y-5 text-justify">
-        <h2 class="text-3xl font-semibold font-[Poppins] text-center sm:pt-5">
-          MARK ALBERT
-        </h2>
-        <p
-          class="lg:text-xl md:text-2xl sm:text-lg font-semibold font-[Poppins] text-blue text-center"
-        >
-          <a href="mailto:mark@mediaadvisoryexperts.com"
-            >mark@mediaadvisoryexperts.com</a
-          >
-        </p>
-        <p class="lg:text-xl md:text-base">
-          Firm founder Mark Albert is a Peabody-winning journalist whose
-          quarter-century career has been distinguished by investigative
-          reporting, innovative storytelling techniques, and creative
-          communications. He's traveled the world for CBS News; created and led
-          a national investigative unit for Hearst Communications; taught
-          journalists in newsrooms in the U.S., Vietnam, and Pakistan; launched
-          an online news startup and created a media database to drive dozens of
-          earned media appearances; and has been to 83 countries so far. In
-          addition to the Peabody Award for an investigation that changed the
-          way remains of U.S. service members are tracked around the world, Mark
-          has been awarded the 'Wade H. McCree Excellence in Legal Journalism
-          and the Advancement of Justice Award' by the State Bar of Michigan for
-          his coverage of the judiciary, law enforcement, and criminal justice
-          issues. Among other honors, he's the first journalist ever awarded the
-          ’Superior Civilian Service Award’ by the Minnesota National Guard for
-          his body of military reporting and embedded coverage, including from
-          Iraq.
-        </p>
+        <MarkText />
       </div>
     </div>
+    <div class="sm:py-10 border-y-2 border-[#807f7f7d]">
+      <h2 class="text-3xl font-semibold font-[Poppins] text-center lg:pb-8">
+        AS SEEN ON
+      </h2>
 
-    <h2
-      class="text-3xl font-semibold font-[Poppins] text-center lg:pt-24 lg:pb-8 sm:py-10"
-    >
-      AS SEEN ON
-    </h2>
+      <div
+        class="flex lg:flex-row md:flex-row lg:mx-[100px] md:mx-[40px] sm:mx-6 sm:flex-col lg:justify-evenly lg:gap-8 md:gap-4 md:pb-0 md:justify-center md:items-center sm:items-center sm:gap-10 lg:pb-10 lg:pt-0 sm:pt-10 sm:pb-0"
+      >
+        <a
+          href="https://www.cbsnews.com/"
+          class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
+        >
+          <Image src={CBS} alt="about pic" />
+        </a>
 
-    <div
-      class="flex lg:flex-row md:flex-row lg:mx-[100px] md:mx-[40px] sm:mx-6 sm:flex-col lg:justify-evenly lg:gap-8 md:gap-4 md:pb-20 md:justify-center md:items-center sm:items-center sm:gap-10 sm:pb-16"
-    >
-      <!-- <div > -->
-      <Image
-        src={CBS}
-        alt="about pic"
-        class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
-      />
-      <!-- </div> -->
+        <a
+          href="https://edition.cnn.com/"
+          class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
+        >
+          <Image src={CNN} alt="about pic" />
+        </a>
 
-      <!-- <div class=""> -->
-      <Image
-        src={CNN}
-        alt="about pic"
-        class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
-      />
-      <!-- </div> -->
+        <a
+          href="https://www.hearst.com/"
+          class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
+        >
+          <Image src={Hearttelevision} alt="about pic" />
+        </a>
 
-      <!-- <div class=""> -->
-      <Image
-        src={Hearttelevision}
-        alt="about pic"
-        class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
-      />
-      <!-- </div> -->
+        <a
+          href="https://abc.com/"
+          class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
+        >
+          <Image src={KSTP} alt="about pic" />
+        </a>
 
-      <!-- <div class=""> -->
-      <Image
-        src={KSTP}
-        alt="about pic"
-        class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
-      />
-      <!-- </div> -->
+        <a
+          href="https://www.kare11.com/"
+          class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
+        >
+          <Image src={KARE} alt="about pic" />
+        </a>
 
-      <!-- <div class=""> -->
-      <Image
-        src={KARE}
-        alt="about pic"
-        class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
-      />
-      <!-- </div> -->
+        <a
+          href="https://www.cbsnews.com/sunday-morning/"
+          class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
+        >
+          <Image src={CBSsunday} alt="ab" />
+        </a>
 
-      <!-- <div class=""> -->
-      <Image
-        src={CBSsunday}
-        alt="ab"
-        class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
-      />
-      <!-- </div> -->
+        <a
+          href="https://www.wxyz.com/"
+          class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
+        >
+          <Image src={XYZ} alt="about pic" />
+        </a>
 
-      <!-- <div class=""> -->
-      <Image
-        src={XYZ}
-        alt="about pic"
-        class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
-      />
-      <!-- </div> -->
+        <a
+          href="https://kfiam640.iheart.com/"
+          class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
+        >
+          <Image src={KFI} alt="about pic" />
+        </a>
 
-      <!-- <div class=""> -->
-      <Image
-        src={KFI}
-        alt="about pic"
-        class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
-      />
-      <!-- </div> -->
+        <a
+          href="https://www.audacy.com/kywnewsradio"
+          class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
+        >
+          <Image src={KYW} alt="about pic" />
+        </a>
 
-      <!-- <div class=""> -->
+        <a
+          href="https://www.medi1tv.com/"
+          class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
+        >
+          <Image src={MEDI} alt="about pic" />
+        </a>
+      </div>
+      <div
+        class="flex lg:flex-row md:flex-row lg:mx-[100px] md:mx-[40px] sm:mx-6 sm:flex-col lg:justify-evenly lg:gap-8 md:gap-4 md:pb-0 md:justify-center md:items-center sm:items-center sm:gap-10 lg:pb-0 lg:pt-0 sm:pt-10 sm:pb-16"
+      >
+        <a
+          href="https://www.wusa9.com/"
+          class="lg:w-[6%] md:w-[7%] sm:w-[25%] h-auto"
+        >
+          <Image src={WUSA_9_logo} alt="about pic" />
+        </a>
 
-      <Image
-        src={KYW}
-        alt="about pic"
-        class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
-      />
-      <!-- </div> -->
+        <a
+          href="https://www.cbsnews.com/radio/"
+          class="lg:w-[6%] md:w-[7%] sm:w-[25%] h-auto"
+        >
+          <Image src={CBSNEWSRADIO} alt="about pic" />
+        </a>
 
-      <!-- <div class=""> -->
+        <a
+          href="https://kstp.com/"
+          class="lg:w-[6%] md:w-[7%] sm:w-[25%] h-auto"
+        >
+          <Image src={kstp} alt="about pic" />
+        </a>
+        <a
+          href="https://www.wwltv.com/"
+          class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
+        >
+          <Image src={wwl} alt="about pic" />
+        </a>
 
-      <Image
-        src={MEDI}
-        alt="about pic"
-        class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
-      />
-      <!-- </div> -->
+        <a
+          href="https://www.wjr.com/"
+          class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
+        >
+          <Image src={WJR} alt="ab" />
+        </a>
+        <a
+          href="https://www.wxyz.com/"
+          class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
+        >
+          <Image src={TCL} alt="about pic" />
+        </a>
+        <a
+          href="https://winknews.com/"
+          class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
+        >
+          <Image src={WInkTV} alt="about pic" />
+        </a>
+        <a
+          href="https://www.abc15.com/"
+          class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
+        >
+          <Image src={KNXV} alt="about pic" />
+        </a>
+        <a
+          href="https://www.audacy.com/wccoradio"
+          class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
+        >
+          <Image src={WCCO} alt="about pic" />
+        </a>
+        <a
+          href="https://www.wsoctv.com/"
+          class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
+        >
+          <Image src={WSOCTV} alt="about pic" />
+        </a>
+      </div>
     </div>
-
     <div
-      class="grid lg:grid-cols-9 md:grid-cols-2 sm:grid-rows-1 lg:mx-[100px] md:mx-[40px] sm:mx-6 lg:justify-between"
+      class="grid lg:grid-cols-9 md:grid-cols-2 sm:grid-rows-1 lg:mx-[100px] md:mx-[40px] sm:mx-6 lg:justify-between lg:py-16"
     >
       <div class="col-span-4">
         <SpeakingEngagement />
@@ -189,7 +220,7 @@ import SpeakingEngagement from "@components/SpeakingEngagement.astro";
       <div class="col-span-1"></div>
       <div class="col-span-4 pt-14">
         <iframe
-          class="embed-responsive-item lg:container lg:mx-auto bottom-0 left-0 right-0 top-0 lg:h-[40vh] lg:w-full md:h-[40vh] md:w-full sm:h-[30vh] sm:w-full"
+          class="embed-responsive-item lg:container lg:mx-auto bottom-0 left-0 right-0 top-0 lg:h-[40vh] lg:w-full md:h-[100vh] md:w-full sm:h-[30vh] sm:w-full"
           src="https://www.youtube.com/embed/-PALozh28ZI?si=yajMEwDL7N_6H4XC"
           title="YouTube video player"
           frameborder="0"
@@ -201,18 +232,7 @@ import SpeakingEngagement from "@components/SpeakingEngagement.astro";
       class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-rows-1 gap-4 lg:mx-[100px] md:mx-[40px] sm:mx-6 lg:pt-20 md:pt-20 sm:pt-20 lg:place-items-end"
     >
       <div class="lg:py-20 md:py-10 text-justify">
-        <p class="lg:text-xl md:text-base">
-          Mark is supported by a team of current and former journalists and
-          media professionals with advance expertise in on-demand videography,
-          editing, research, logistics and digital marketing.
-        </p>
-        <p
-          class="lg:text-xl md:text-xl py-5 sm:text-lg font-semibold font-[Poppins] text-blue"
-        >
-          <a href="mailto:contact@mediaadvisoryexperts.com"
-            >contact@mediaadvisoryexperts.com</a
-          >
-        </p>
+        <TeamSupport />
       </div>
       <div class="flex justify-end pb-10">
         <Image src={HoldingHands} alt="mark pic" class="h-full w-full" />

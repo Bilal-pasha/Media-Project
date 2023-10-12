@@ -1,20 +1,20 @@
 ---
-import HTML from "../../layouts/HTML/HTML.astro";
-import { Image } from "astro:assets";
-import MediaTraningBanner from "../../assets/MediaTraningBanner.jpeg";
-import MarkinDetroit from "../../assets/MarkinDetroit.jpeg";
-import MarkinAirforce from "../../assets/MarkinAirForce.jpg";
-import MarkinSheriff from "../../assets/MarkInterviewSheriff.jpeg";
-import MarkTeaching1 from "../../assets/MarkAlbertTeaching1.jpg";
-import MarkTeaching2 from "../../assets/MarkAlbertTeaching2.jpg";
-import MarkTeaching3 from "../../assets/MarkAlbertTeaching3.jpg";
-import Logo1 from "../../assets/IRElogo.png";
-import Logo2 from "../../assets/ICFJlogo.jpg";
-import Logo3 from "../../assets/VTVlogo.png";
-import University from "../../assets/University.jpg";
-import BackGroundImage from "../../components/BackGroundImage.astro";
-import ImageSlider from "@components/ImageSlider.astro";
-// import MarkTeaching4 from "../../assets/MarkAlbertTeaching4.jpg";
+import { BackGroundImage, Image, HTML } from "@utils/Components";
+import {
+  MediaTraningBanner,
+  MarkinDetroit,
+  MarkinAirforce,
+  MarkinSheriff,
+  MarkTeaching1,
+  MarkTeaching2,
+  MarkTeaching3,
+  Logo1,
+  Logo2,
+  Logo3,
+  University,
+  ForLeadersText,
+  ForJournalistText,
+} from "@utils/images";
 ---
 
 <Fragment>
@@ -29,7 +29,7 @@ import ImageSlider from "@components/ImageSlider.astro";
 
     <section class="lg:container lg:mx-auto">
       <div
-        class="flex lg:flex-row md:flex-col sm:flex-col lg:items-start sm:items-center lg:justify-between lg:py-10 lg:mx-[100px] md:mx-[40px] sm:mx-6"
+        class="flex lg:flex-row md:flex-col sm:flex-col lg:items-start sm:items-center lg:justify-evenly lg:py-10 lg:mx-[100px] md:mx-[40px] sm:mx-6"
       >
         <div class="flex flex-col gap-10 lg:py-4">
           <Image
@@ -54,52 +54,7 @@ import ImageSlider from "@components/ImageSlider.astro";
         <div
           class="lg:text-xl md:text-base lg:max-w-[40%] md:max-w-[80%] sm:max-w-[100%] text-justify space-y-5 lg:py-2 sm:py-10 md:py-20"
         >
-          <p>
-            The ever-broadening array of media platforms and news outlets means
-            today’s leaders need to be ready to convey authenticity,
-            transparency, competency and empathy in their news interviews and
-            television availabilities with traditional, adversarial, new or
-            earned media.
-          </p>
-          <p>
-            <span class="font-[Poppins] font-bold">
-              Media Advisory Experts</span
-            > using decades of local and national media experience, can train
-            you and your team on:
-          </p>
-          <ul class="list-disc space-y-3 ml-6">
-            <li>
-              Proven interview techniques and how to establish a rapport with
-              your interviewer
-            </li>
-            <li>
-              How to speak with clarity and purpose while paying attention to
-              annunciation and cadence — on-camera or off
-            </li>
-            <li>Most effective ways to master a news conference</li>
-            <li>
-              How you or your communications team can create your own earned
-              media without surrendering your narrative or issuing dead-end news
-              releases that get zero traction
-              <li>
-                Methods for declining a perceived hostile media interview while
-                still ensuring your message is conveyed to the audience
-              </li>
-              <li>Deep dives into news production to control your own image</li>
-            </li>
-            <p>When a journalist calls, be ready to master your own story.</p>
-            <p class="lg:text-xl font-[Poppins] pb-4">Contact us today :</p>
-            <a
-              href="mailto:contact@mediaadvisoryexperts.com"
-              class="lg:text-xl sm:text-sm font-semibold font-[Poppins] text-blue"
-              >contact@mediaadvisoryexperts.com</a
-            >
-            <br />
-            <i id="Legal" class="lg:text-xl">
-              Please indicate level of urgency in your initial message so that
-              we may best meet your needs.
-            </i>
-          </ul>
+          <ForLeadersText />
         </div>
       </div>
     </section>
@@ -138,32 +93,7 @@ import ImageSlider from "@components/ImageSlider.astro";
         <div
           class="lg:text-xl md:text-base lg:max-w-[40%] md:max-w-[80%] sm:max-w-[100%] text-justify lg:py-0 space-y-5 sm:py-10 md:py-20 lg:mx-[100px] md:mx-[40px] sm:mx-6"
         >
-          <p>
-            <span class="font-[Poppins] font-bold">
-              Media Advisory Experts</span
-            > founder Mark Albert has a quarter-century of experience as an
-            investigative journalist and educator. He’s been an adjunct
-            instructor at Northwestern University’s Medill School of Journalism
-            in Washington, DC, and nearly every year since 2017, has created and
-            taught curriculum in newsrooms across Vietnam, including on
-            fact-checking, news production, investigative reporting, how to ask
-            probing questions in news conferences and hold public officials
-            accountable, digital content creation, elements of live-streaming,
-            and on Western free speech and defamation principles. In 2016, he
-            designed and taught a two-week course on general news production in
-            Pakistan as part of an initiative administered by the International
-            Center for Journalists (ICFL) and sponsored by the U.S. State
-            Department. Mark has also spoken on panels at the preeminent
-            investigative journalism conference in the United States, the
-            Investigative Reporters & Editors (IRE) event every June, invited to
-            speak on topics such as internal/external newsroom collaboration and
-            military beat reporting.
-          </p>
-          <p>
-            This type of training can be invaluable to journalists no matter the
-            size of the newsroom. Media Advisory Experts can customize the
-            curriculum to fit your beat, needs, and newsroom size.
-          </p>
+          <ForJournalistText />
         </div>
       </div>
       <div class="lg:container lg:mx-auto lg:py-20 md:pt-0 sm:pt-0">
@@ -171,32 +101,40 @@ import ImageSlider from "@components/ImageSlider.astro";
           class="flex flex-row justify-between lg:mx-[100px] md:mx-[40px] sm:mx-6"
         >
           <div class="lg:max-w-[15%] sm:w-[20%]">
-            <Image
-              src={Logo1}
-              alt="image"
-              class="w-full h-full object-contain"
-            />
+            <a href="https://www.ire.org/">
+              <Image
+                src={Logo1}
+                alt="image"
+                class="w-full h-full object-contain"
+              />
+            </a>
           </div>
           <div class="lg:max-w-[15%] sm:w-[20%]">
-            <Image
-              src={Logo2}
-              alt="image"
-              class="w-full h-full object-contain"
-            />
+            <a href="https://www.icfj.org/">
+              <Image
+                src={Logo2}
+                alt="image"
+                class="w-full h-full object-contain"
+              />
+            </a>
           </div>
           <div class="lg:max-w-[15%] sm:w-[20%]">
-            <Image
-              src={Logo3}
-              alt="image"
-              class="w-full h-full object-contain"
-            />
+            <a href="https://english.vtv.vn/">
+              <Image
+                src={Logo3}
+                alt="image"
+                class="w-full h-full object-contain"
+              />
+            </a>
           </div>
           <div class="lg:max-w-[15%] sm:w-[20%]">
-            <Image
-              src={University}
-              alt="image"
-              class="w-full h-full object-contain"
-            />
+            <a href="https://www.northwestern.edu/">
+              <Image
+                src={University}
+                alt="image"
+                class="w-full h-full object-contain"
+              />
+            </a>
           </div>
         </div>
       </div>

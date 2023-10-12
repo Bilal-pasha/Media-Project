@@ -1,15 +1,17 @@
 ---
-
+const month = new Date().getMonth().toString();
+const year = new Date().getFullYear().toString();
 ---
 
 <Fragment>
   <h2
-    class="text-center text-2xl lg:pt-6 sm:pt-10 sm:pb-6 font-[Poppins] font-semibold"
+    class="text-center text-2xl lg:pt-6 sm:pt-10 md:pb-0 sm:pb-6 font-[Poppins] font-semibold"
   >
     BOOK A FREE CONSULTATION
   </h2>
   <iframe
-    src="https://calendly.com/mediaadvisoryexperts?hide_landing_page_details=1"
+    src=`https://calendly.com/mediaadvisoryexperts/30min?hide_landing_page_details=1&back=1&month=${year}-${month}`
     frameborder="1"
-    class="lg:h-[40vh] md:h-[40vh] sm:h-[40vh] w-full"></iframe>
+    class="h-fit lg:h-[800px] md:h-[170vh] sm:h-[200vh] object-contain w-full"
+  ></iframe>
 </Fragment>

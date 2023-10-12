@@ -18,8 +18,8 @@ import Accordian from "./Accordian/Accordian.astro";
     >
       <Icon client:only />
     </label>
-    <div class="flex flex-row justify-center pl-4 pr-0">
-      <a href="/">
+    <a href="/" class="block">
+      <div class="flex flex-row items-center space-x-1 pl-4 pr-0">
         <Image
           src={logo2}
           alt="logo"
@@ -27,11 +27,13 @@ import Accordian from "./Accordian/Accordian.astro";
           width="120"
           class="max-w-[100px]"
         />
-        <h2 class="text-xs font-[Poppins] pt-1 font-semibold">
+        <h2
+          class="text-base font-[Poppins] font-semibold lg:block md:hidden sm:hidden"
+        >
           MEDIA ADVISORY <span class="text-blue"> EXPERTS</span>
         </h2>
-      </a>
-    </div>
+      </div>
+    </a>
     <ul
       class="lg:flex lg:items-center md:hidden sm:hidden text-xs
             font-[Poppins]"
@@ -143,10 +145,10 @@ import Accordian from "./Accordian/Accordian.astro";
                      flex-col bg-white drop-shadow-lg text-black z-10 text-xs"
           >
             <a class="px-5 py-3 hover:text-blue" href="/Contact/#contact-items"
-              >BOOK FREE CONSULTATION</a
+              >SEND US A MESSAGE</a
             >
             <a class="px-5 py-3 hover:text-blue" href="/Contact/#contact-items"
-              >SEND US A MESSAGE</a
+              >BOOK A FREE CONSULTATION</a
             >
           </div>
         </div>

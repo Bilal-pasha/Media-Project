@@ -1,13 +1,18 @@
 ---
-import HTML from "../../layouts/HTML/HTML.astro";
-import { Image } from "astro:assets";
-import CorporateVideos1 from "../../assets/CorporateVideos1.jpg";
-import CorporateVideos2 from "../../assets/CorporateVideos2.jpg";
-import CorporateVideos3 from "../../assets/CorporateVideos3.jpg";
-import SupremeCourt from "../../assets/SupremeCourt.jpeg";
-import BackGroundImage from "@components/BackGroundImage.astro";
-import ImageSlider from "@components/ImageSlider.astro";
-import VideoproductionBanner from "../../assets/Videoproductionbanner.jpg";
+import {
+  HTML,
+  Image,
+  BackGroundImage,
+  CorporateText,
+  LegalVideoText,
+} from "@utils/Components";
+import {
+  CorporateVideos1,
+  CorporateVideos2,
+  CorporateVideos3,
+  SupremeCourt,
+  VideoproductionBanner,
+} from "@utils/images";
 ---
 
 <Fragment>
@@ -28,47 +33,8 @@ import VideoproductionBanner from "../../assets/Videoproductionbanner.jpg";
         class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-rows-1 gap-4 lg:mx-[100px] md:mx-[40px] sm:mx-6"
       >
         <div class="lg:text-xl md:text-base text-justify">
-          <p class="">
-            <span class="font-[Poppins] font-bold">
-              Media Advisory Experts</span
-            >
-             can harness decades of experience across the United States to
-            conceptualize, storyboard, shoot, edit and deliver professional
-            videos for corporate clients of any size and budget, from small
-            firms to Fortune 500 brands.
-          </p>
-
-          <p class="">We can produce:</p>
-
-          <ul class="list-disc space-y-2 ml-[22px] py-2">
-            <li>Internal marketing, training, and inspirational videos</li>
-            <li>
-              Videos for an external audience, including proof-of-performance,
-              customer messaging, and crisis response
-            </li>
-            <li>
-              Videos to be utilized in investor communications and pitch decks
-            </li>
-            <li>Product announcements</li>
-            <li>Digital video campaigns</li>
-            <li>Aspirational videos</li>
-          </ul>
-
-          <p class="">
-            Trust these critical business video needs to the experts at
-          </p>
-          <p class="font-[Poppins] font-bold py-4">Media Advisory Experts</p>
-          <p class="font-[Poppins] px-12 pb-2">Contact us today:</p>
-          <a
-            href="mailto:contact@mediaadvisoryexperts.com"
-            class="lg:text-xl sm:text-sm font-semibold font-[Poppins] text-blue"
-            >contact@mediaadvisoryexperts.com</a
-          >
-          <br />
-          <i class="lg:text-xl">
-            Please indicate level of urgency in your initial message so that we
-            may best meet your needs.
-          </i>
+          <CorporateText />
+          <p class=""></p>
         </div>
         <div
           class="space-y-8 lg:justify-self-end md:justify-self-end sm:justify-self-center lg:pt-0 sm:pt-10"
@@ -113,38 +79,7 @@ import VideoproductionBanner from "../../assets/Videoproductionbanner.jpg";
         <div
           class="lg:text-xl md:text-base text-justify lg:order-last sm:order-first"
         >
-          <p>
-            <span class="font-[Poppins] font-bold">
-              Media Advisory Experts</span
-            > can produce videos for early litigation or pre-filing purposes,
-            case settlement, trials, and other steps of the legal process.
-            Day-in-the-life videos and settlement documentaries can be powerful
-            tools to accurately convey how clients, plaintiffs and defendants
-            have been impacted by traumatic, life-changing events. Firm founder
-            Mark Albert is a Peabody Award-winning former on-air CBS News
-            network correspondent, who has covered cases before the U.S. Supreme
-            Court and been honored with the Wade H. McCree ‘Award for Excellence
-            in Legal Journalism and the Advancement of Justice’ from the State
-            Bar of Michigan. He’s covered legal issues and frequently used
-            PACER, CMF/ECF as a member of the media for more than 20 years. So
-            Media Advisory EXperts knows the vast scope of cases where
-            compelling, emotional storytelling videos can resonate for litigants
-            across the legal landscape.
-          </p>
-          <p class="lg:text-2xl font-[Poppins] py-4">
-            Contact us to schedule a free consultation:
-          </p>
-          <a
-            href="mailto:contact@mediaadvisoryexperts.com"
-            class="lg:text-xl sm:text-sm font-semibold font-[Poppins] text-blue"
-            >contact@mediaadvisoryexperts.com</a
-          >
-          <br />
-          <i class="lg:text-xl">
-            Please indicate the status of your client’s case in your initial
-            message so that we may best meet your needs on an expedited basis,
-            if needed
-          </i>
+          <LegalVideoText />
         </div>
       </div>
     </div>

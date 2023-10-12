@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import SpeakingEngagements from "../assets/SpeakingEngagements.jpeg";
+import SpeakingEngagementText from "../layouts/MDX/About/SpeakingEngagementsText.md";
 ---
 
 <Fragment>
@@ -10,11 +11,5 @@ import SpeakingEngagements from "../assets/SpeakingEngagements.jpeg";
     SPEAKING ENGAGEMENTS
   </h2>
   <Image src={SpeakingEngagements} alt="image" />
-  <p class="lg:text-xl md:text-base text-justify">
-    <span class="font-[Poppins] font-bold"> Media Advisory Experts</span>
-     founder Mark Albert is available for speaking engagements. He’s given
-    tailored remarks on current events, media industry analysis, and insightful
-    travel tips gleaned from visiting 83 countries to government leaders,
-    private companie s, and while emceeing community events.
-  </p>
+  <SpeakingEngagementText />
 </Fragment>

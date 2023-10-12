@@ -1,7 +1,7 @@
 import { useForm, Controller } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { ContactUsSchema } from "./schema";
-import type { IFormContact } from "./types";
+import { ContactUsSchema } from "../pages/Contact/schema";
+import type { IFormContact } from "../pages/Contact/types";
 const defaultValues: IFormContact = {
   firstName: "",
   lastName: "",
@@ -82,11 +82,11 @@ const FormContact = () => {
 
   return (
     <section>
-      <h2 class="text-center lg:text-2xl md:text-2xl sm:text-2xl lg:pb-10 sm:pb-6 font-[Poppins] font-semibold">
+      <h2 className="text-center lg:text-2xl md:text-2xl sm:text-2xl lg:pb-10 sm:pb-6 font-[Poppins] font-semibold">
         SEND US A MESSAGE
       </h2>
       <form
-        className="container mx-auto w-full max-w-lg lg:px-0"
+        className=" w-full max-w-[100rem] lg:px-0"
         onSubmit={handleSubmit(saveHandler)}
       >
         <div className="flex flex-wrap -mx-3 mb-2">
