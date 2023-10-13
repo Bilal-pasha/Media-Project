@@ -1,0 +1,71 @@
+---
+import { Image, Heading } from "@utils/Components";
+import { JournalistImageData, JournalistLogoData } from "@utils/Data";
+import { ForJournalistText } from "@utils/images";
+---
+
+<Heading
+  Heading="FOR JOURNALISTS"
+  id="for-journalists"
+  style="sm:text-center lg:pt-20 lg:pb-10 sm:py-20"
+/>
+<section class="lg:container lg:mx-auto">
+  <div
+    class="flex lg:flex-row-reverse md:flex-col sm:flex-col lg:items-start sm:items-center lg:justify-evenly lg:py-10"
+  >
+    <div
+      class="flex flex-col gap-10 lg:py-2 lg:mx-[0px] lg:mr-[30px] md:mx-[40px] sm:mx-6 justify-end"
+    >
+      {
+        JournalistImageData.map((data) => {
+          return (
+            <Image
+              src={data.ImageSource}
+              alt="image"
+              width="400"
+              class="rounded-2xl hover:scale-[1.1] ease-in-out transition-all duration-[600ms]"
+            />
+          );
+        })
+      }
+    </div>
+    <div
+      class="lg:text-xl md:text-base lg:max-w-[40%] md:max-w-[80%] sm:max-w-[100%] text-justify lg:py-0 space-y-5 sm:py-10 md:py-20 lg:mx-[100px] md:mx-[40px] sm:mx-6"
+    >
+      <ForJournalistText />
+    </div>
+  </div>
+  <div class="lg:container lg:mx-auto lg:py-20 md:pt-0 sm:pt-0">
+    <div
+      class="flex flex-row justify-between lg:mx-[100px] md:mx-[40px] sm:mx-6"
+    >
+      {
+        JournalistLogoData.map((data) => {
+          return (
+            <div class="lg:max-w-[15%] sm:w-[20%]">
+              <a href={data.websiteLink}>
+                <Image
+                  src={data.ImageSource}
+                  alt="image"
+                  class="w-full h-full object-contain"
+                />
+              </a>
+            </div>
+          );
+        })
+      }
+    </div>
+  </div>
+</section>
+<div class="lg:container lg:mx-auto py-10 flex md:justify-center">
+  <div class="lg:mx-[100px] md:mx-[40px] sm:mx-6">
+    <p class="lg:text-xl sm:text-base">
+      Contact us to schedule an introductory consultation: <br />
+      <span class="lg:text-xl sm:text-sm font-semibold font-[Poppins] text-blue"
+        ><a href="mailto:contact@mediaadvisoryexperts.com"
+          >contact@mediaadvisoryexperts.com</a
+        >
+      </span>
+    </p>
+  </div>
+</div>

@@ -1,17 +1,22 @@
 ---
+import { Heading } from "@utils/Components";
 const month = new Date().getMonth().toString();
 const year = new Date().getFullYear().toString();
 ---
 
 <Fragment>
-  <h2
-    class="text-center text-2xl lg:pt-6 sm:pt-10 md:pb-0 sm:pb-6 font-[Poppins] font-semibold"
+  <div
+    class="lg:w-full md:w-full sm:pt-0 sm:py-12 lg:py-0 lg:pb-0 sm:w-full md:py-0 lg:px-0 md:px-6 sm:px-0 lg:border-r-[1px] border-lightgray"
   >
-    BOOK A FREE CONSULTATION
-  </h2>
-  <iframe
-    src=`https://calendly.com/mediaadvisoryexperts/30min?hide_landing_page_details=1&back=1&month=${year}-${month}`
-    frameborder="1"
-    class="h-fit lg:h-[800px] md:h-[170vh] sm:h-[200vh] object-contain w-full"
-  ></iframe>
+    <Heading
+      Heading="BOOK A FREE CONSULTATION"
+      id="free-consultation"
+      style="text-center lg:pt-12 sm:pt-10 md:pb-0 sm:pb-6"
+    />
+    <iframe
+      src=`https://calendly.com/mediaadvisoryexperts/30min?hide_landing_page_details=1&back=1&month=${year}-${month}`
+      frameborder="1"
+      class="h-fit lg:h-[800px] md:h-[170vh] sm:h-[200vh] object-contain w-full"
+    ></iframe>
+  </div>
 </Fragment>

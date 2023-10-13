@@ -1,38 +1,15 @@
 ---
 import {
-  SpeakingEngagement,
+  YoutubeVideo,
   BackGroundImage,
   HeadingText,
   MarkText,
   TeamSupport,
   HTML,
   Image,
+  NewsChannelLogos,
 } from "@utils/Components";
-import {
-  MarkPicture,
-  CBS,
-  Hearttelevision,
-  CNN,
-  KSTP,
-  KARE,
-  CBSsunday,
-  XYZ,
-  KFI,
-  KYW,
-  MEDI,
-  HoldingHands,
-  AboutPagebanner,
-  WCCO,
-  KNXV,
-  WInkTV,
-  TCL,
-  WJR,
-  wwl,
-  WSOCTV,
-  kstp,
-  CBSNEWSRADIO,
-  WUSA_9_logo,
-} from "@utils/images";
+import { MarkPicture, HoldingHands, AboutPagebanner } from "@utils/images";
 ---
 
 <HTML>
@@ -47,7 +24,6 @@ import {
       </div>
     </div>
   </section>
-  <!-- <section class="flex flex-col"></section> -->
   <section class="lg:container lg:mx-auto lg:pt-20 md:pt-20 sm:pt-20 space-y-2">
     <div
       class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-rows-1 gap-4 lg:mx-[100px] md:mx-[40px] md:py-10 sm:py-10 sm:mx-6 lg:pb-24"
@@ -65,177 +41,19 @@ import {
         <MarkText />
       </div>
     </div>
+
     <div class="sm:py-10 border-y-2 border-[#807f7f7d]">
-      <h2 class="text-3xl font-semibold font-[Poppins] text-center lg:pb-8">
-        AS SEEN ON
-      </h2>
-
+      <NewsChannelLogos />
+      <YoutubeVideo />
       <div
-        class="flex lg:flex-row md:flex-row lg:mx-[100px] md:mx-[40px] sm:mx-6 sm:flex-col lg:justify-evenly lg:gap-8 md:gap-4 md:pb-0 md:justify-center md:items-center sm:items-center sm:gap-10 lg:pb-10 lg:pt-0 sm:pt-10 sm:pb-0"
+        class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-rows-1 gap-4 lg:mx-[100px] md:mx-[40px] sm:mx-6 lg:pt-20 md:pt-20 sm:pt-20 lg:place-items-end"
       >
-        <a
-          href="https://www.cbsnews.com/"
-          class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
-        >
-          <Image src={CBS} alt="about pic" />
-        </a>
-
-        <a
-          href="https://edition.cnn.com/"
-          class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
-        >
-          <Image src={CNN} alt="about pic" />
-        </a>
-
-        <a
-          href="https://www.hearst.com/"
-          class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
-        >
-          <Image src={Hearttelevision} alt="about pic" />
-        </a>
-
-        <a
-          href="https://abc.com/"
-          class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
-        >
-          <Image src={KSTP} alt="about pic" />
-        </a>
-
-        <a
-          href="https://www.kare11.com/"
-          class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
-        >
-          <Image src={KARE} alt="about pic" />
-        </a>
-
-        <a
-          href="https://www.cbsnews.com/sunday-morning/"
-          class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
-        >
-          <Image src={CBSsunday} alt="ab" />
-        </a>
-
-        <a
-          href="https://www.wxyz.com/"
-          class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
-        >
-          <Image src={XYZ} alt="about pic" />
-        </a>
-
-        <a
-          href="https://kfiam640.iheart.com/"
-          class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
-        >
-          <Image src={KFI} alt="about pic" />
-        </a>
-
-        <a
-          href="https://www.audacy.com/kywnewsradio"
-          class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
-        >
-          <Image src={KYW} alt="about pic" />
-        </a>
-
-        <a
-          href="https://www.medi1tv.com/"
-          class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
-        >
-          <Image src={MEDI} alt="about pic" />
-        </a>
-      </div>
-      <div
-        class="flex lg:flex-row md:flex-row lg:mx-[100px] md:mx-[40px] sm:mx-6 sm:flex-col lg:justify-evenly lg:gap-8 md:gap-4 md:pb-0 md:justify-center md:items-center sm:items-center sm:gap-10 lg:pb-0 lg:pt-0 sm:pt-10 sm:pb-16"
-      >
-        <a
-          href="https://www.wusa9.com/"
-          class="lg:w-[6%] md:w-[7%] sm:w-[25%] h-auto"
-        >
-          <Image src={WUSA_9_logo} alt="about pic" />
-        </a>
-
-        <a
-          href="https://www.cbsnews.com/radio/"
-          class="lg:w-[6%] md:w-[7%] sm:w-[25%] h-auto"
-        >
-          <Image src={CBSNEWSRADIO} alt="about pic" />
-        </a>
-
-        <a
-          href="https://kstp.com/"
-          class="lg:w-[6%] md:w-[7%] sm:w-[25%] h-auto"
-        >
-          <Image src={kstp} alt="about pic" />
-        </a>
-        <a
-          href="https://www.wwltv.com/"
-          class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
-        >
-          <Image src={wwl} alt="about pic" />
-        </a>
-
-        <a
-          href="https://www.wjr.com/"
-          class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
-        >
-          <Image src={WJR} alt="ab" />
-        </a>
-        <a
-          href="https://www.wxyz.com/"
-          class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
-        >
-          <Image src={TCL} alt="about pic" />
-        </a>
-        <a
-          href="https://winknews.com/"
-          class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
-        >
-          <Image src={WInkTV} alt="about pic" />
-        </a>
-        <a
-          href="https://www.abc15.com/"
-          class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
-        >
-          <Image src={KNXV} alt="about pic" />
-        </a>
-        <a
-          href="https://www.audacy.com/wccoradio"
-          class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
-        >
-          <Image src={WCCO} alt="about pic" />
-        </a>
-        <a
-          href="https://www.wsoctv.com/"
-          class="lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto"
-        >
-          <Image src={WSOCTV} alt="about pic" />
-        </a>
-      </div>
-    </div>
-    <div
-      class="grid lg:grid-cols-9 md:grid-cols-2 sm:grid-rows-1 lg:mx-[100px] md:mx-[40px] sm:mx-6 lg:justify-between lg:py-16"
-    >
-      <div class="col-span-4">
-        <SpeakingEngagement />
-      </div>
-      <div class="col-span-1"></div>
-      <div class="col-span-4 pt-14">
-        <iframe
-          class="embed-responsive-item lg:container lg:mx-auto bottom-0 left-0 right-0 top-0 lg:h-[40vh] lg:w-full md:h-[100vh] md:w-full sm:h-[30vh] sm:w-full"
-          src="https://www.youtube.com/embed/-PALozh28ZI?si=yajMEwDL7N_6H4XC"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-      </div>
-    </div>
-    <div
-      class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-rows-1 gap-4 lg:mx-[100px] md:mx-[40px] sm:mx-6 lg:pt-20 md:pt-20 sm:pt-20 lg:place-items-end"
-    >
-      <div class="lg:py-20 md:py-10 text-justify">
-        <TeamSupport />
-      </div>
-      <div class="flex justify-end pb-10">
-        <Image src={HoldingHands} alt="mark pic" class="h-full w-full" />
+        <div class="lg:py-20 md:py-10 text-justify">
+          <TeamSupport />
+        </div>
+        <div class="flex justify-end pb-10">
+          <Image src={HoldingHands} alt="mark pic" class="h-full w-full" />
+        </div>
       </div>
     </div>
   </section>

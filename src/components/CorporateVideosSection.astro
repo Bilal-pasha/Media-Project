@@ -1,0 +1,36 @@
+---
+import { CorporateVideosImages } from "@utils/Data";
+import { Image, CorporateText, Heading } from "@utils/Components";
+---
+
+<div id="CORPORATE"></div>
+<div class="lg:container lg:mx-auto lg:pt-20 md:pt-0 sm:pt-20">
+  <Heading
+    Heading="CORPORATE VIDEOS"
+    id="corporate-videos"
+    style="lg:pt-0 md:pt-16 lg:pb-24 sm:pb-10 text-center"
+  />
+  <div
+    class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-rows-1 gap-4 lg:mx-[100px] md:mx-[40px] sm:mx-6"
+  >
+    <div class="lg:text-xl md:text-base text-justify">
+      <CorporateText />
+    </div>
+    <div
+      class="space-y-8 lg:justify-self-end md:justify-self-end sm:justify-self-center lg:pt-0 sm:pt-10"
+    >
+      {
+        CorporateVideosImages.map((data) => {
+          return (
+            <Image
+              src={data.ImageSource}
+              alt="image"
+              width="400"
+              class="rounded-2xl hover:lg:scale-[1.1] ease-in-out transition-all duration-[600ms]"
+            />
+          );
+        })
+      }
+    </div>
+  </div>
+</div>

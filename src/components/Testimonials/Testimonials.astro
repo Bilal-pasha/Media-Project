@@ -3,6 +3,7 @@ import { initializeApp } from "firebase/app";
 import { getFirestore, collection, getDocs } from "firebase/firestore";
 // import CarouselSlider from "../Testimonials/CarouselSlider.jsx";
 import AliceCarousel from "./AliceCarousel.astro";
+import { Heading } from "@utils/Components";
 
 const firebaseConfig = {
   apiKey: "AIzaSyBq8-RG6mhrMLiziMwTd1Sv67GbJOi_VrY",
@@ -34,10 +35,12 @@ const data = await getDocs(colRef)
 <Fragment>
   <section class="lg:py-20 md:py-0 sm:pt-20 sm:pb-0 sm:my-0 lg:pb-10 lg:pt-10">
     <div class="lg:container mx-auto">
-      <div
-        class="font-[Poppins] font-black lg:text-4xl sm:text-3xl text-center"
-      >
-        <h2 class="pb-8">Testimonials</h2>
+      <div>
+        <Heading
+          Heading="Testimonials"
+          style="text-center pb-5"
+          id="testimonials"
+        />
       </div>
       <AliceCarousel data={data} />
     </div>

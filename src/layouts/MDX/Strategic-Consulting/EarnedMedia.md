@@ -6,7 +6,7 @@
             </p>
             <ul class="list-disc space-y-4 ml-6">
               <li>
-                De signed a database of media contacts to ensure the right
+                Designed a database of media contacts to ensure the right
                 target audience hears your message
               </li>
               <li>

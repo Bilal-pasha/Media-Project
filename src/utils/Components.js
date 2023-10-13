@@ -12,6 +12,14 @@ import TeamSupport from "@layouts/MDX/About/TeamSupport.md";
 import { Image } from "astro:assets";
 import CorporateText from "@layouts/MDX/VideoProduction/CorporateText.md";
 import LegalVideoText from "@layouts/MDX/VideoProduction/LegaVideoText.md";
+import ServicesBoxes from "@components/ServicesBoxes.astro";
+import YoutubeVideo from "@components/YoutubeVideo.astro";
+import NewsChannelLogos from "@components/NewsChannelLogos.astro";
+import LeadersSection from "@components/LeadersSection.astro";
+import JournalistSection from "@components/JournalistSection.astro";
+import Heading from "@components/Heading.astro";
+import CorporateVideosSection from "@components/CorporateVideosSection.astro";
+import LegalVideoSection from "@components/LegalVideosSection.astro";
 
 export {
   Testinomials,
@@ -28,4 +36,12 @@ export {
   Image,
   CorporateText,
   LegalVideoText,
+  ServicesBoxes,
+  YoutubeVideo,
+  NewsChannelLogos,
+  LeadersSection,
+  JournalistSection,
+  Heading,
+  CorporateVideosSection,
+  LegalVideoSection,
 };

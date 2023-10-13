@@ -1,0 +1,10 @@
+---
+const { Heading, id, style } = Astro.props;
+---
+
+<h2
+  class=`lg:text-4xl md:text-2xl sm:text-2xl font-[Poppins] font-black ${style}`
+  id={id}
+>
+  {Heading}
+</h2>
