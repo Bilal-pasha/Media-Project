@@ -1,9 +1,10 @@
 import Testinomials from "@components/Testimonials/Testimonials.astro";
 import HTML from "@layouts/HTML/HTML.astro";
+import Home from "@pages/Home/index.astro";
 import FormContact from "@components/FormContact";
 import FreeConsultation from "@components/FreeConsultation.astro";
 import HomeHeading from "@layouts/MDX/Home/home.md";
-import Movie from "@components/Movie/Movie.jsx";
+import Movie from "@components/Movie/Movie.astro";
 import SpeakingEngagement from "@components/SpeakingEngagement.astro";
 import BackGroundImage from "@components/BackGroundImage.astro";
 import HeadingText from "@layouts/MDX/About/About.md";
@@ -20,10 +21,20 @@ import JournalistSection from "@components/JournalistSection.astro";
 import Heading from "@components/Heading.astro";
 import CorporateVideosSection from "@components/CorporateVideosSection.astro";
 import LegalVideoSection from "@components/LegalVideosSection.astro";
+import DefaultLayout from "@layouts/defaultLayout/defaultLayout.astro";
+import Footer from "@components/Footer.astro";
+import Navbar from "@components/CustomNavbar/CustomNavbar.astro";
+import Accordian from "@components/CustomNavbar/Accordian/Accordian.astro";
+import Icon from "@components/CustomNavbar/Hamburger.jsx";
 
 export {
+  Footer,
+  Navbar,
+  Icon,
+  DefaultLayout,
   Testinomials,
   HTML,
+  Home,
   FormContact,
   FreeConsultation,
   HomeHeading,
@@ -44,4 +55,5 @@ export {
   Heading,
   CorporateVideosSection,
   LegalVideoSection,
+  Accordian,
 };

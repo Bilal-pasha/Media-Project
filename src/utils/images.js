@@ -52,10 +52,12 @@ import EarnedMedia from "@layouts/MDX/Strategic-Consulting/EarnedMedia.md";
 import CrisisCommunication from "@layouts/MDX/Strategic-Consulting/CrisisCommunication.md";
 import NewIndustryInsight from "@layouts/MDX/Strategic-Consulting/NewIndustryInsight.md";
 import MultiMediaText from "@layouts/MDX/Strategic-Consulting/MultiMedia.md";
+import MainLogo from "@assets/logo2.png";
 export {
   VideoProduction,
   MediaTraining,
   Consulting,
+  MainLogo,
   MarkPicture,
   CBS,
   Hearttelevision,

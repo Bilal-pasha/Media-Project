@@ -1,6 +1,6 @@
 <p>
               With new digital media brands created all the time and legacy
-              properties reinventing themselves or fading , <span
+              properties reinventing themselves or fading,<span
                 class="font-[Poppins] font-bold"
               >
                 Media Advisory Experts

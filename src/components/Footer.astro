@@ -1,6 +1,6 @@
 ---
-import MaxLogo from "../../src/assets/Logo2.png";
-import { Image } from "astro:assets";
+import { MainLogo } from "@utils/images";
+import { Image } from "@utils/Components";
 ---
 
 <section class="text-black border-t-[0.1px] border-lightgray">
@@ -12,7 +12,7 @@ import { Image } from "astro:assets";
     >
       <a href="/"
         ><Image
-          src={MaxLogo}
+          src={MainLogo}
           alt="MaxLogo"
           height="20"
           width="120"

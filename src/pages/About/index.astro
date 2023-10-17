@@ -26,10 +26,10 @@ import { MarkPicture, HoldingHands, AboutPagebanner } from "@utils/images";
   </section>
   <section class="lg:container lg:mx-auto lg:pt-20 md:pt-20 sm:pt-20 space-y-2">
     <div
-      class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-rows-1 gap-4 lg:mx-[100px] md:mx-[40px] md:py-10 sm:py-10 sm:mx-6 lg:pb-24"
+      class="grid lg:grid-cols-8 md:grid-cols-2 sm:grid-rows-1 gap-4 lg:mx-[100px] md:mx-[40px] md:py-10 sm:py-10 sm:mx-6 lg:pb-24"
     >
       <div
-        class="lg:items-start col-span-2 sm:flex sm:items-center sm:justify-center lg:max-w-[25rem] sm:max-w-full lg:mt-[100px]"
+        class="lg:items-start col-span-3 sm:flex sm:items-center sm:justify-center lg:max-w-[25rem] sm:max-w-full lg:mt-[100px]"
       >
         <Image
           src={MarkPicture}
@@ -37,7 +37,8 @@ import { MarkPicture, HoldingHands, AboutPagebanner } from "@utils/images";
           class="rounded-lg lg:w-full lg:h-auto md:w-[80%] sm:w-full sm:h-auto"
         />
       </div>
-      <div class="col-span-2 max-w-[80rem] space-y-5 text-justify">
+      <div class="col-span-1 lg:block md:hidden sm:hidden"></div>
+      <div class="col-span-4 max-w-[80rem] space-y-5 text-justify">
         <MarkText />
       </div>
     </div>
@@ -46,12 +47,14 @@ import { MarkPicture, HoldingHands, AboutPagebanner } from "@utils/images";
       <NewsChannelLogos />
       <YoutubeVideo />
       <div
-        class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-rows-1 gap-4 lg:mx-[100px] md:mx-[40px] sm:mx-6 lg:pt-20 md:pt-20 sm:pt-20 lg:place-items-end"
+        class="grid lg:grid-cols-8 md:grid-cols-2 sm:grid-rows-1 gap-4 lg:mx-[100px] md:mx-[40px] sm:mx-6 lg:pt-20 md:pt-20 sm:pt-20 lg:place-items-end"
       >
-        <div class="lg:py-20 md:py-10 text-justify">
+        <div class="col-span-4 lg:py-20 md:py-10 text-justify">
           <TeamSupport />
         </div>
-        <div class="flex justify-end pb-10">
+        <div class="col-span-1 lg:block md:hidden sm:hidden"></div>
+
+        <div class="col-span-3 flex justify-end pb-10">
           <Image src={HoldingHands} alt="mark pic" class="h-full w-full" />
         </div>
       </div>

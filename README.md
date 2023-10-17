@@ -52,14 +52,3 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-
-## Development
-
-Following are the guides for running project in development
-
-- Backend
-  - Switch to folder: `cd tw-backend`
-  - Follow backend [guide](https://github.com/Techwards/tw-website/blob/main/tw-backend/README.md#run-project)
-- Frontend
-  - Switch to folder: `cd tw-frontend`
-  - Follow frontend [guide](https://github.com/Techwards/tw-website/blob/main/tw-frontend/README.md#project-setup)

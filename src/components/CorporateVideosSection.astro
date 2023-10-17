@@ -11,13 +11,14 @@ import { Image, CorporateText, Heading } from "@utils/Components";
     style="lg:pt-0 md:pt-16 lg:pb-24 sm:pb-10 text-center"
   />
   <div
-    class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-rows-1 gap-4 lg:mx-[100px] md:mx-[40px] sm:mx-6"
+    class="grid lg:grid-cols-8 md:grid-cols-2 sm:grid-rows-1 gap-4 lg:mx-[100px] md:mx-[40px] sm:mx-6"
   >
-    <div class="lg:text-xl md:text-base text-justify">
+    <div class="col-span-4 lg:text-xl md:text-base text-justify">
       <CorporateText />
     </div>
+    <div class="col-span-1 lg:block md:hidden sm:hidden"></div>
     <div
-      class="space-y-8 lg:justify-self-end md:justify-self-end sm:justify-self-center lg:pt-0 sm:pt-10"
+      class="col-span-3 space-y-8 lg:justify-self-end md:justify-self-end sm:justify-self-center lg:pt-0 sm:pt-10"
     >
       {
         CorporateVideosImages.map((data) => {

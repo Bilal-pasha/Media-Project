@@ -81,7 +81,7 @@ const FormContact = () => {
   };
 
   return (
-    <div className="lg:container lg:mx-auto h-auto lg:w-[90%] md:w-full sm:w-full lg:py-6 md:py-10 sm:py-5 space-y-9 lg:px-6 md:px-4 sm:px-4">
+    <div className="lg:container lg:mx-auto h-auto lg:w-full md:w-full sm:w-full lg:py-6 md:py-10 sm:py-5 space-y-9 lg:px-6 md:px-4 sm:px-4">
       <div className="lg:mx-[200px] md:mx-10 sm:mx-3">
         <section>
           <h2 className="text-center lg:text-2xl md:text-2xl sm:text-2xl lg:pb-10 sm:pb-6 font-[Poppins] font-semibold">
@@ -104,7 +104,7 @@ const FormContact = () => {
                       className="appearance-none block w-full text-gray-700 border border-[#d8d4d4] rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                       id="grid-first-name"
                       type="text"
-                      placeholder="Enter your First Name"
+                      placeholder="First Name"
                       value={value}
                       onChange={onChange}
                       onBlur={onBlur}
@@ -129,7 +129,7 @@ const FormContact = () => {
                       className="appearance-none block w-full text-gray-700 border border-[#d8d4d4] rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                       id="grid-last-name"
                       type="text"
-                      placeholder="Enter your Last Name"
+                      placeholder="Last Name"
                       value={value}
                       onChange={onChange}
                       onBlur={onBlur}
@@ -156,7 +156,7 @@ const FormContact = () => {
                       className="appearance-none block w-full text-gray-700 border border-[#d8d4d4] rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                       id="email"
                       type="email"
-                      placeholder="Enter your Email"
+                      placeholder="Email"
                       value={value}
                       onChange={onChange}
                       onBlur={onBlur}

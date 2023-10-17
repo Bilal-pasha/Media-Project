@@ -1,7 +1,6 @@
 ---
 import {
   Testinomials,
-  HTML,
   FormContact,
   FreeConsultation,
   Movie,
@@ -9,14 +8,12 @@ import {
 } from "@utils/Components";
 ---
 
-<HTML>
-  <Movie />
-  <ServicesBoxes />
-  <Testinomials />
-  <div
-    class="lg:mx-0 md:mx-10 sm:mx-3 lg:py-0 sm:py-0 sm:pb-20 flex flex-col items-center"
-  >
-    <FreeConsultation />
-    <FormContact client:visible />
-  </div>
-</HTML>
+<Movie />
+<ServicesBoxes />
+<Testinomials />
+<div
+  class="lg:mx-0 md:mx-10 sm:mx-3 lg:py-0 sm:py-0 sm:pb-20 flex flex-col items-center"
+>
+  <FreeConsultation />
+  <FormContact client:visible />
+</div>

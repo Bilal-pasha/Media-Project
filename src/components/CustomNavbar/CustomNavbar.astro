@@ -1,10 +1,8 @@
 ---
-// import { RxHamburgerMenu } from "react-icons/rx";
-import { Image } from "astro:assets";
-// import logo from "../../assets/Logo.png";
-import logo2 from "../../assets/Logo2.png";
-import Icon from "../../components/CustomNavbar/Hamburger.jsx";
-import Accordian from "./Accordian/Accordian.astro";
+import { Image, Icon } from "@utils/Components";
+import { MainLogo } from "@utils/images";
+import Accordion from "../CustomNavbar/Accordian/accordion";
+import "../CustomNavbar/Accordian/accordion.css";
 ---
 
 <Fragment>
@@ -16,12 +14,13 @@ import Accordian from "./Accordian/Accordian.astro";
       for="check"
       class="lg:hidden md:block sm:block text-4xl cursor-pointer"
     >
-      <Icon client:only />
+      <Icon client:visible />
     </label>
+    <!-- <HamburgerIcon /> -->
     <a href="/" class="block">
       <div class="flex flex-row items-center space-x-1 pl-4 pr-0">
         <Image
-          src={logo2}
+          src={MainLogo}
           alt="logo"
           height="20"
           width="120"
@@ -48,7 +47,7 @@ import Accordian from "./Accordian/Accordian.astro";
         class="lg:border-none md:border-b-[1px] lg:py-0 md:py-4 sm:py-4 md:border-[#cdc6c6] sm:border-b-[1px] sm:border-[#cdc6c6]"
       >
         <div class="relative">
-          <button class="peer px-2 lg:text-black md:text-black">
+          <button class="peer px-2 lg:py-2 lg:text-black md:text-black">
             <a
               class="px-2 mt-2 font-semibold text-gray-900 rounded-lg hover:border-blue hover:text-blue dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
               href="/Video_production">VIDEO PRODUCTION</a
@@ -133,7 +132,7 @@ import Accordian from "./Accordian/Accordian.astro";
         class="lg:border-none md:border-b-[1px] md:border-[#cdc6c6] lg:py-0 md:py-4 sm:py-4 sm:border-b-[1px] sm:border-[#cdc6c6]"
       >
         <div class="relative">
-          <button class="peer lg:text-black md:text-black"
+          <button class="peer lg:py-2 lg:text-black md:text-black"
             ><a
               class="px-2 mt-2 font-semibold text-gray-900 rounded-lg hover:border-blue hover:text-blue dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
               href="/Contact">CONTACT US</a
@@ -144,20 +143,163 @@ import Accordian from "./Accordian/Accordian.astro";
                      w-[150px]
                      flex-col bg-white drop-shadow-lg text-black z-10 text-xs"
           >
-            <a class="px-5 py-3 hover:text-blue" href="/Contact/#contact-items"
+            <a class="px-5 py-3 hover:text-blue" href="/Contact/#send-message"
               >SEND US A MESSAGE</a
             >
-            <a class="px-5 py-3 hover:text-blue" href="/Contact/#contact-items"
-              >BOOK A FREE CONSULTATION</a
+            <a
+              class="px-5 py-3 hover:text-blue"
+              href="/Contact/#free-consultation">BOOK A FREE CONSULTATION</a
             >
           </div>
         </div>
       </li>
     </ul>
+
     <div
       class="md:block md:peer-checked:left-[-100%] md:fixed md:left-0 md:transition-all md:duration-[900ms] md:top-[70px] md:h-[100vh] md:bg-[#fffffff2] w-full md:py-0 md:space-y-10 sm:block sm:peer-checked:left-[-100%] sm:fixed sm:left-0 sm:transition-all sm:duration-[900ms] sm:top-[70px] sm:h-[100vh] sm:bg-[#fffffff2] sm:py-0 sm:space-y-10"
     >
-      <Accordian />
+      <div class="accordion-container">
+        <a href="/About" class=""
+          ><div
+            class="border-t-[0.1px] border-lightgray hover:text-blue font-medium text-[14px] text-black py-[10px] px-[32px]"
+          >
+            ABOUT
+          </div></a
+        >
+        <div class="ac">
+          <h2 class="ac-header">
+            <button type="button" class="ac-trigger hover:text-blue">
+              VIDEO PRODUCTION</button
+            >
+          </h2>
+          <div class="ac-panel">
+            <a href="/Video_production#CORPORATE" id="HandleCheck">
+              <p
+                class="ac-text hover:text-blue cursor-pointer border-y-[0.1px] border-lightgray"
+              >
+                CORPORATE VIDEOS
+              </p></a
+            >
+            <a href="/Video_production/#Legal" id="HandleCheck2">
+              <p class="ac-text hover:text-blue">LEGAL VIDEOS</p></a
+            >
+          </div>
+        </div>
+
+        <div class="ac">
+          <h2 class="ac-header">
+            <button type="button" class="ac-trigger hover:text-blue">
+              MEDIA TRAINING/COACHING</button
+            >
+          </h2>
+          <div class="ac-panel">
+            <a href="/Media_training#for-leaders" id="HandleCheck3"
+              ><p
+                class="ac-text hover:text-blue border-y-[0.1px] border-lightgray"
+              >
+                FOR LEADERS
+              </p></a
+            >
+            <a href="/Media_training/#for-journalists" id="HandleCheck4">
+              <p class="ac-text hover:text-blue">FOR JOURNALISTS</p></a
+            >
+          </div>
+        </div>
+
+        <div class="ac">
+          <h2 class="ac-header">
+            <button type="button" class="ac-trigger hover:text-blue">
+              STRATEGIC CONSULTING</button
+            >
+          </h2>
+          <div class="ac-panel">
+            <a href="/Strategic_consulting/#Earned" id="HandleCheck5">
+              <p
+                class="ac-text hover:text-blue border-y-[0.1px] border-lightgray"
+              >
+                EARNED MEDIA
+              </p></a
+            >
+            <a href="/Strategic_consulting#crisis" id="HandleCheck6">
+              <p class="ac-text hover:text-blue">CRISIS COMMUNICATIONS</p></a
+            >
+            <a href="/Strategic_consulting/#new-industry" id="HandleCheck7">
+              <p
+                class="ac-text hover:text-blue border-y-[0.1px] border-lightgray"
+              >
+                NEW INDUSTRY INSIGHT
+              </p></a
+            >
+            <a href="/Strategic_consulting#multi-media" id="HandleCheck8">
+              <p class="ac-text hover:text-blue">MULTI-MEDIA</p></a
+            >
+          </div>
+        </div>
+        <div class="ac">
+          <h2 class="ac-header border-b-[0.1px] border-lightgray">
+            <button type="button" class="ac-trigger hover:text-blue"
+              >CONTACT US</button
+            >
+          </h2>
+          <div class="ac-panel">
+            <a href="/Contact/#send-message" id="HandleCheck9">
+              <p class="ac-text hover:text-blue">SEND US A MESSAGE</p></a
+            >
+            <a href="/Contact" id="HandleCheck10">
+              <p
+                class="ac-text hover:text-blue border-y-[0.1px] border-lightgray"
+              >
+                BOOK A FREE CONSULTATION
+              </p></a
+            >
+          </div>
+        </div>
+      </div>
+      <script>
+        // let input = document.getElementById("check") as HTMLInputElement;
+        // const Handle = document.getElementById("HandleCheck");
+        // Handle.addEventListener("click", () => {
+        //   input.checked = true;
+        // });
+        // const Handle2 = document.getElementById("HandleCheck2");
+        // Handle2.addEventListener("click", () => {
+        //   input.checked = true;
+        // });
+        // const Handle3 = document.getElementById("HandleCheck3");
+        // Handle3.addEventListener("click", () => {
+        //   input.checked = true;
+        // });
+        // const Handle4 = document.getElementById("HandleCheck4");
+        // Handle4.addEventListener("click", () => {
+        //   input.checked = true;
+        // });
+        // const Handle5 = document.getElementById("HandleCheck5");
+        // Handle5.addEventListener("click", () => {
+        //   input.checked = true;
+        // });
+        // const Handle6 = document.getElementById("HandleCheck6");
+        // Handle6.addEventListener("click", () => {
+        //   input.checked = true;
+        // });
+        // const Handle7 = document.getElementById("HandleCheck7");
+        // Handle7.addEventListener("click", () => {
+        //   input.checked = true;
+        // });
+        // const Handle8 = document.getElementById("HandleCheck8");
+        // Handle8.addEventListener("click", () => {
+        //   input.checked = true;
+        // });
+        // const Handle9 = document.getElementById("HandleCheck9");
+        // Handle9.addEventListener("click", () => {
+        //   input.checked = true;
+        // });
+        // const Handle10 = document.getElementById("HandleCheck10");
+        // Handle10.addEventListener("click", () => {
+        //   input.checked = true;
+        // });
+        new Accordion(".accordion-container", { duration: 400 });
+      </script>
+      <!-- <Accordian /> -->
     </div>
   </nav>
 </Fragment>
