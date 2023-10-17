@@ -4,7 +4,10 @@ import "@splidejs/splide/css";
 const { data } = Astro.props;
 ---
 
-<section class="splide testimonial relative" id="second-slider">
+<section
+  class="splide testimonial relative lg:w-[70%] w-full"
+  id="second-slider"
+>
   <div class="splide__track overflow-hidden relative z-0 select-none">
     <ul class="splide__list flex h-full m-0 p-0">
       {
@@ -18,7 +21,8 @@ const { data } = Astro.props;
 
 <script>
   import Splide from "@splidejs/splide";
-  var btnClasses = "lg:text-6xl sm:text-xl absolute z-[1] cursor-pointer";
+  var btnClasses =
+    "lg:text-6xl  sm:text-4xl sm:text-4xl absolute z-[1] cursor-pointer";
   const prebtn = "sm:left-[0px] lg:left-[-5px]	 sm:top-[50.5%] lg:top-[50%]";
   const nextbtn = "sm:right-[0px] lg:left-[px] sm:top-[50%]  lg:top-[51%]	";
   var splide = new Splide("#second-slider", {

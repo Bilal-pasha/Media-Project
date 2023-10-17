@@ -1,21 +1,10 @@
 ---
-import { initializeApp } from "firebase/app";
 import { getFirestore, collection, getDocs } from "firebase/firestore";
-// import CarouselSlider from "../Testimonials/CarouselSlider.jsx";
 import AliceCarousel from "./AliceCarousel.astro";
 import { Heading } from "@utils/Components";
+import { app } from "@utils/Components";
 
-const firebaseConfig = {
-  apiKey: "AIzaSyBq8-RG6mhrMLiziMwTd1Sv67GbJOi_VrY",
-  authDomain: "composed-world-393911.firebaseapp.com",
-  projectId: "composed-world-393911",
-  storageBucket: "composed-world-393911.appspot.com",
-  messagingSenderId: "690324972945",
-  appId: "1:690324972945:web:d6c8b66ff2cffd3745e630",
-  measurementId: "G-7PRP65ENKB",
-};
-initializeApp(firebaseConfig);
-const db = getFirestore();
+const db = getFirestore(app);
 const colRef = collection(db, "testimonials");
 const data = await getDocs(colRef)
   .then((review) => {
@@ -33,7 +22,7 @@ const data = await getDocs(colRef)
 
 <Fragment>
   <section class="lg:py-20 md:py-0 sm:pt-0 sm:pb-0 sm:my-0 lg:pb-10 lg:pt-10">
-    <div class="lg:container mx-auto">
+    <div class="lg:container mx-auto flex flex-col justify-center items-center">
       <div>
         <Heading
           Heading="Testimonials"
