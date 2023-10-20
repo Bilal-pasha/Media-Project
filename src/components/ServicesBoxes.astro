@@ -20,12 +20,12 @@ import { Boxes } from "@utils/Data";
   </div>
 
   <div
-    class="flex lg:flex-row sm:px-[24px] lg:justify-evenly md:flex-col md:justify-center md:items-center sm:items-center sm:flex-col md:space-y-12 lg:py-10 md:py-10 sm:py-8 sm:space-y-16 lg:space-y-0"
+    class="flex lg:flex-row sm:px-[24px] xl:justify-center xl:space-x-24 lg:justify-evenly md:flex-col md:justify-center md:items-center sm:items-center sm:flex-col md:space-y-12 lg:py-10 md:py-10 sm:py-8 sm:space-y-16 lg:space-y-0"
   >
     {
       Boxes.map((box) => {
         return (
-          <div class="md:block lg:max-w-sm sm:max-w-[100%] md:max-w-sm rounded overflow-hidden shadow-xl cursor-pointer hover:text-blue hover:scale-[1.1] ease-in-out transition-all duration-[600ms]">
+          <div class="md:block xl:max-w-[26rem] lg:max-w-[16rem] sm:max-w-[100%] md:max-w-sm rounded overflow-hidden shadow-xl cursor-pointer hover:text-blue hover:scale-[1.1] ease-in-out transition-all duration-[600ms]">
             <a href={box.link}>
               <Image
                 src={box.ImageSource}

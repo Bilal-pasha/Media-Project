@@ -4,11 +4,12 @@
   width: auto;
 }
 .slider_ThreeBoxes img {
-  width: 40%;
-  height: auto;
+  height: 80px;
+  object-fit: contain;
 }
 .splide__pagination {
-  bottom: -30px !important;
+  /* bottom: -39px !important; */
+  top: 138px !important;
 }
 /* .splide__arrow img {
   height: 100px;

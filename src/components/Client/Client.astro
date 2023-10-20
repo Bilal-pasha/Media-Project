@@ -2,7 +2,7 @@
 import "./Client.css";
 import { Logo1, Logo2, Logo3, University } from "@utils/images";
 import { Image } from "@utils/Components";
-import ClientLogo from "../../assets/ClientFirstLogo.ico";
+import ClientLogo from "../../assets/ClientFirstLogo.webp";
 ---
 
 <section class="border-y border-semigray pt-8 pb-14">
@@ -19,7 +19,7 @@ import ClientLogo from "../../assets/ClientFirstLogo.ico";
     <div class="splide__track lg:pt-10 lg:pb-0 sm:pb-16 sm:pt-4">
       <ul class="splide__list space-x-6">
         <li class="splide__slide slider_ThreeBoxes">
-          <Image src={ClientLogo} alt="" height="40" width="60" />
+          <Image src={ClientLogo} alt="" />
         </li>
 
         <li class="splide__slide slider_ThreeBoxes">
@@ -29,7 +29,7 @@ import ClientLogo from "../../assets/ClientFirstLogo.ico";
           <Image src={University} alt="" />
         </li>
         <li class="splide__slide slider_ThreeBoxes">
-          <Image src={ClientLogo} alt="" height="40" width="60" />
+          <Image src={ClientLogo} alt="" />
         </li>
 
         <li class="splide__slide slider_ThreeBoxes">
@@ -71,7 +71,13 @@ import ClientLogo from "../../assets/ClientFirstLogo.ico";
         1400: {
           perPage: 4,
         },
-        900: {
+        1000: {
+          perPage: 3,
+        },
+        800: {
+          perPage: 2,
+        },
+        600: {
           perPage: 1,
         },
       },
