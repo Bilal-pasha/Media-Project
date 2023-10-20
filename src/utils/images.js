@@ -29,7 +29,7 @@ import CorporateVideos3 from "@assets/CorporateVideos3.jpg";
 import SupremeCourt from "@assets/SupremeCourt.jpeg";
 import VideoproductionBanner from "@assets/Videoproductionbanner.jpg";
 import MediaTraningBanner from "@assets/MediaTraningBanner.jpeg";
-import MarkinDetroit from "@assets/MarkinDetroit.jpeg";
+import MarkinDetroit from "@assets/MarkinDetroit.jpg";
 import MarkinAirforce from "@assets/MarkinAirForce.jpg";
 import MarkinSheriff from "@assets/MarkInterviewSheriff.jpeg";
 import MarkTeaching1 from "@assets/MarkAlbertTeaching1.jpg";
@@ -53,6 +53,11 @@ import CrisisCommunication from "@layouts/MDX/Strategic-Consulting/CrisisCommuni
 import NewIndustryInsight from "@layouts/MDX/Strategic-Consulting/NewIndustryInsight.md";
 import MultiMediaText from "@layouts/MDX/Strategic-Consulting/MultiMedia.md";
 import MainLogo from "@assets/logo2.png";
+import AlArabiaLogo from "@assets/news-channel-logos/AlArabiyalogo.png";
+import WBTV from "@assets/news-channel-logos/WBTV.png";
+import WNCH from "@assets/news-channel-logos/WNCN.png";
+import WVON from "@assets/news-channel-logos/WVON.png";
+import MarkWithGates from "@assets/MarkWithGates.jpg";
 export {
   VideoProduction,
   MediaTraining,
@@ -109,4 +114,9 @@ export {
   CrisisCommunication,
   NewIndustryInsight,
   MultiMediaText,
+  AlArabiaLogo,
+  WBTV,
+  WNCH,
+  WVON,
+  MarkWithGates,
 };

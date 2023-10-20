@@ -14,22 +14,40 @@ import { MarkPicture, HoldingHands, AboutPagebanner } from "@utils/images";
 
 <HTML>
   <BackGroundImage imageSource={AboutPagebanner} text="ABOUT US" />
-
-  <section class="lg:container lg:mx-auto lg:pt-20 md:pt-20 sm:pt-20">
-    <div
-      class="grid lg:grid-cols-1 md:grid-cols-1 sm:grid-rows-1 gap-4 lg:mx-[100px] md:mx-[40px] sm:mx-6"
-    >
-      <div class="lg:text-xl md:text-base text-justify">
-        <HeadingText />
+  <section class="border-b-[0.1px] border-lightgray pb-12">
+    <div class="lg:container lg:mx-auto lg:pt-8 md:pt-20 sm:pt-12">
+      <div
+        class="grid lg:grid-cols-1 md:grid-cols-1 sm:grid-rows-1 gap-4 lg:mx-[140px] md:mx-[40px] sm:mx-6"
+      >
+        <div class="lg:text-xl md:text-base text-left">
+          <HeadingText />
+        </div>
       </div>
     </div>
   </section>
   <section class="lg:container lg:mx-auto lg:pt-20 md:pt-20 sm:pt-20 space-y-2">
+    <h2
+      class="lg:text-4xl md:text-2xl sm:text-2xl font-[Poppins] font-black text-center"
+    >
+      Mark Albert
+    </h2>
+    <p
+      class="lg:text-xl md:text-base sm:text-base font-[Poppins] font-semibold text-center"
+    >
+      Founder and CEO
+    </p>
+    <p
+      class="lg:text-xl md:text-2xl sm:text-lg font-semibold font-[Poppins] text-blue text-center"
+    >
+      <a href="mailto:mark@mediaadvisoryexperts.com"
+        >mark@mediaadvisoryexperts.com</a
+      >
+    </p>
     <div
-      class="grid lg:grid-cols-8 md:grid-cols-2 sm:grid-rows-1 gap-4 lg:mx-[100px] md:mx-[40px] md:py-10 sm:py-10 sm:mx-6 lg:pb-24"
+      class="grid lg:grid-cols-8 md:grid-cols-2 sm:grid-cols-2 gap-4 lg:mx-[100px] md:mx-[40px] md:py-10 sm:py-10 sm:mx-6 lg:pb-24"
     >
       <div
-        class="lg:items-start col-span-3 sm:flex sm:items-center sm:justify-center lg:max-w-[25rem] sm:max-w-full lg:mt-[100px]"
+        class="lg:items-start col-span-3 sm:flex sm:items-center sm:justify-center lg:w-full sm:max-w-full"
       >
         <Image
           src={MarkPicture}
@@ -38,23 +56,40 @@ import { MarkPicture, HoldingHands, AboutPagebanner } from "@utils/images";
         />
       </div>
       <div class="col-span-1 lg:block md:hidden sm:hidden"></div>
-      <div class="col-span-4 max-w-[80rem] space-y-5 text-justify">
+      <div class="col-span-4 max-w-[80rem] space-y-5 text-left">
         <MarkText />
       </div>
     </div>
-
-    <div class="sm:py-10 border-y-2 border-[#807f7f7d]">
+  </section>
+  <section
+    class="lg:pt-8 md:pt-10 sm:pt-6 space-y-2 border-y-[0.1px] border-lightgray"
+  >
+    <div class="lg:container lg:mx-auto sm:py-10">
       <NewsChannelLogos />
+    </div>
+  </section>
+  <section class="lg:pt-8 md:pt-10 sm:pt-4 space-y-2">
+    <div class="lg:container lg:mx-auto sm:py-10">
       <YoutubeVideo />
+    </div>
+  </section>
+  <section
+    class="lg:pt-8 md:pt-10 sm:pt-10 space-y-2 border-t-[0.1px] border-lightgray"
+  >
+    <div class="lg:container lg:mx-auto sm:py-0">
       <div
-        class="grid lg:grid-cols-8 md:grid-cols-2 sm:grid-rows-1 gap-4 lg:mx-[100px] md:mx-[40px] sm:mx-6 lg:pt-0 md:pt-20 sm:pt-20"
+        class="grid lg:grid-cols-8 md:grid-cols-2 sm:grid-cols-2 gap-4 lg:mx-[100px] md:mx-[40px] sm:mx-6 lg:pt-0 md:pt-20 sm:pt-0"
       >
-        <div class="col-span-4 lg:py-8 md:py-10 text-justify">
+        <div class="col-span-4 lg:py-8 md:py-10 text-left">
           <TeamSupport />
         </div>
         <div class="col-span-1 lg:block md:hidden sm:hidden"></div>
         <div class="col-span-3 flex justify-end pb-10">
-          <Image src={HoldingHands} alt="mark pic" class="h-full w-full" />
+          <Image
+            src={HoldingHands}
+            alt="mark pic"
+            class="h-full w-full rounded-lg"
+          />
         </div>
       </div>
     </div>

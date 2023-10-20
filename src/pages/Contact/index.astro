@@ -12,22 +12,26 @@ import {
   <HTML>
     <BackGroundImage imageSource={ContactBanner} text="CONTACT" />
     <div id="contact-items"></div>
-    <div
-      class="flex lg:flex-col md:flex-col sm:flex-col lg:container justify-center items-center md:container lg:px-0 mx-auto lg:py-16 lg:space-y-24 md:py-12 sm:py-12 md:space-y-24 sm:space-y-20"
-      id="free-consultation"
-    >
+    <section class="lg:container lg:mx-auto">
       <div
-        class="object-contain lg:w-[80%] md:w-full border border-[#d8d4d4] shadow-xl sm:pt-0 sm:py-12 lg:py-0 lg:pb-0 sm:w-full md:py-10 space-y-9"
+        class="grid lg:grid-cols-2 lg:mx-0 md:mx-10 sm:mx-3 lg:py-10 sm:py-0 sm:pb-20 sm:justify-items-center"
+        id="free-consultation"
       >
         <FreeConsultation />
+        <section class="border-l-[0.1px] border-lightgray">
+          <div class="mx-[100px] md:w-full sm:w-[90%]" id="send-message">
+            <h2
+              class="lg:text-4xl md:text-2xl sm:text-2xl font-[Poppins] text-center font-black"
+            >
+              SEND US A MESSAGE
+            </h2>
+            <div class="pt-10">
+              <FormContact client:visible />
+            </div>
+          </div>
+        </section>
       </div>
-      <div
-        class="lg:w-full border border-[#d8d4d4] py-6 space-y-9 shadow-xl"
-        id="send-message"
-      >
-        <FormContact client:visible />
-      </div>
-    </div>
+    </section>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
   </HTML>
 </Fragment>

@@ -1,0 +1,81 @@
+---
+import "./Client.css";
+import { Logo1, Logo2, Logo3, University } from "@utils/images";
+import { Image } from "@utils/Components";
+import ClientLogo from "../../assets/ClientFirstLogo.ico";
+---
+
+<section class="border-y border-semigray pt-8 pb-14">
+  <h2
+    class="lg:text-4xl md:text-2xl sm:text-2xl font-[Poppins] text-center font-black"
+  >
+    Clients
+  </h2>
+  <div
+    id="image-carousel"
+    class="splide text-center lg:container lg:mx-auto md:px-14 sm:px-6 lg:w-[100%] sm:w-full"
+    aria-label="Beautiful Images"
+  >
+    <div class="splide__track lg:pt-10 lg:pb-0 sm:pb-16 sm:pt-4">
+      <ul class="splide__list space-x-6">
+        <li class="splide__slide slider_ThreeBoxes">
+          <Image src={ClientLogo} alt="" height="40" width="60" />
+        </li>
+
+        <li class="splide__slide slider_ThreeBoxes">
+          <Image src={Logo3} alt="" />
+        </li>
+        <li class="splide__slide slider_ThreeBoxes">
+          <Image src={University} alt="" />
+        </li>
+        <li class="splide__slide slider_ThreeBoxes">
+          <Image src={ClientLogo} alt="" height="40" width="60" />
+        </li>
+
+        <li class="splide__slide slider_ThreeBoxes">
+          <Image src={Logo3} alt="" />
+        </li>
+        <li class="splide__slide slider_ThreeBoxes">
+          <Image src={University} alt="" />
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<script>
+  import Splide from "@splidejs/splide";
+  document.addEventListener("DOMContentLoaded", function () {
+    var btnClasses =
+      "lg:text-6xl  sm:text-4xl sm:text-4xl absolute z-[1] cursor-pointer";
+    const prebtn = "sm:left-[0px] lg:left-[-5px]	 sm:top-[50.5%] lg:top-[50%]";
+    const nextbtn = "sm:right-[0px] lg:left-[px] sm:top-[50%]  lg:top-[51%]	";
+    var splide = new Splide("#image-carousel", {
+      classes: {
+        prev: `${btnClasses} ${prebtn} left-4 top-[49.5%]  rotate-180`,
+        next: `${btnClasses} ${nextbtn} right-4 bottom-50% `,
+      },
+      type: "slide",
+      perPage: 3,
+      perMove: 1,
+      arrows: true,
+      trimSpace: true,
+      autoplay: true,
+      rewindSpeed: 500,
+      pagination: true,
+      speed: 1200,
+      rewind: true,
+      arrowPath:
+        "M4,20A16,16,0,1,0,20.1,4,16,16,0,0,0,4,20Zm14.9-7L25,19.1l.5.8c0,.6-.4.8-.6,1.1l-6.1,6c-.3.4-.7,1-1.4.4s.2-1.1.5-1.4,3.4-3.5,5.2-5.2.7-1,0-1.6L18,14c-.4-.3-1.1-.7-.6-1.4S18.5,12.6,18.9,13Z",
+      breakpoints: {
+        1400: {
+          perPage: 4,
+        },
+        900: {
+          perPage: 1,
+        },
+      },
+    });
+    splide.mount();
+  });
+</script>

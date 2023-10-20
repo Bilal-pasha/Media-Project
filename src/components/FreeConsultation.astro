@@ -6,17 +6,32 @@ const year = new Date().getFullYear().toString();
 
 <Fragment>
   <div
-    class="lg:w-full md:w-full sm:pt-0 sm:py-12 lg:py-0 lg:pb-0 sm:w-full md:py-0 lg:px-0 md:px-6 sm:px-0 lg:border-r-[1px] border-lightgray"
+    class="flex flex-col lg:px-[100px] justify-between md:mx-10 sm:mx-3 md:w-full sm:pb-0 sm:pt-12 lg:py-0 lg:pb-0 sm:w-full md:py-0 md:px-6 sm:px-0"
   >
     <Heading
-      Heading="BOOK A FREE CONSULTATION"
+      Heading="FREE CONSULTATION"
       id="free-consultation"
-      style="text-center lg:pt-12 sm:pt-10 md:pb-0 sm:pb-6"
+      style="text-center lg:pt-0 sm:pt-10 md:pb-0 sm:pb-6"
     />
-    <iframe
-      src=`https://calendly.com/mediaadvisoryexperts/30min?hide_landing_page_details=1&back=1&month=${year}-${month}`
-      frameborder="1"
-      class="h-fit lg:h-[800px] md:h-[170vh] sm:h-[125vh] object-contain w-full"
-    ></iframe>
+    <div class="py-10 text-center text-2xl">
+      <p>
+        Schedule a free, 30-minute consultation with Media Advisory Experts
+        today! From media training and coaching, to crisis communications and
+        news industry insight, to bespoke video production, we look forward to
+        collaborating with you to meet your goals. Let's get started!
+      </p>
+    </div>
+    <div class="flex justify-center">
+      <a
+        href=""
+        onclick="
+        Calendly.initPopupWidget({ url: 'https://calendly.com/mediaadvisoryexperts?hide_landing_page_details=1' }); return false;
+        "
+      >
+        <button class="py-2 px-9 bg-[#1E90FF] text-white rounded"
+          >BOOK NOW</button
+        >
+      </a>
+    </div>
   </div>
 </Fragment>

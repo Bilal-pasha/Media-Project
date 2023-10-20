@@ -18,7 +18,7 @@
             </li>
             <li>
               How to speak with clarity and purpose while paying attention to
-              annunciation and cadence — on-camera or off
+              annunciation and cadence-on-camera or off
             </li>
             <li>Most effective ways to master a news conference</li>
             <li>
@@ -32,15 +32,14 @@
               <li>Deep dives into news production to control your own image</li>
             </li>
             <p>When a journalist calls, be ready to master your own story.</p>
-            <p class="lg:text-xl font-[Poppins] pb-4">Contact us today :</p>
+            <!-- <p class="lg:text-xl font-[Poppins] pb-4">Contact us today :</p>
             <a
               href="mailto:contact@mediaadvisoryexperts.com"
               class="lg:text-xl sm:text-sm font-semibold font-[Poppins] text-blue"
               >contact@mediaadvisoryexperts.com</a
-            >
+            > -->
             <br />
             <i id="Legal" class="lg:text-xl">
-              Please indicate level of urgency in your initial message so that
-              we may best meet your needs.
+              Please indicate level of urgency in your <a href="/Contact#send-message" class="text-[#0000ff]">initial message</a>  so that we may best meet your needs.
             </i>
           </ul>

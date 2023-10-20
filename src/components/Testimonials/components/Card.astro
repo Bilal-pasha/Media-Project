@@ -14,11 +14,11 @@ const { data } = Astro.props;
   class="splide__slide box-border shrink-0 list-none m-0 z-0 overflow-hidden p-2"
 >
   <div
-    class="flex flex-col relative border-y-[1.5px] border-lightgray lg:container mx-auto justify-start items-center gap-4 lg:py-6 md:py-10 sm:py-10 lg:w-[85%] sm:w-[90%] sm:h-auto sm:max-w-full bg-white p-4"
+    class="flex flex-col relative lg:container mx-auto justify-around items-center gap-4 lg:pb-6 md:py-10 sm:py-10 lg:h-[26rem] lg:w-[85%] sm:w-[90%] sm:h-auto sm:max-w-full bg-white p-4"
   >
-    <div class="flex justify-between max-w-[90%]">
+    <div class="flex justify-between lg:max-w-[75%]">
       <div class="flex flex-col space-y-6">
-        <div class="flex justify-center pt-3 pb-6">
+        <div class="flex justify-center pb-6">
           <Image src={TestimonialImage} width="70" alt="ddaa" />
         </div>
         <ContentLoop data={data} client:load />

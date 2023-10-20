@@ -15,6 +15,7 @@ import {
   CorporateVideos1,
   CorporateVideos2,
   CorporateVideos3,
+  MarkWithGates,
 } from "@utils/images";
 const imagestyle =
   " w-full object-cover lg:h-[180px] md:h-[200px] md:w-full sm:h-[200px] sm:w-full";
@@ -42,7 +43,7 @@ export const Boxes = [
 
 export const LeadersImagesData = [
   {
-    ImageSource: MarkinDetroit,
+    ImageSource: MarkWithGates,
   },
   {
     ImageSource: MarkinAirforce,

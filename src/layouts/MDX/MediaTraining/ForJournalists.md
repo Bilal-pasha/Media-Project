@@ -1,5 +1,5 @@
 <p>
-            <span class="font-[Poppins] font-bold">
+            <span class="font-[Poppins] font-bold ">
               Media Advisory Experts</span
             > founder Mark Albert has a quarter-century of experience as an
             investigative journalist and educator. He’s been an adjunct

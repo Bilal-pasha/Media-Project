@@ -1,0 +1,15 @@
+.splide__slide {
+  display: flex;
+  justify-content: center;
+  width: auto;
+}
+.slider_ThreeBoxes img {
+  width: 40%;
+  height: auto;
+}
+.splide__pagination {
+  bottom: -30px !important;
+}
+/* .splide__arrow img {
+  height: 100px;
+} */

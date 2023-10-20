@@ -19,6 +19,10 @@ import {
   kstp,
   CBSNEWSRADIO,
   WUSA_9_logo,
+  AlArabiaLogo,
+  WBTV,
+  WNCH,
+  WVON,
 } from "@utils/images";
 
 export const NewsLogos = [
@@ -121,5 +125,25 @@ export const NewsLogos = [
     websiteLink: "https://www.wsoctv.com/",
     Style: "lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto",
     imageSource: WSOCTV,
+  },
+  {
+    websiteLink: "https://english.alarabiya.net/",
+    Style: "lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto",
+    imageSource: AlArabiaLogo,
+  },
+  {
+    websiteLink: "https://www.wbtv.com/",
+    Style: "lg:w-[4%] md:w-[7%] sm:w-[10%] h-auto",
+    imageSource: WBTV,
+  },
+  {
+    websiteLink: "https://www.nbcnews.com/",
+    Style: "lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto",
+    imageSource: WNCH,
+  },
+  {
+    websiteLink: "https://www.wvon.com/",
+    Style: "lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto",
+    imageSource: WVON,
   },
 ];

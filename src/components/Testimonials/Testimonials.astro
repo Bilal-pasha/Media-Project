@@ -21,16 +21,20 @@ const data = await getDocs(colRef)
 ---
 
 <Fragment>
-  <section class="lg:py-20 md:py-0 sm:pt-0 sm:pb-0 sm:my-0 lg:pb-10 lg:pt-10">
-    <div class="lg:container mx-auto flex flex-col justify-center items-center">
-      <div>
-        <Heading
-          Heading="Testimonials"
-          style="text-center pb-5"
-          id="testimonials"
-        />
+  <section>
+    <div class="border-t-[0.1px] border-lightgray">
+      <Heading
+        Heading="Client Feedback"
+        style="text-center pt-10"
+        id="testimonials"
+      />
+    </div>
+    <div class="sm:my-0">
+      <div
+        class="lg:container mx-auto flex flex-col justify-center items-center"
+      >
+        <AliceCarousel data={data} />
       </div>
-      <AliceCarousel data={data} />
     </div>
   </section>
 </Fragment>

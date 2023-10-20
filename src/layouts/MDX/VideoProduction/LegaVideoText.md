@@ -16,17 +16,15 @@
             compelling, emotional storytelling videos can resonate for litigants
             across the legal landscape.
           </p>
-          <p class="lg:text-2xl font-[Poppins] py-4">
+          <!-- <p class="lg:text-2xl font-[Poppins] py-4">
             Contact us to schedule a free consultation:
           </p>
           <a
             href="mailto:contact@mediaadvisoryexperts.com"
             class="lg:text-xl sm:text-sm font-semibold font-[Poppins] text-blue"
             >contact@mediaadvisoryexperts.com</a
-          >
-          <br />
+          >-->
+          <br /> 
           <i class="lg:text-xl">
-            Please indicate the status of your client’s case in your initial
-            message so that we may best meet your needs on an expedited basis,
-            if needed
+            When <a href="/Contact#send-message" class="text-[#0000ff]">contacting us </a>, please indicate the status of your client’s case so that we may best meet your needs on an expedited basis, if needed.
           </i>

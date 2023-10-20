@@ -5,7 +5,7 @@ const { data } = Astro.props;
 ---
 
 <section
-  class="splide testimonial relative lg:w-[70%] w-full"
+  class="splide testimonial relative lg:w-[80%] w-full"
   id="second-slider"
 >
   <div class="splide__track overflow-hidden relative z-0 select-none">
@@ -32,17 +32,15 @@ const { data } = Astro.props;
     arrows: true,
     trimSpace: true,
     pagination: false,
+    autoplay: true,
+    speed: 1200,
+    rewind: true,
     arrowPath:
       "M4,20A16,16,0,1,0,20.1,4,16,16,0,0,0,4,20Zm14.9-7L25,19.1l.5.8c0,.6-.4.8-.6,1.1l-6.1,6c-.3.4-.7,1-1.4.4s.2-1.1.5-1.4,3.4-3.5,5.2-5.2.7-1,0-1.6L18,14c-.4-.3-1.1-.7-.6-1.4S18.5,12.6,18.9,13Z",
     classes: {
       prev: `${btnClasses} ${prebtn} left-4 top-[49.5%]  rotate-180`,
       next: `${btnClasses} ${nextbtn} right-4 bottom-50% `,
-      // prev: `${btnClasses}  sm:left-[40px] sm:top-[43%] md:left-[20px]  lg:left-[303px] left-[80px] lg:top-[150px] rotate-180 `,
-      // next: `${btnClasses} sm:right-[40px] sm:top-[48%] md:right-[20px] lg:right-[303px] right-[80px] lg:top-[150px]`,
     },
-    // classes: {
-    //   arrow: `${btnClasses} top-[40%]`,
-    // },
     breakpoints: {
       760: {
         perPage: 1,

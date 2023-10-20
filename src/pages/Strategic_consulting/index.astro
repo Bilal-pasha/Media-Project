@@ -21,94 +21,105 @@ import {
       heading1="STRATEGIC"
       text="CONSULTING"
     />
+    <section>
+      <div class="lg:container lg:mx-auto sm:px-5 mx-auto space-y-5 mb-5">
+        <div class="lg:pt-8 md:pt-14 sm:pt-14 lg:py-6 lg:mx-[100px]">
+          <div
+            class="flex md:flex-col-reverse sm:flex-col-reverse sm:items-center lg:justify-evenly"
+          >
+            <div
+              class="lg:text-xl sm:text-base lg:max-w-5/6 md:max-w-full text-left space-y-5"
+            >
+              <ConsultingHeading />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="border-y-[0.1px] border-lightgray">
+      <div class="lg:container lg:mx-auto sm:px-5 mx-auto space-y-5 mb-5">
+        <div class="lg:py-6 sm:py-0 sm:space-y-5 lg:mx-[100px]">
+          <h2
+            class="lg:text-3xl md:text-3xl sm:text-2xl sm:pt-10 md:py-10 font-semibold font-[Poppins] text-center lg:py-8"
+          >
+            EARNED MEDIA
+          </h2>
+          <div class="grid lg:grid-cols-11 lg:space-y-0 sm:space-y-4">
+            <div class="col-span-5" id="crisis">
+              <Image src={MediaTraining} alt="image" class="rounded-lg" />
+            </div>
+            <div class="col-span-1"></div>
+            <div
+              class="lg:text-xl col-span-5 md:max-w-full sm:max-w-[100%] lg:text-left space-y-5"
+            >
+              <EarnedMedia />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="border-b-[0.1px] border-lightgray">
+      <div class="lg:container lg:mx-auto sm:px-5 mx-auto space-y-5 mb-5">
+        <div class="lg:py-6 md:py-0 sm:pb-10 sm:pt-0 space-y-5 lg:mx-[100px]">
+          <h2
+            class="lg:text-3xl md:text-3xl sm:text-2xl sm:pt-10 md:py-10 font-semibold font-[Poppins] text-center lg:py-8"
+          >
+            CRISIS COMMUNICATIONS
+          </h2>
+          <div class="grid lg:grid-cols-11 lg:space-y-0 sm:space-y-4">
+            <div class="lg:text-xl col-span-5 md:max-w-full text-left">
+              <CrisisCommunication />
+            </div>
+            <div class="col-span-1"></div>
+            <div class="col-span-5" id="new-industry">
+              <Image
+                src={CrisisCommunications}
+                alt="image"
+                class="rounded-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="border-b-[0.1px] border-lightgray">
+      <div class="lg:container lg:mx-auto sm:px-5 mx-auto space-y-5 mb-5">
+        <div class="lg:py-6 space-y-5 lg:mx-[100px]">
+          <h2
+            class="lg:text-3xl md:text-3xl sm:text-2xl sm:pt-10 md:py-8 font-semibold font-[Poppins] text-center lg:py-8"
+          >
+            NEWS INDUSTRY INSIGHT
+          </h2>
+          <div class="grid lg:grid-cols-11 lg:space-y-0 sm:space-y-4">
+            <div class="col-span-5" id="multi-media">
+              <Image src={Industry} alt="image" class="rounded-lg" />
+            </div>
+            <div class="col-span-1"></div>
+            <div class="lg:text-xl col-span-5 md:max-w-full text-left">
+              <NewIndustryInsight />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <div class="lg:container lg:mx-auto sm:px-5 mx-auto space-y-5 mb-5">
-      <section
-        class="lg:pt-20 md:py-10 sm:pt-20 lg:py-6 lg:mx-[100px] md:mx-[40px]"
-      >
-        <div
-          class="flex md:flex-col-reverse sm:flex-col-reverse sm:items-center lg:justify-evenly"
-        >
-          <div
-            class="lg:text-xl sm:text-base lg:max-w-5/6 md:max-w-full text-justify space-y-5"
-          >
-            <ConsultingHeading />
-          </div>
-        </div>
-      </section>
-
-      <section class="lg:py-6 sm:py-0 sm:space-y-5">
+      <section class="lg:pt-10 lg:pb-10 space-y-5 lg:mx-[100px]">
         <h2
-          class="lg:text-3xl md:text-3xl sm:text-2xl sm:pt-10 md:pt-0 font-semibold font-[Poppins] text-center lg:py-5"
-        >
-          EARNED MEDIA
-        </h2>
-        <div
-          class="lg:flex lg:items-start lg:flex-row-reverse md:block sm:block lg:justify-evenly lg:space-x-14 lg:space-y-0 sm:space-y-10"
-        >
-          <div
-            class="lg:text-xl lg:max-w-[40%] md:max-w-full sm:max-w-[100%] lg:text-justify text-justify space-y-5"
-          >
-            <EarnedMedia />
-          </div>
-          <div class="lg:max-w-[25rem]" id="crisis">
-            <Image src={MediaTraining} alt="image" class="rounded-lg" />
-          </div>
-        </div>
-      </section>
-
-      <section class="lg:py-6 sm:py-10 space-y-5">
-        <h2
-          class="lg:text-3xl md:text-3xl sm:text-2xl sm:pt-10 md:pt-0 font-semibold font-[Poppins] text-center lg:py-5"
-        >
-          CRISIS COMMUNICATIONS
-        </h2>
-        <div
-          class="lg:flex lg:items-start md:block sm:block lg:justify-evenly space-y-5"
-        >
-          <div class="lg:text-xl lg:max-w-[40%] md:max-w-full text-justify">
-            <CrisisCommunication />
-          </div>
-          <div class="lg:max-w-[25rem]" id="new-industry">
-            <Image src={CrisisCommunications} alt="image" class="rounded-lg" />
-          </div>
-        </div>
-      </section>
-
-      <section class="lg:py-6 space-y-5">
-        <h2
-          class="lg:text-3xl md:text-3xl sm:text-2xl sm:pt-10 md:pt-0 font-semibold font-[Poppins] text-center lg:py-5"
-        >
-          NEWS INDUSTRY INSIGHT
-        </h2>
-        <div
-          class="lg:flex lg:items-start lg:flex-row-reverse md:block sm:block lg:justify-evenly space-y-5"
-        >
-          <div class="lg:text-xl lg:max-w-[40%] md:max-w-full text-justify">
-            <NewIndustryInsight />
-          </div>
-          <div class="lg:max-w-[25rem]" id="multi-media">
-            <Image src={Industry} alt="image" class="rounded-lg" />
-          </div>
-        </div>
-      </section>
-
-      <section class="lg:pt-10 lg:pb-10 container mx-auto space-y-5">
-        <h2
-          class="lg:text-3xl md:text-3xl sm:text-2xl sm:pt-10 md:pt-0 font-semibold font-[Poppins] text-center lg:py-5"
+          class="lg:text-3xl md:text-3xl sm:text-2xl sm:pt-10 md:py-8 font-semibold font-[Poppins] text-center lg:py-8"
         >
           MULTI-MEDIA
         </h2>
-        <div
-          class="lg:flex lg:items-start md:block sm:block lg:justify-evenly space-y-5"
-        >
-          <div class="lg:text-xl lg:max-w-[40%] md:max-w-full text-justify">
+        <div class="grid lg:grid-cols-11 lg:space-y-0 sm:space-y-4">
+          <div class="lg:text-xl col-span-5 md:max-w-full text-left">
             <MultiMediaText />
           </div>
-          <div class="lg:max-w-[25rem]">
+          <div class="col-span-1"></div>
+
+          <div class="col-span-5">
             <Image src={MultiMedia} alt="image" class="rounded-lg" />
           </div>
         </div>
-        <div class="lg:pt-20 lg:px-[100px] text-center">
+        <!-- <div class="lg:pt-20 lg:px-[100px] text-center">
           <p class="text-2xl font-semibold">
             Contact us today: <br />
             <span class="lg:text-xl sm:text-sm font-[Poppins] text-blue"
@@ -117,7 +128,7 @@ import {
               >
             </span>
           </p>
-        </div>
+        </div> -->
       </section>
     </div>
   </HTML>

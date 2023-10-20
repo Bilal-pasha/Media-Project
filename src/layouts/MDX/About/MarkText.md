@@ -1,17 +1,8 @@
 ---
 ---
 
-<h2 class="text-3xl font-semibold font-[Poppins] text-center sm:pt-5">
-          MARK ALBERT
-        </h2>
-        <p
-          class="lg:text-xl md:text-2xl sm:text-lg font-semibold font-[Poppins] text-blue text-center"
-        >
-          <a href="mailto:mark@mediaadvisoryexperts.com"
-            >mark@mediaadvisoryexperts.com</a
-          >
-        </p>
-        <p class="lg:text-xl md:text-base">
+<div>
+      <p class="lg:text-xl md:text-base">
           Firm founder Mark Albert is a Peabody-winning journalist whose
           quarter-century career has been distinguished by investigative
           reporting, innovative storytelling techniques, and creative
@@ -30,3 +21,4 @@
           his body of military reporting and embedded coverage, including from
           Iraq.
         </p>
+        </div>

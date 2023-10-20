@@ -1,7 +1,11 @@
 ---
 import DefaultLayout from "../defaultLayout/defaultLayout.astro";
-import { MainLogo } from "@utils/images";
 import "./index.css";
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
 ---
 
 <html lang="en">
@@ -14,9 +18,16 @@ import "./index.css";
       type="image/x-icon"
       href="https://firebasestorage.googleapis.com/v0/b/composed-world-393911.appspot.com/o/logo2.png?alt=media&token=51907058-09ce-40ba-be16-f2761acf588a&_gl=1*iri6qd*_ga*NzMyOTIyOTM2LjE2OTUyMDcwOTg.*_ga_CW55HF8NVT*MTY5NzUyNDg4NC4zNS4xLjE2OTc1MjQ5MjEuMjMuMC4w"
     />
-    <title>Media Advisory Experts</title>
+    <title>{title}</title>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
+    <script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      type="text/javascript"
+      async></script>
+    <link
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap"

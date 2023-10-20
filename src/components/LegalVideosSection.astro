@@ -3,26 +3,30 @@ import { Image, LegalVideoText, Heading } from "@utils/Components";
 import { SupremeCourt } from "@utils/images";
 ---
 
-<div class="lg:container lg:mx-auto lg:py-24 md:py-20 sm:py-20" id="Legal">
-  <Heading
-    Heading="LEGAL VIDEOS"
-    id="legal-videos"
-    style="lg:pt-0 md:pt-16 lg:pb-24 sm:pb-10 text-center"
-  />
-  <div
-    class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-rows-1 gap-4 lg:mx-[100px] md:mx-[40px] sm:mx-6"
-  >
-    <div class="lg:order-first md:order-first sm:order-last">
-      <Image
-        src={SupremeCourt}
-        alt="supreme-court"
-        class="rounded-lg hover:lg:scale-[1.1] ease-in-out transition-all duration-[600ms] lg:w-[80%] md:w-[80%] sm:w-full"
-      />
-    </div>
+<section
+  class="border-t-[0.1px] border-lightgray lg:mt-20 lg:py-16 md:py-20 sm:py-20"
+>
+  <div class="lg:container lg:mx-auto" id="Legal">
+    <Heading
+      Heading="LEGAL VIDEOS"
+      id="legal-videos"
+      style="lg:pt-0 md:pt-16 lg:pb-24 sm:pb-10 text-center"
+    />
     <div
-      class="lg:text-xl md:text-base text-justify lg:order-last sm:order-first"
+      class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-rows-1 gap-4 lg:mx-[100px] md:mx-[40px] sm:mx-6"
     >
-      <LegalVideoText />
+      <div class="lg:order-first md:order-first sm:order-last">
+        <Image
+          src={SupremeCourt}
+          alt="supreme-court"
+          class="rounded-lg hover:lg:scale-[1.1] ease-in-out transition-all duration-[600ms] lg:w-[80%] md:w-[80%] sm:w-full"
+        />
+      </div>
+      <div
+        class="lg:text-xl md:text-base text-left lg:order-last sm:order-first"
+      >
+        <LegalVideoText />
+      </div>
     </div>
   </div>
-</div>
+</section>

@@ -6,5 +6,5 @@
      founder Mark Albert is available for speaking engagements. He’s given
     tailored remarks on current events, media industry analysis, and insightful
     travel tips gleaned from visiting 83 countries to government leaders,
-    private companie s, and while emceeing community events.
+    private companies, and while emceeing community events.
   </p>

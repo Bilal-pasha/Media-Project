@@ -4,7 +4,7 @@
               blasting a news release to a hundred media outlets will do the
               trick, we know that isn’t an effective ROI. Instead, we’ve:
             </p>
-            <ul class="list-disc space-y-4 ml-6">
+            <ul class="list-disc space-y-2 ml-6">
               <li>
                 Designed a database of media contacts to ensure the right
                 target audience hears your message

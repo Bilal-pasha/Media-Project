@@ -1,15 +1,8 @@
 ---
 import { Image } from "astro:assets";
-import SpeakingEngagements from "../assets/SpeakingEngagements.jpeg";
-import SpeakingEngagementText from "../layouts/MDX/About/SpeakingEngagementsText.md";
+import SpeakingEngagements from "../assets/SpeakingEngagements.jpg";
 ---
 
 <Fragment>
-  <h2
-    class="text-center text-2xl lg:py-3 sm:pt-14 sm:pb-6 font-[Poppins] font-semibold"
-  >
-    SPEAKING ENGAGEMENTS
-  </h2>
-  <Image src={SpeakingEngagements} alt="image" />
-  <SpeakingEngagementText />
+  <Image src={SpeakingEngagements} alt="image" class="lg:h-[19rem] lg:w-full" />
 </Fragment>

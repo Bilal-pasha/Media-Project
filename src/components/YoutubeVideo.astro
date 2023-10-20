@@ -1,21 +1,30 @@
 ---
 import { SpeakingEngagement } from "@utils/Components";
+import SpeakingEngagementText from "../layouts/MDX/About/SpeakingEngagementsText.md";
 ---
 
-<div
-  class="grid lg:grid-cols-9 md:grid-cols-2 sm:grid-rows-1 lg:mx-[100px] md:mx-[40px] sm:mx-6 lg:justify-between lg:py-16"
+<h2
+  class="lg:text-4xl md:text-2xl sm:text-2xl font-[Poppins] font-black text-center"
 >
-  <div class="col-span-4">
+  SPEAKING ENGAGEMENTS
+</h2>
+<div
+  class="grid lg:grid-cols-11 lg:mx-[100px] md:mx-[40px] sm:mx-6 lg:justify-between lg:py-16 sm:py-8 lg:space-y-0 md:space-y-8 sm:space-y-8"
+>
+  <div class="col-span-5">
     <SpeakingEngagement />
   </div>
-  <div class="col-span-1"></div>
-  <div class="col-span-4 pt-14">
+  <div class="col-span-1 lg:block md:hidden sm:hidden"></div>
+  <div class="col-span-5">
     <iframe
-      class="embed-responsive-item lg:container lg:mx-auto bottom-0 left-0 right-0 top-0 lg:h-[40vh] lg:w-full md:h-[100vh] md:w-full sm:h-[30vh] sm:w-full"
+      class="embed-responsive-item lg:container lg:mx-auto bottom-0 left-0 right-0 top-0 lg:h-[19rem] lg:w-full md:h-[100vh] md:w-full sm:h-[30vh] sm:w-full"
       src="https://www.youtube.com/embed/-PALozh28ZI?si=yajMEwDL7N_6H4XC"
       title="YouTube video player"
       frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowfullscreen></iframe>
   </div>
+</div>
+<div class="lg:mx-[100px] md:mx-[40px] sm:mx-6 lg:justify-between">
+  <SpeakingEngagementText />
 </div>
