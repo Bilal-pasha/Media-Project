@@ -40,6 +40,6 @@
             > -->
             <br />
             <i id="Legal" class="lg:text-xl">
-              Please indicate level of urgency in your <a href="/Contact#send-message" class="text-[#0000ff]">initial message</a>  so that we may best meet your needs.
+              Please indicate the level of urgency in your <a href="/Contact#send-message" class="text-[#0000ff]">initial message</a>  so that we may best meet your needs.
             </i>
           </ul>

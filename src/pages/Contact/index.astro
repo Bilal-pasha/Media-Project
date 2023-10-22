@@ -18,14 +18,19 @@ import {
         id="free-consultation"
       >
         <FreeConsultation />
-        <section class="border-l-[0.1px] border-lightgray">
-          <div class="mx-[100px] md:w-full sm:w-[90%]" id="send-message">
+        <section
+          class="flex sm:flex-col items-center md:w-full sm:wi-full lg:py-0 md:py-10 sm:py-0 lg:pt-0 sm:pt-16 lg:border-l-[0.1px] border-lightgray"
+        >
+          <div
+            class="xl:mx-[100px] lg:mx-[50px] md:w-full sm:w-[90%]"
+            id="send-message"
+          >
             <h2
-              class="lg:text-4xl md:text-2xl sm:text-2xl font-[Poppins] text-center font-black"
+              class="lg:text-4xl md:text-2xl sm:text-2xl font-[Poppins] text-center font-black lg:pb-6 md:pb-14 sm:pb-14"
             >
               SEND US A MESSAGE
             </h2>
-            <div class="pt-10">
+            <div class="">
               <FormContact client:visible />
             </div>
           </div>

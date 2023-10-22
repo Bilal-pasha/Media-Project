@@ -96,7 +96,7 @@ const FormContact = () => {
     <section className="lg:mx-[20px] md:mx-10 sm:mx-3">
       <div>
         <form
-          className=" w-full max-w-[100rem] lg:px-0 pt-10"
+          className=" w-full max-w-[100rem] lg:px-0 "
           onSubmit={handleSubmit(saveHandler)}
         >
           <div className="flex flex-wrap -mx-3 mb-2">
@@ -208,7 +208,7 @@ const FormContact = () => {
             data-sitekey="6LdUxIUoAAAAAL9SEZiRTMSs6gfwk-QV2jRwfyr-"
           ></div>
           <span id="captcha" className="text-red"></span>
-          <div className="md:flex md:items-center">
+          <div className="flex items-center justify-center">
             <div className="md:w-1/3">
               <input
                 type="submit"

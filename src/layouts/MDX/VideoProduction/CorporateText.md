@@ -33,5 +33,5 @@
             >contact@mediaadvisoryexperts.com</a
           > -->
           <i class="lg:text-xl">
-            When <a href="/Contact#send-message" class="text-[#0000ff]">contacting us </a> , please indicate your level of urgency so that we may best meet your needs.
+            When <a href="/Contact#send-message" class="text-[#0000ff]">contacting us</a>, please indicate your level of urgency so that we may best meet your needs.
           </i>
