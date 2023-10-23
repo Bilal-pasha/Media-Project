@@ -1,19 +1,19 @@
 ---
 import { Heading } from "@utils/Components";
-const month = new Date().getMonth().toString();
-const year = new Date().getFullYear().toString();
+import Calendly from "./Calendly";
+// import { currentdate } from "./Calendly";
 ---
 
 <Fragment>
   <div
-    class="flex flex-col xl:px-[100px] lg:mx-0 justify-between md:mx-10 sm:mx-3 md:w-full sm:pb-0 sm:pt-12 lg:py-0 lg:pb-0 sm:w-full md:py-0 md:px-6 sm:px-0"
+    class="flex flex-col col-span-1 xl:px-[50px] lg:px-[40px] lg:mx-0 justify-between md:mx-0 sm:mx-3 md:w-full sm:pb-0 sm:pt-12 lg:py-0 lg:pb-0 sm:w-full md:py-0 md:px-0 sm:px-0"
   >
     <Heading
       Heading="FREE CONSULTATION"
       id="free-consultation"
-      style="text-center lg:pt-0 md:pb-0 sm:pb-6"
+      style="text-center lg:pt-0 md:py-10 sm:pb-6"
     />
-    <div class="pb-10 text-center text-2xl">
+    <div class="pb-10 text-center text-2xl lg:px-0 md:px-10 sm:px-10">
       <p>
         Schedule a free, 30-minute consultation with Media Advisory Experts
         today! From media training and coaching, to crisis communications and
@@ -25,12 +25,20 @@ const year = new Date().getFullYear().toString();
       <a
         href=""
         onclick="
-        Calendly.initPopupWidget({ url: 'https://calendly.com/mediaadvisoryexperts?hide_landing_page_details=1' }); return false;
+        const month = new Date().getMonth() + 1;
+        const currentmonth = month.toString();
+        const year = new Date().getFullYear().toString();
+        Calendly.initPopupWidget({
+          url: `https:calendly.com/mediaadvisoryexperts/30min?back=1&hide_landing_page_details=1&month=${year}-${currentmonth}`,
+        });
+        return false;
         "
       >
-        <button class="py-2 px-9 bg-[#1E90FF] text-white rounded"
-          >BOOK NOW</button
+        <button
+          class="py-2 lg:mb-0 md:mb-10 sm:mb-10 px-9 bg-[#1E90FF] text-white rounded"
         >
+          BOOK NOW
+        </button>
       </a>
     </div>
   </div>

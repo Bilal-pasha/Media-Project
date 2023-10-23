@@ -9,8 +9,8 @@
             fact-checking, news production, investigative reporting, how to ask
             probing questions in news conferences and hold public officials
             accountable, digital content creation, elements of live-streaming,
-            and on Western free speech and defamation principles. In 2016, he
-            designed and taught a two-week course on general news production in
+            and on Western free speech and defamation principles.</p>
+            <p> In 2016, he designed and taught a two-week course on general news production in
             Pakistan as part of an initiative administered by the International
             Center for Journalists (ICFL) and sponsored by the U.S. State
             Department. Mark has also spoken on panels at the preeminent

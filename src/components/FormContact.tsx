@@ -93,7 +93,7 @@ const FormContact = () => {
   // }
 
   return (
-    <section className="lg:mx-[20px] md:mx-10 sm:mx-3">
+    <section className=" lg:mx-0 md:mx-10 sm:mx-3">
       <div>
         <form
           className=" w-full max-w-[100rem] lg:px-0 "
@@ -208,16 +208,15 @@ const FormContact = () => {
             data-sitekey="6LdUxIUoAAAAAL9SEZiRTMSs6gfwk-QV2jRwfyr-"
           ></div>
           <span id="captcha" className="text-red"></span>
-          <div className="flex items-center justify-center">
-            <div className="md:w-1/3">
-              <input
-                type="submit"
-                disabled={!isValid}
-                className="py-2 px-12 bg-[#1E90FF] text-white rounded cursor-pointer"
-                value="Send"
-              />
-            </div>
-            <div className="md:w-2/3"></div>
+          <div className="flex  justify-center">
+            <input
+              type="submit"
+              disabled={!isValid}
+              className="py-2 px-12 text-lg bg-[#1E90FF] text-white rounded cursor-pointer"
+              value="Send"
+            />
+            <div className=""></div>
+            {/* <div className="md:w-2/3"></div> */}
           </div>
         </form>
       </div>

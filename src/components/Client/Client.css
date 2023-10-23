@@ -11,6 +11,9 @@
   /* bottom: -39px !important; */
   top: 138px !important;
 }
+.splide__pagination__page {
+  background: #666464 !important;
+}
 /* .splide__arrow img {
   height: 100px;
 } */

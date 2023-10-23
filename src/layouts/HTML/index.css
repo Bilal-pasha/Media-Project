@@ -11,9 +11,6 @@
 html {
   scroll-behavior: smooth;
 }
-.splide__pagination__page {
-  background: black !important;
-}
 
 /* .splide__list {
   transform: translateX(-890px) !important;
