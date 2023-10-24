@@ -32,12 +32,6 @@
               <li>Deep dives into news production to control your own image</li>
             </li>
             <p>When a journalist calls, be ready to master your own story.</p>
-            <!-- <p class="lg:text-xl font-[Poppins] pb-4">Contact us today :</p>
-            <a
-              href="mailto:contact@mediaadvisoryexperts.com"
-              class="lg:text-xl sm:text-sm font-semibold font-[Poppins] text-blue"
-              >contact@mediaadvisoryexperts.com</a
-            > -->
             <br />
             <i id="Legal" class="lg:text-xl">
               Please indicate the level of urgency in your <a href="/Contact#send-message" class="text-[#0000ff]">initial message</a>  so that we may best meet your needs.

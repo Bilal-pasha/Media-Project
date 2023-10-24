@@ -1,9 +1,6 @@
  <p>
               Having covered politics, criminal justice, and business for
-              decades, the team at <span
-                class="font-[Poppins] font-bold"
-                id="Earned">Media Advisory Experts</span
-              > can offer C-suite executives, leaders in law enforcement, and
+              decades, the team at <span class="font-[Poppins] font-bold"> Media Advisory <span class="text-blue"> Experts</span></span> can offer C-suite executives, leaders in law enforcement, and
               local to multi-national corporations strategic consulting,
               crisis communications, news industry insight, public relations,
               and media coaching services to prepare them for an always-on
