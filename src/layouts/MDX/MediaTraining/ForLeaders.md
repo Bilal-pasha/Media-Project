@@ -6,9 +6,7 @@
             earned media.
           </p>
           <p>
-            <span class="font-[Poppins] font-bold">
-              Media Advisory Experts</span
-            > using decades of local and national media experience, can train
+            <span class="font-[Poppins] font-bold"> Media Advisory <span class="text-blue"> Experts</span></span> using decades of local and national media experience, can train
             you and your team on:
           </p>
           <ul class="list-disc space-y-3 ml-6">

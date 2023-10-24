@@ -16,9 +16,9 @@
   background: #666464 !important;
 }
 
-/* .slider_ThreeBoxes {
-  margin-right: 25px !important;
-} */
+.slider_ThreeBoxes {
+  width: calc(30%) !important;
+}
 /* .splide__arrow img {
   height: 100px;
 } */

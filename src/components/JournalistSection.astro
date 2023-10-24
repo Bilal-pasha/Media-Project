@@ -1,7 +1,8 @@
 ---
 import { Image, Heading } from "@utils/Components";
-import { JournalistImageData, JournalistLogoData } from "@utils/Data";
+import { JournalistImageData } from "@utils/Data";
 import { ForJournalistText } from "@utils/images";
+import ForJournalistImageSlider from "../components/ForJournalistImageSlider.astro";
 ---
 
 <section class="border-t-[0.1px] border-lightgray lg:mt-10">
@@ -40,17 +41,7 @@ import { ForJournalistText } from "@utils/images";
       <div
         class="flex flex-row justify-evenly items-center lg:mx-[96px] md:mx-[40px] sm:mx-8 xl:space-x-24 lg:space-x-16 md:space-x-8 sm:space-x-4"
       >
-        <!-- {
-          JournalistLogoData.map((data) => {
-            return (
-              <div class="lg:w-[12%] sm:w-[40%]">
-                <a href={data.websiteLink}>
-                  <Image src={data.ImageSource} alt="image" />
-                </a>
-              </div>
-            );
-          })
-        } -->
+        <ForJournalistImageSlider />
       </div>
     </div>
   </section>

@@ -1,7 +1,5 @@
 <p>
-            <span class="font-[Poppins] font-bold ">
-              Media Advisory Experts</span
-            > founder Mark Albert has a quarter-century of experience as an
+            <span class="font-[Poppins] font-bold"> Media Advisory <span class="text-blue"> Experts</span></span> founder Mark Albert has a quarter-century of experience as an
             investigative journalist and educator. He’s been an adjunct
             instructor at Northwestern University’s Medill School of Journalism
             in Washington, DC, and nearly every year since 2017, has created and

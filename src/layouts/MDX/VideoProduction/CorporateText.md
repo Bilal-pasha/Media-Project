@@ -1,7 +1,5 @@
 <p>
-            <span class="font-[Poppins] font-bold ">
-              Media Advisory Experts</span
-            >
+            <span class="font-[Poppins] font-bold"> Media Advisory <span class="text-blue"> Experts</span></span>
              can harness decades of experience across the United States to
             conceptualize, storyboard, shoot, edit and deliver professional
             videos for corporate clients of any size and budget, from small
@@ -25,7 +23,7 @@
         <p>
            Trust these critical business video needs to the team at
           </p>
-          <p class="font-[Poppins] font-bold">Media Advisory Experts.</p>
+          <p class="font-[Poppins] font-bold"> Media Advisory <span class="text-blue"> Experts</span></p>
           <br/>
           <i class="lg:text-xl">
             When <a href="/Contact#send-message" class="text-[#0000ff]">contacting us</a>, please indicate your level of urgency so that we may best meet your needs.
