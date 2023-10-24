@@ -103,7 +103,7 @@ const FormContact = () => {
                       className="appearance-none block w-full text-gray-700 border border-[#d8d4d4] rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                       id="grid-first-name"
                       type="text"
-                      placeholder="Enter your First Name"
+                      placeholder="First Name"
                       value={value}
                       onChange={onChange}
                       onBlur={onBlur}
@@ -128,7 +128,7 @@ const FormContact = () => {
                       className="appearance-none block w-full text-gray-700 border border-[#d8d4d4] rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                       id="grid-last-name"
                       type="text"
-                      placeholder="Enter your Last Name"
+                      placeholder="Last Name"
                       value={value}
                       onChange={onChange}
                       onBlur={onBlur}
@@ -181,7 +181,7 @@ const FormContact = () => {
                     <textarea
                       className="no-resize appearance-none block w-full text-gray-700 border border-[#d8d4d4] rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white  h-48 resize-none"
                       id="message"
-                      placeholder="Enter your Message"
+                      placeholder="Please type your Message"
                       value={value}
                       onChange={onChange}
                       onBlur={onBlur}
@@ -206,7 +206,7 @@ const FormContact = () => {
                 type="submit"
                 disabled={!isValid}
                 className="h-10 w-32 text-lg bg-[#1E90FF] text-white rounded cursor-pointer"
-                value="Send"
+                value="SEND"
               />
               <div className=""></div>
               {/* <div className="md:w-2/3"></div> */}

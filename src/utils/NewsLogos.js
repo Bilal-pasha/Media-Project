@@ -23,6 +23,11 @@ import {
   WBTV,
   WNCH,
   WVON,
+  HoustonChroniclelogo,
+  MetrofocusLogo,
+  SeattlePIlogo,
+  SFGateLogo,
+  sfchroniclelogo,
 } from "@utils/images";
 
 export const NewsLogos = [
@@ -145,5 +150,30 @@ export const NewsLogos = [
     websiteLink: "https://www.wvon.com/",
     Style: "lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto",
     imageSource: WVON,
+  },
+  {
+    websiteLink: "https://www.wvon.com/",
+    Style: "lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto",
+    imageSource: HoustonChroniclelogo,
+  },
+  {
+    websiteLink: "https://www.wvon.com/",
+    Style: "lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto",
+    imageSource: MetrofocusLogo,
+  },
+  {
+    websiteLink: "https://www.wvon.com/",
+    Style: "lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto",
+    imageSource: SeattlePIlogo,
+  },
+  {
+    websiteLink: "https://www.wvon.com/",
+    Style: "lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto",
+    imageSource: SFGateLogo,
+  },
+  {
+    websiteLink: "https://www.wvon.com/",
+    Style: "lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto",
+    imageSource: sfchroniclelogo,
   },
 ];

@@ -19,6 +19,6 @@
 .slider_ThreeBoxes {
   width: calc(30%) !important;
 }
-/* .splide__arrow img {
-  height: 100px;
-} */
+.splide__arrow img {
+  z-index: -1;
+}

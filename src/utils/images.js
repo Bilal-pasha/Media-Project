@@ -58,7 +58,17 @@ import WBTV from "@assets/news-channel-logos/WBTV.png";
 import WNCH from "@assets/news-channel-logos/WNCN.png";
 import WVON from "@assets/news-channel-logos/WVON.png";
 import MarkWithGates from "@assets/MarkWithGates.jpg";
+import HoustonChroniclelogo from "@assets/HoustonChroniclelogo.png";
+import MetrofocusLogo from "@assets/MetrofocusLogo.png";
+import SeattlePIlogo from "@assets/SeattlePIlogo.jpg";
+import SFGateLogo from "@assets/SFGateLogo.jpg";
+import sfchroniclelogo from "@assets/sfchronicle logo.png";
 export {
+  HoustonChroniclelogo,
+  MetrofocusLogo,
+  SeattlePIlogo,
+  SFGateLogo,
+  sfchroniclelogo,
   VideoProduction,
   MediaTraining,
   Consulting,

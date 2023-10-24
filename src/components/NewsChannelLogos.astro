@@ -5,12 +5,12 @@ import { Image, Heading } from "@utils/Components";
 
 <Heading Heading="As Seen On" id="As-seen-on" style="text-center pb-10" />
 <div
-  class="flex gap-10 flex-wrap lg:mx-[100px] md:mx-[40px] sm:mx-6 justify-center items-center"
+  class="flex gap-10 flex-wrap lg:mx-[60px] md:mx-[40px] sm:mx-6 justify-center items-center"
 >
   {
     NewsLogos.map((logo) => {
       return (
-        <div class="lg:w-[12%] md:w-[12%] sm:w-[27%]">
+        <div class="lg:w-[10%] gap-9 md:w-[12%] sm:w-[27%]">
           <a href={logo.websiteLink} class={logo.Style}>
             <Image src={logo.imageSource} alt="about pic" />
           </a>

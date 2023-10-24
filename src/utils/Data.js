@@ -89,7 +89,4 @@ export const CorporateVideosImages = [
   {
     ImageSource: CorporateVideos2,
   },
-  {
-    ImageSource: CorporateVideos3,
-  },
 ];

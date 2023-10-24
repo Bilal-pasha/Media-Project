@@ -19,6 +19,6 @@
           </p>
           <p>
             This type of training can be invaluable to journalists no matter the
-            size of the newsroom. Media Advisory Experts can customize the
+            size of the newsroom. <span class="font-[Poppins] font-bold"> Media Advisory <span class="text-blue"> Experts</span></span> can customize the
             curriculum to fit your beat, needs, and newsroom size.
           </p>

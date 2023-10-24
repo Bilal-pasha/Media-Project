@@ -12,7 +12,7 @@
             in Legal Journalism and the Advancement of Justice’ from the State
             Bar of Michigan. He’s covered legal issues and frequently used
             PACER, CMF/ECF as a member of the media for more than 20 years. So
-            Media Advisory EXperts knows the vast scope of cases where
+            <span class="font-[Poppins] font-bold"> Media Advisory <span class="text-blue"> Experts</span></span> knows the vast scope of cases where
             compelling, emotional storytelling videos can resonate for litigants
             across the legal landscape.
           </p>
