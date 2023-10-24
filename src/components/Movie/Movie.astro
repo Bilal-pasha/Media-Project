@@ -1,12 +1,19 @@
 ---
+import { Image } from "@utils/Components";
 import Moviebg from "../../assets/videoBg.mp4";
 import "./global.css";
+import VideoGif from "../../assets/video.gif";
 ---
 
 <Fragment>
   <div class="relative w-full lg:h-[60vh] md:h-[60vh] sm:h-[30vh]">
     <div class="absolute lg:h-[60vh] md:h-[60vh] sm:h-[30vh]">
-      <video
+      <Image
+        src={VideoGif}
+        alt="gif"
+        class="top-0 w-full h-full object-cover"
+      />
+      <!-- <video
         autoplay={true}
         loop={true}
         muted={true}
@@ -14,7 +21,7 @@ import "./global.css";
         class="top-0 w-full h-full object-cover"
       >
         <source src={Moviebg} type="video/mp4" />
-      </video>
+      </video> -->
     </div>
     <div
       class="absolute text-white font-base justify-end items-center lg:py-20 sm:py-6 w-full h-full flex flex-col lg:top-0 lg:left-0 lg:px-[100px] sm:px-[50px] max-w-[100%] lg:space-y-5 sm:space-y-2 bg-semiblack"

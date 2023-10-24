@@ -26,7 +26,7 @@ const { data } = Astro.props;
   const prebtn = "sm:left-[0px] lg:left-[-5px]	 sm:top-[50.5%] lg:top-[50%]";
   const nextbtn = "sm:right-[0px] lg:left-[px] sm:top-[50%]  lg:top-[51%]	";
   var splide = new Splide("#second-slider", {
-    type: "slide",
+    type: "loop",
     perPage: 1,
     perMove: 1,
     arrows: true,
@@ -34,7 +34,7 @@ const { data } = Astro.props;
     pagination: false,
     autoplay: true,
     speed: 1200,
-    rewind: true,
+    // rewind: true,
     arrowPath:
       "M4,20A16,16,0,1,0,20.1,4,16,16,0,0,0,4,20Zm14.9-7L25,19.1l.5.8c0,.6-.4.8-.6,1.1l-6.1,6c-.3.4-.7,1-1.4.4s.2-1.1.5-1.4,3.4-3.5,5.2-5.2.7-1,0-1.6L18,14c-.4-.3-1.1-.7-.6-1.4S18.5,12.6,18.9,13Z",
     classes: {
