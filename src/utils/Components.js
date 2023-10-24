@@ -27,6 +27,8 @@ import Navbar from "@components/CustomNavbar/CustomNavbar.astro";
 import Accordian from "@components/CustomNavbar/Accordian/Accordian.astro";
 import Icon from "@components/CustomNavbar/Hamburger.jsx";
 import { app } from "../scripts/Client";
+import Consultation from "../components/Consultation&Message.astro";
+import Client from "@components/Client/Client.astro";
 
 export {
   Footer,
@@ -58,4 +60,6 @@ export {
   LegalVideoSection,
   Accordian,
   app,
+  Consultation,
+  Client,
 };

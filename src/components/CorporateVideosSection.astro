@@ -4,20 +4,20 @@ import { Image, CorporateText, Heading } from "@utils/Components";
 ---
 
 <div id="CORPORATE"></div>
-<div class="lg:container lg:mx-auto lg:pt-12 md:pt-0 sm:pt-20">
+<div class="lg:container lg:mx-auto lg:pt-12 md:pt-0 sm:pt-10">
   <Heading
-    Heading="CORPORATE VIDEOS"
+    Heading="Corporate Videos"
     id="corporate-videos"
     style="lg:pt-0 md:pt-16 lg:pb-12 sm:pb-10 text-center"
   />
   <div
-    class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-rows-1 gap-4 lg:mx-[100px] md:mx-[40px] sm:mx-6"
+    class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-rows-1 gap-4 lg:mx-[100px] md:mx-[40px] sm:mx-6 lg:pb-12"
   >
     <div class="lg:text-xl md:text-base text-left">
       <CorporateText />
     </div>
     <div
-      class="space-y-8 lg:justify-self-end md:justify-self-end sm:justify-self-center lg:pt-0 md:pt-0 sm:pt-10"
+      class="space-y-8 lg:justify-self-end md:justify-self-end sm:justify-self-center lg:py-0 md:pt-0 sm:py-10"
     >
       {
         CorporateVideosImages.map((data) => {
@@ -25,7 +25,7 @@ import { Image, CorporateText, Heading } from "@utils/Components";
             <Image
               src={data.ImageSource}
               alt="image"
-              width="400"
+              width="500"
               class="rounded-2xl hover:lg:scale-[1.1] ease-in-out transition-all duration-[600ms]"
             />
           );

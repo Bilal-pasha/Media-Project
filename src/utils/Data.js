@@ -24,19 +24,19 @@ export const Boxes = [
   {
     ImageSource: Consulting,
     imagestyle: { imagestyle },
-    text: "STRATEGIC CONSULTING",
+    text: "Strategic Consulting",
     link: "/Strategic_consulting",
   },
   {
     ImageSource: MediaTraining,
     imagestyle: { imagestyle },
-    text: "MEDIA TRAINING",
+    text: "Media Training",
     link: "/Media_training",
   },
   {
     ImageSource: VideoProduction,
     imagestyle: { imagestyle },
-    text: "VIDEO PRODUCTION",
+    text: "Video Production",
     link: "/Video_production",
   },
 ];

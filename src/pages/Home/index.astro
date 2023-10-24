@@ -1,12 +1,10 @@
 ---
-import Client from "@components/Client/Client.astro";
 import {
   Testinomials,
-  FormContact,
-  FreeConsultation,
   Movie,
   ServicesBoxes,
-  Heading,
+  Consultation,
+  Client,
 } from "@utils/Components";
 ---
 
@@ -14,36 +12,4 @@ import {
 <ServicesBoxes />
 <Testinomials />
 <Client />
-<div class="lg:container lg:mx-auto">
-  <div
-    class="grid lg:grid-cols-2 lg:mx-0 md:mx-0 sm:mx-0 lg:py-10 sm:py-0 sm:pb-10"
-  >
-    <FreeConsultation />
-
-    <!-- <div class="col-span-1 lg:block md:hidden sm:hidden"></div>
-    <div
-      class="col-span-1 lg:border-l border-semigray pt-8 pb-14 lg:block md:hidden sm:hidden"
-    > -->
-    <div
-      class="flex flex-col col-span-1 justify-between xl:px-[50px] lg:px-[40px] lg:mx-[0px] md:mx-0 sm:mx-6 lg:border-l lg:border-t-0 md:border-t sm:border-t border-semigray"
-    >
-      <Heading
-        Heading="SEND US A MESSAGE"
-        id="free-consultation"
-        style="text-center lg:pt-0 md:mb-10 md:pt-0 sm:pt-10 md:pb-0 lg:mt-0 md:mt-10 sm:pb-6"
-      />
-      <FormContact client:visible />
-    </div>
-  </div>
-
-  <!-- <div
-      class="lg:w-[50%] md:w-full sm:w-full lg:py-6 md:py-10 sm:py-5 space-y-9 lg:px-6 md:px-4 sm:px-4"
-    >
-      <h2
-        class="lg:text-4xl md:text-2xl sm:text-2xl font-[Poppins] text-center font-black pb-10"
-      >
-        SEND US A MESSAGE
-      </h2>
-      
-    </div> -->
-</div>
+<Consultation />

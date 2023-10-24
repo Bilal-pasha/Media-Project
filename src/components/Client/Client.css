@@ -10,10 +10,15 @@
 .splide__pagination {
   /* bottom: -39px !important; */
   top: 138px !important;
+  /* bottom: 13px !important; */
 }
 .splide__pagination__page {
   background: #666464 !important;
 }
+
+/* .slider_ThreeBoxes {
+  margin-right: 25px !important;
+} */
 /* .splide__arrow img {
   height: 100px;
 } */

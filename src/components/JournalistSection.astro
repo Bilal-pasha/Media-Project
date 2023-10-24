@@ -4,15 +4,15 @@ import { JournalistImageData, JournalistLogoData } from "@utils/Data";
 import { ForJournalistText } from "@utils/images";
 ---
 
-<section class="border-y-[0.1px] border-lightgray lg:mt-10">
+<section class="border-t-[0.1px] border-lightgray lg:mt-10">
   <Heading
-    Heading="FOR JOURNALISTS"
+    Heading="For Journalists"
     id="for-journalists"
-    style="sm:text-center lg:pt-12 lg:pb-12 sm:py-20"
+    style="sm:text-center lg:pt-12 lg:pb-12 sm:py-10"
   />
   <section class="lg:container lg:mx-auto">
     <div
-      class="flex lg:flex-row-reverse md:flex-col sm:flex-col lg:items-start sm:items-center lg:justify-evenly lg:pb-10 lg:pt-0"
+      class="flex lg:flex-row-reverse md:flex-col sm:flex-col lg:items-start sm:items-center lg:justify-evenly lg:pb-0 lg:pt-0"
     >
       <div
         class="flex flex-col gap-10 lg:py-2 lg:mx-[0px] lg:mr-[30px] md:mx-[40px] sm:mx-6 justify-end"
@@ -36,14 +36,14 @@ import { ForJournalistText } from "@utils/images";
         <ForJournalistText />
       </div>
     </div>
-    <div class="lg:container lg:mx-auto lg:py-12 md:pt-0 sm:py-10">
+    <div class="lg:container lg:mx-auto lg:py-12 md:pt-0 sm:pb-10">
       <div
-        class="flex flex-row justify-evenly lg:mx-[96px] md:mx-[40px] sm:mx-8 xl:space-x-24 lg:space-x-16 md:space-x-8 sm:space-x-4"
+        class="flex flex-row justify-evenly items-center lg:mx-[96px] md:mx-[40px] sm:mx-8 xl:space-x-24 lg:space-x-16 md:space-x-8 sm:space-x-4"
       >
         {
           JournalistLogoData.map((data) => {
             return (
-              <div class="">
+              <div class="lg:w-[12%] sm:w-[40%]">
                 <a href={data.websiteLink}>
                   <Image src={data.ImageSource} alt="image" />
                 </a>
@@ -54,17 +54,4 @@ import { ForJournalistText } from "@utils/images";
       </div>
     </div>
   </section>
-  <!-- <div class="lg:container lg:mx-auto py-10 flex md:justify-center">
-    <div class="lg:mx-[100px] md:mx-[40px] sm:mx-6">
-      <p class="lg:text-xl sm:text-base">
-        Contact us to schedule an introductory consultation: <br />
-        <span
-          class="lg:text-xl sm:text-sm font-semibold font-[Poppins] text-blue"
-          ><a href="mailto:contact@mediaadvisoryexperts.com"
-            >contact@mediaadvisoryexperts.com</a
-          >
-        </span>
-      </p>
-    </div>
-  </div> -->
 </section>
