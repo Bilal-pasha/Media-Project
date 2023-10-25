@@ -48,19 +48,21 @@ export const NewsLogos = [
     imageSource: Hearttelevision,
   },
   {
-    websiteLink: "https://abc.com/",
-    Style: "lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto",
-    imageSource: KSTP,
-  },
-  {
-    websiteLink: "https://www.kare11.com/",
-    Style: "lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto",
-    imageSource: KARE,
-  },
-  {
     websiteLink: "https://www.cbsnews.com/sunday-morning/",
     Style: "lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto",
     imageSource: CBSsunday,
+  },
+
+  {
+    websiteLink: "https://www.cbsnews.com/radio/",
+    Style: "lg:w-[6%] md:w-[7%] sm:w-[25%] h-auto",
+    imageSource: CBSNEWSRADIO,
+  },
+
+  {
+    websiteLink: "https://abc.com/",
+    Style: "lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto",
+    imageSource: KSTP,
   },
   {
     websiteLink: "https://www.wxyz.com/",
@@ -87,11 +89,13 @@ export const NewsLogos = [
     Style: "lg:w-[6%] md:w-[7%] sm:w-[25%] h-auto",
     imageSource: WUSA_9_logo,
   },
+
   {
-    websiteLink: "https://www.cbsnews.com/radio/",
-    Style: "lg:w-[6%] md:w-[7%] sm:w-[25%] h-auto",
-    imageSource: CBSNEWSRADIO,
+    websiteLink: "https://www.kare11.com/",
+    Style: "lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto",
+    imageSource: KARE,
   },
+
   {
     websiteLink: "https://kstp.com/",
     Style: "lg:w-[6%] md:w-[7%] sm:w-[25%] h-auto",

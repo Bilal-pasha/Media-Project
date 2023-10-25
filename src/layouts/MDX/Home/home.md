@@ -1,3 +1,3 @@
-<p> <span class="font-[Poppins] font-bold"> Media Advisory <span class="text-blue"> Experts</span></span> is an innovative media advisory company offering strategic communications,
+<p> <span class="font-[Poppins] font-bold"> Media Advisory <span class="text-blue">Experts</span></span> is an innovative media advisory company offering strategic communications,
 network television-level video production, and targeted media and journalism training to corporate,
  government, and individual clients across the United States and internationally. </p>

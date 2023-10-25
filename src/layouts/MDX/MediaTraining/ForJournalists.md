@@ -10,10 +10,10 @@
             and on Western free speech and defamation principles.</p>
             <p> In 2016, he designed and taught a two-week course on general news production in
             Pakistan as part of an initiative administered by the International
-            Center for Journalists (ICFL) and sponsored by the U.S. State
+            Center for Journalists (ICFJ) and sponsored by the U.S. State
             Department. Mark has also spoken on panels at the preeminent
             investigative journalism conference in the United States, the
-            Investigative Reporters & Editors (IRE) event every June, invited to
+            Investigative Reporters & Editors (IRE) event, invited to
             speak on topics such as internal/external newsroom collaboration and
             military beat reporting.
           </p>

@@ -1,7 +1,7 @@
 ---
 ---
 
- <p class="lg:text-xl md:text-base text-justify sm:pt-0">
+ <p class="lg:text-xl md:text-base text-left sm:pt-0">
     <span class="font-[Poppins] font-bold"> Media Advisory <span class="text-blue"> Experts</span></span>
      founder Mark Albert is available for speaking engagements. He’s given
     tailored remarks on current events, media industry analysis, and insightful

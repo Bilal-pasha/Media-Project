@@ -4,7 +4,7 @@
               respond in an instant when it lands at your doorstep. Sometimes,
               despite your best efforts, you can’t head off adverse publicity.
               But often, clients can get in front of the headline, crafting a
-              message that limits reputational damage and busines s impact. The
+              message that limits reputational damage and business impact. The
               key is speed. Don’t wait to prepare your business or brand;
-              contact us today
+              contact us today.
             </p>

@@ -14,7 +14,7 @@
               customer messaging, and crisis response
             </li>
             <li>
-              Videos to be utilized in investor communications and pitch decks
+              Videos to be utilized in investor communications <br/> and pitch decks
             </li>
             <li>Product announcements</li>
             <li>Digital video campaigns</li>
@@ -23,8 +23,8 @@
         <p>
            Trust these critical business video needs to the team at
           </p>
-          <p class="font-[Poppins] font-bold"> Media Advisory <span class="text-blue"> Experts</span></p>
+          <p class="font-[Poppins] font-bold"> Media Advisory <span class="text-blue"> Experts.</span></p>
           <br/>
           <i class="lg:text-xl">
-            When <a href="/Contact#send-message" class="text-[#0000ff]">contacting us</a>, please indicate your level of urgency so that we may best meet your needs.
+            When <a href="/Contact#send-message" class="text-blue font-semibold">contacting us</a>, please indicate your level of urgency so that we may best meet your needs.
           </i>

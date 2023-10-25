@@ -18,5 +18,5 @@
           </p>
           <br /> 
           <i class="lg:text-xl">
-            When <a href="/Contact#send-message" class="text-[#0000ff]">contacting us</a>, please indicate the status of your client’s case so that we may best meet your needs on an expedited basis, if needed.
+            When <a href="/Contact#send-message" class="text-blue font-semibold">contacting us</a>, please indicate the status of your client’s case so that we may best meet your needs on an expedited basis, if needed.
           </i>

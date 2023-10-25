@@ -6,5 +6,5 @@
               and media coaching services to prepare them for an always-on
               media ecosystem that demands lightning, accurate response and
               accountability—while also ensuring their vital context breaks
-              through the noise and is heard by their target audience.
+              through the noise and resonates with their target audience.
             </p>

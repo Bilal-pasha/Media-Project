@@ -6,7 +6,7 @@
             earned media.
           </p>
           <p>
-            <span class="font-[Poppins] font-bold"> Media Advisory <span class="text-blue"> Experts</span></span> using decades of local and national media experience, can train
+            <span class="font-[Poppins] font-bold"> Media Advisory <span class="text-blue"> Experts,</span></span> using decades of local and national media experience, can train
             you and your team on:
           </p>
           <ul class="list-disc space-y-3 ml-6">
@@ -16,7 +16,7 @@
             </li>
             <li>
               How to speak with clarity and purpose while paying attention to
-              annunciation and cadence-on-camera or off
+              annunciation and cadence—on-camera or off
             </li>
             <li>Most effective ways to master a news conference</li>
             <li>
@@ -29,9 +29,9 @@
               </li>
               <li>Deep dives into news production to control your own image</li>
             </li>
+          </ul>
             <p>When a journalist calls, be ready to master your own story.</p>
             <br />
             <i id="Legal" class="lg:text-xl">
               Please indicate the level of urgency in your <a href="/Contact#send-message" class="text-[#0000ff]">initial message</a>  so that we may best meet your needs.
             </i>
-          </ul>
