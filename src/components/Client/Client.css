@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   width: auto;
+  margin-left: 15px !important;
 }
 .slider_ThreeBoxes img {
   height: 80px;
@@ -16,9 +17,22 @@
   background: #666464 !important;
 }
 
-.slider_ThreeBoxes {
-  width: calc(30%) !important;
-}
 .splide__arrow img {
   z-index: -1;
+}
+
+@media screen and (max-width: 500px) {
+  .slider_ThreeBoxes {
+    width: calc(100%) !important;
+  }
+}
+@media screen and (min-width: 700px) {
+  .slider_ThreeBoxes {
+    width: calc(45%) !important;
+  }
+}
+@media screen and (min-width: 800px) {
+  .slider_ThreeBoxes {
+    width: calc(31.5%) !important;
+  }
 }

@@ -28,6 +28,7 @@ import {
   SeattlePIlogo,
   SFGateLogo,
   sfchroniclelogo,
+  Postlogo,
 } from "@utils/images";
 
 export const NewsLogos = [
@@ -148,32 +149,37 @@ export const NewsLogos = [
   },
   {
     websiteLink: "https://www.wvon.com/",
-    Style: "lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto",
+    Style: "lg:w-[100%] md:w-[7%] sm:w-[25%] h-auto",
     imageSource: WVON,
   },
   {
-    websiteLink: "https://www.wvon.com/",
-    Style: "lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto",
+    websiteLink: "https://www.houstonchronicle.com/",
+    Style: "lg:w-[100%] md:w-[7%] sm:w-[25%] h-auto",
     imageSource: HoustonChroniclelogo,
   },
   {
-    websiteLink: "https://www.wvon.com/",
-    Style: "lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto",
+    websiteLink: "https://www.pbs.org/show/metrofocus/",
+    Style: "lg:w-[100%] md:w-[7%] sm:w-[25%] h-auto",
     imageSource: MetrofocusLogo,
   },
   {
-    websiteLink: "https://www.wvon.com/",
-    Style: "lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto",
+    websiteLink: "https://www.seattlepi.com/",
+    Style: "lg:w-[100%] md:w-[7%] sm:w-[25%] h-auto",
     imageSource: SeattlePIlogo,
   },
   {
-    websiteLink: "https://www.wvon.com/",
-    Style: "lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto",
+    websiteLink: "https://www.sfgate.com/",
+    Style: "lg:w-[100%] md:w-[7%] sm:w-[25%] h-auto",
     imageSource: SFGateLogo,
   },
   {
-    websiteLink: "https://www.wvon.com/",
-    Style: "lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto",
+    websiteLink: "https://www.sfchronicle.com/",
+    Style: "lg:w-[100%] md:w-[7%] sm:w-[25%] h-auto",
     imageSource: sfchroniclelogo,
+  },
+  {
+    websiteLink: "https://www.ctpost.com/",
+    Style: "lg:w-[100%] md:w-[7%] sm:w-[25%] h-auto",
+    imageSource: Postlogo,
   },
 ];

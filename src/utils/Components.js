@@ -24,7 +24,7 @@ import LegalVideoSection from "@components/LegalVideosSection.astro";
 import DefaultLayout from "@layouts/defaultLayout/defaultLayout.astro";
 import Footer from "@components/Footer.astro";
 import Navbar from "@components/CustomNavbar/CustomNavbar.astro";
-import Accordian from "@components/CustomNavbar/Accordian/Accordian.astro";
+// import Accordian from "@components/CustomNavbar/Accordian/Accordian.astro";
 import Icon from "@components/CustomNavbar/Hamburger.jsx";
 import { app } from "../scripts/Client";
 import Consultation from "../components/Consultation&Message.astro";
@@ -58,7 +58,7 @@ export {
   Heading,
   CorporateVideosSection,
   LegalVideoSection,
-  Accordian,
+  // Accordian,
   app,
   Consultation,
   Client,

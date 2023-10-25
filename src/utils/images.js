@@ -63,8 +63,10 @@ import MetrofocusLogo from "@assets/MetrofocusLogo.png";
 import SeattlePIlogo from "@assets/SeattlePIlogo.jpg";
 import SFGateLogo from "@assets/SFGateLogo.jpg";
 import sfchroniclelogo from "@assets/sfchronicle logo.png";
+import Postlogo from "@assets/Postlogo.jpg";
 export {
   HoustonChroniclelogo,
+  Postlogo,
   MetrofocusLogo,
   SeattlePIlogo,
   SFGateLogo,

@@ -1,14 +1,15 @@
 ---
 import { Image } from "@utils/Components";
 import { JournalistLogoData } from "@utils/Data";
+import "../components/Client/Client.css";
 ---
 
 <div
   id="image-carousel"
-  class="splide text-center lg:container lg:mx-auto md:px-14 sm:px-6 lg:w-[100%] sm:w-full"
+  class="splide text-center lg:container lg:mx-auto md:px-14 sm:px-0 lg:w-[100%] sm:w-full"
   aria-label="Beautiful Images"
 >
-  <div class="splide__track lg:pt-10 lg:pb-0 sm:pb-16 sm:pt-4">
+  <div class="splide__track lg:pt-10 lg:pb-0 sm:pb-0 sm:pt-4">
     <ul class="splide__list space-x-6">
       {
         JournalistLogoData.map((data) => {
@@ -43,7 +44,6 @@ import { JournalistLogoData } from "@utils/Data";
       trimSpace: true,
       autoplay: true,
       rewindSpeed: 500,
-      pagination: true,
       speed: 1200,
       arrowPath:
         "M4,20A16,16,0,1,0,20.1,4,16,16,0,0,0,4,20Zm14.9-7L25,19.1l.5.8c0,.6-.4.8-.6,1.1l-6.1,6c-.3.4-.7,1-1.4.4s.2-1.1.5-1.4,3.4-3.5,5.2-5.2.7-1,0-1.6L18,14c-.4-.3-1.1-.7-.6-1.4S18.5,12.6,18.9,13Z",
