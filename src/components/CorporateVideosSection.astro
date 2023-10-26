@@ -3,7 +3,6 @@ import { CorporateVideosImages } from "@utils/Data";
 import { Image, CorporateText, Heading } from "@utils/Components";
 ---
 
-<div id="CORPORATE"></div>
 <div class="lg:container lg:mx-auto lg:pt-12 md:pt-0 sm:pt-10">
   <Heading
     Heading="Corporate Videos"
@@ -22,12 +21,15 @@ import { Image, CorporateText, Heading } from "@utils/Components";
       {
         CorporateVideosImages.map((data) => {
           return (
-            <Image
-              src={data.ImageSource}
-              alt="image"
-              width="500"
-              class="rounded-2xl hover:lg:scale-[1.1] ease-in-out transition-all duration-[600ms]"
-            />
+            <>
+              <Image
+                src={data.ImageSource}
+                alt="image"
+                width="500"
+                class="rounded-2xl hover:lg:scale-[1.1] ease-in-out transition-all duration-[600ms]"
+              />
+              <div id="Legal" />
+            </>
           );
         })
       }

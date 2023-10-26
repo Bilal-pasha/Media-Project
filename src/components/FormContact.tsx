@@ -180,7 +180,6 @@ const FormContact = () => {
                   render={({ field: { value, onChange, onBlur } }) => (
                     <textarea
                       className="no-resize appearance-none block w-full text-gray-700 border border-[#d8d4d4] rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white  h-48 resize-none"
-                      id="message"
                       placeholder="Please type your Message"
                       value={value}
                       onChange={onChange}
