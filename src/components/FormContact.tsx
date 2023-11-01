@@ -21,65 +21,35 @@ const FormContact = () => {
     defaultValues: defaultValues,
   });
 
-  const saveHandler = (event: IFormContact) => {
-    const BodyValue =
-      "First Name : " +
-      event.firstName +
-      "<br/> Last Name : " +
-      event.lastName +
-      "<br/> Email : " +
-      event.email +
-      "<br/> Message : " +
-      event.message;
-    var Email = {
-      send: function (a) {
-        return new Promise(function (n, e) {
-          (a.nocache = Math.floor(1e6 * Math.random() + 1)),
-            (a.Action = "Send");
-          var t = JSON.stringify(a);
-          Email.ajaxPost("https://smtpjs.com/v3/smtpjs.aspx?", t, function (e) {
-            n(e);
-          });
-        });
-      },
-      ajaxPost: function (e, n, t) {
-        var a = Email.createCORSRequest("POST", e);
-        a.setRequestHeader("Content-type", "application/x-www-form-urlencoded"),
-          (a.onload = function () {
-            var e = a.responseText;
-            null != t && t(e);
-          }),
-          a.send(n);
-      },
-      ajax: function (e, n) {
-        var t = Email.createCORSRequest("GET", e);
-        (t.onload = function () {
-          var e = t.responseText;
-          null != n && n(e);
-        }),
-          t.send();
-      },
-      createCORSRequest: function (e, n) {
-        var t = new XMLHttpRequest();
-        return (
-          "withCredentials" in t
-            ? t.open(e, n, !0)
-            : "undefined" != typeof XDomainRequest
-            ? (t = new XDomainRequest()).open(e, n)
-            : (t = null),
-          t
-        );
-      },
+  const saveHandler = async (event: IFormContact) => {
+    const data = {
+      Name: event.firstName,
+      LastName: event.lastName,
+      Email: event.email,
+      Message: event.message,
     };
-    Email.send({
-      Host: "smtp.elasticemail.com",
-      Username: "billopasho56@gmail.com",
-      Password: "6F44B8551B31A371B045BF46E7CBC835C530",
-      To: "billopasho56@gmail.com",
-      From: "billopasho56@gmail.com",
-      Subject: "MEDIA ADVISORY EXPERTS",
-      Body: BodyValue,
-    }).then((message) => alert(message));
+    async function postData(url = "http://localhost:4321/api/data") {
+      // Default options are marked with *
+
+      const payload = JSON.stringify(data);
+
+      const response = await fetch(url, {
+        method: "POST", // *GET, POST, PUT, DELETE, etc.
+        mode: "cors", // no-cors, *cors, same-origin
+        cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+        credentials: "same-origin", // include, *same-origin, omit
+        headers: {
+          "Content-Type": "application/json",
+          // 'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        redirect: "follow", // manual, *follow, error
+        referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+        body: payload, // body data type must match "Content-Type" header
+      });
+      const res = await response.json(); // parses JSON response into native JavaScript objects
+      alert(res.message);
+    }
+    await postData();
   };
 
   return (
@@ -87,7 +57,7 @@ const FormContact = () => {
       <section className="sm:pb-10 lg:mx-0 md:mx-10 sm:mx-3 sm:px-3">
         <div>
           <form
-            className=" w-full max-w-[100rem] lg:px-0 "
+            className="w-full max-w-[100rem] lg:px-0"
             onSubmit={handleSubmit(saveHandler)}
           >
             <div className="flex flex-wrap -mx-3 mb-2">
@@ -207,8 +177,6 @@ const FormContact = () => {
                 className="h-10 w-32 text-lg bg-[#1E90FF] text-white rounded cursor-pointer"
                 value="SEND"
               />
-              <div className=""></div>
-              {/* <div className="md:w-2/3"></div> */}
             </div>
           </form>
         </div>

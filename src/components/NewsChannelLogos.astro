@@ -1,6 +1,22 @@
 ---
-import { NewsLogos } from "@utils/NewsLogos";
 import { Image, Heading } from "@utils/Components";
+import { type NewsInterface } from "@components/NewLogosInterface";
+import { app } from "@utils/Components";
+import { getFirestore, collection, getDocs } from "firebase/firestore";
+const db = getFirestore(app);
+const colRef = collection(db, "NewsChannelsLogos");
+const ImageData = await getDocs(colRef)
+  .then((review) => {
+    const updatedData: NewsInterface[] | any = review.docs.map((doc) => {
+      return { ...doc.data(), id: doc.id };
+    });
+
+    const sortedvalue = updatedData.sort((a, b) => a.ImageOrder - b.ImageOrder);
+    return sortedvalue;
+  })
+  .catch((err) => {
+    console.log(err.message);
+  });
 ---
 
 <Heading Heading="As Seen On" id="As-seen-on" style="text-center pb-10" />
@@ -8,11 +24,19 @@ import { Image, Heading } from "@utils/Components";
   class="flex gap-10 flex-wrap lg:mx-[60px] md:mx-[40px] sm:mx-6 justify-center items-center"
 >
   {
-    NewsLogos.map((logo) => {
+    ImageData.map((data) => {
       return (
         <div class="lg:w-[10%] gap-9 md:w-[12%] sm:w-[27%] lg:m-6">
-          <a href={logo.websiteLink} class={logo.Style}>
-            <Image src={logo.imageSource} alt="about pic" />
+          <a
+            href={data.ImageWebsiteUrl}
+            class="lg:w-[4%] md:w-[7%] sm:w-[25%] h-auto"
+          >
+            <Image
+              src={data.ImageUrl}
+              alt="about pic"
+              width="300"
+              height="200"
+            />
           </a>
         </div>
       );

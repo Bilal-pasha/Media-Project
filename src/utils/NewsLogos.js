@@ -39,12 +39,12 @@ export const NewsLogos = [
   },
   {
     websiteLink: "https://edition.cnn.com/",
-    Style: "lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto",
+    Style: "lg:w-[4%] md:w-[7%] sm:w-[25%] h-auto",
     imageSource: CNN,
   },
   {
     websiteLink: "https://www.hearst.com/",
-    Style: "lg:w-[8%] md:w-[7%] sm:w-[25%] h-auto",
+    Style: "lg:w-[4%] md:w-[7%] sm:w-[25%] h-auto",
     imageSource: Hearttelevision,
   },
   {
