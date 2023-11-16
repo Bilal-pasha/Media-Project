@@ -17,6 +17,7 @@ import {
   CorporateVideos3,
   MarkWithGates,
 } from "@utils/images";
+import JsonText from "../layouts/Heading/heading.json";
 const imagestyle =
   " w-full object-cover lg:h-[180px] md:h-[200px] md:w-full sm:h-[200px] sm:w-full";
 
@@ -24,19 +25,19 @@ export const Boxes = [
   {
     ImageSource: Consulting,
     imagestyle: { imagestyle },
-    text: "Strategic Consulting",
+    text: JsonText.ServicesBoxesText.box1,
     link: "/Strategic_consulting",
   },
   {
     ImageSource: MediaTraining,
     imagestyle: { imagestyle },
-    text: "Media Training",
+    text: JsonText.ServicesBoxesText.box2,
     link: "/Media_training",
   },
   {
     ImageSource: VideoProduction,
     imagestyle: { imagestyle },
-    text: "Video Production",
+    text: JsonText.ServicesBoxesText.box3,
     link: "/Video_production",
   },
 ];

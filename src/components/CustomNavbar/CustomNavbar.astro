@@ -3,6 +3,7 @@ import { Image, Icon } from "@utils/Components";
 import { MainLogo } from "@utils/images";
 import Accordion from "../CustomNavbar/Accordian/accordion";
 import "../CustomNavbar/Accordian/accordion.css";
+import Jsontext from "../../layouts/Heading/heading.json";
 ---
 
 <Fragment>
@@ -28,7 +29,8 @@ import "../CustomNavbar/Accordian/accordion.css";
         <h2
           class="xl:text-[16px] lg:text-[15px] sm:text-[0.93rem] font-[Poppins] font-semibold"
         >
-          MEDIA ADVISORY <span class="text-blue"> EXPERTS</span>
+          {Jsontext.mainlogotext.whitetext}
+          <span class="text-blue"> {Jsontext.mainlogotext.bluetext}</span>
         </h2>
       </div>
     </a>
@@ -39,7 +41,7 @@ import "../CustomNavbar/Accordian/accordion.css";
       <li class="lg:border-none md:border-b-[1px]">
         <a
           class="px-2 font-semibold hover:border-blue hover:text-blue md:mt-0 hover:text-gray-900 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-          href="/About">ABOUT US</a
+          href="/About">{Jsontext.header.abouttext}</a
         >
       </li>
       <li
@@ -49,7 +51,8 @@ import "../CustomNavbar/Accordian/accordion.css";
           <button class="peer px-2 md:px-0 lg:py-2 lg:text-black md:text-black">
             <a
               class="px-2 md:px-4 sm:px-4 py-2 mt-2 font-semibold text-gray-900 rounded-lg hover:border-blue hover:text-blue dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-              href="/Strategic_consulting">STRATEGIC CONSULTING</a
+              href="/Strategic_consulting"
+              >{Jsontext.header.Strategictext.STRATEGICCONSULTING}</a
             ></button
           >
           <div
@@ -59,19 +62,23 @@ import "../CustomNavbar/Accordian/accordion.css";
           >
             <a
               class="px-5 py-3 hover:text-blue"
-              href="/Strategic_consulting#Earned">EARNED MEDIA</a
+              href="/Strategic_consulting#Earned"
+              >{Jsontext.header.Strategictext.earnedmediatext}</a
             >
             <a
               class="px-5 py-3 hover:text-blue"
-              href="/Strategic_consulting#crisis">CRISIS COMMUNICATIONS</a
+              href="/Strategic_consulting#crisis"
+              >{Jsontext.header.Strategictext.crisiscommunication}</a
             >
             <a
               class="px-5 py-3 hover:text-blue"
-              href="/Strategic_consulting#new-industry">NEWS INDUSTRY INSIGHT</a
+              href="/Strategic_consulting#new-industry"
+              >{Jsontext.header.Strategictext.NEWSINDUSTRY}</a
             >
             <a
               class="px-5 py-3 hover:text-blue"
-              href="/Strategic_consulting#multi-media">MULTI-MEDIA</a
+              href="/Strategic_consulting#multi-media"
+              >{Jsontext.header.Strategictext.MULTIMEDIA}</a
             >
           </div>
         </div>
@@ -84,7 +91,8 @@ import "../CustomNavbar/Accordian/accordion.css";
           <button class="peer px-2 md:px-0 lg:py-2 lg:text-black md:text-black">
             <a
               class="px-2 md:px-4 sm:px-4 py-2 mt-2 font-semibold text-gray-900 rounded-lg hover:border-blue hover:text-blue dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-              href="/Media_training">MEDIA TRAINING/COACHING</a
+              href="/Media_training"
+              >{Jsontext.header.MEDIATRAININGTEXT.MEDIATRAINING}</a
             >
           </button>
           <div
@@ -94,11 +102,13 @@ import "../CustomNavbar/Accordian/accordion.css";
           >
             <a
               class="px-5 py-3 hover:text-blue"
-              href="/Media_training/#for-leaders">FOR LEADERS</a
+              href="/Media_training/#for-leaders"
+              >{Jsontext.header.MEDIATRAININGTEXT.FORLEADERTEXT}</a
             >
             <a
               class="px-5 py-3 hover:text-blue"
-              href="/Media_training/#for-journalists">FOR JOURNALISTS</a
+              href="/Media_training/#for-journalists"
+              >{Jsontext.header.MEDIATRAININGTEXT.FORJOURNALIST}</a
             >
           </div>
         </div>
@@ -111,7 +121,8 @@ import "../CustomNavbar/Accordian/accordion.css";
           <button class="peer px-2 lg:py-2 lg:text-black md:text-black">
             <a
               class="px-2 mt-2 font-semibold text-gray-900 rounded-lg hover:border-blue hover:text-blue dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-              href="/Video_production">VIDEO PRODUCTION</a
+              href="/Video_production"
+              >{Jsontext.header.VIDEOPRODUCTIONTEXT.VIDEOPRODUCTIONTEXT}</a
             ></button
           >
           <div
@@ -121,10 +132,11 @@ import "../CustomNavbar/Accordian/accordion.css";
           >
             <a
               class="py-3 px-5 hover:text-blue"
-              href="/Video_production#CORPORATE">CORPORATE VIDEOS</a
+              href="/Video_production#CORPORATE"
+              >{Jsontext.header.VIDEOPRODUCTIONTEXT.CORPORATETEXT}</a
             >
             <a class="py-3 px-5 hover:text-blue" href="/Video_production#Legal"
-              >LEGAL VIDEOS</a
+              >{Jsontext.header.VIDEOPRODUCTIONTEXT.LEGALTEXT}</a
             >
           </div>
         </div>
@@ -136,7 +148,7 @@ import "../CustomNavbar/Accordian/accordion.css";
           <button class="peer lg:py-2 lg:text-black md:text-black"
             ><a
               class="xl:px-4 lg:pr-2 mt-2 font-semibold text-gray-900 rounded-lg hover:border-blue hover:text-blue dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-              href="/Contact">CONTACT US</a
+              href="/Contact">{Jsontext.header.CONTACTUS.CONTACTTEXT}</a
             ></button
           >
           <div
@@ -145,10 +157,10 @@ import "../CustomNavbar/Accordian/accordion.css";
                      flex-col bg-white drop-shadow-lg text-black z-10 text-[14px]"
           >
             <a class="px-5 py-3 hover:text-blue" href="/Contact/#Consultation"
-              >BOOK A FREE CONSULTATION</a
+              >{Jsontext.header.CONTACTUS.CONSULTATIONTEXT}</a
             >
             <a class="px-5 py-3 hover:text-blue" href="/Contact/#send-message"
-              >SEND US A MESSAGE</a
+              >{Jsontext.header.CONTACTUS.SENDMESSAGE}</a
             >
           </div>
         </div>
@@ -165,13 +177,13 @@ import "../CustomNavbar/Accordian/accordion.css";
           ><div
             class="border-t-[0.1px] border-lightgray hover:text-blue font-medium text-[16px] text-black py-[10px] px-[32px]"
           >
-            ABOUT US
+            {Jsontext.header.abouttext}
           </div></a
         >
         <div class="ac">
           <h2 class="ac-header">
             <button type="button" class="ac-trigger hover:text-blue">
-              STRATEGIC CONSULTING</button
+              {Jsontext.header.Strategictext.STRATEGICCONSULTING}</button
             >
           </h2>
           <div class="ac-panel">
@@ -179,28 +191,32 @@ import "../CustomNavbar/Accordian/accordion.css";
               <p
                 class="ac-text hover:text-blue border-y-[0.1px] border-lightgray"
               >
-                EARNED MEDIA
+                {Jsontext.header.Strategictext.earnedmediatext}
               </p></a
             >
             <a href="/Strategic_consulting#crisis" id="HandleCheck6">
-              <p class="ac-text hover:text-blue">CRISIS COMMUNICATIONS</p></a
+              <p class="ac-text hover:text-blue">
+                {Jsontext.header.Strategictext.crisiscommunication}
+              </p></a
             >
             <a href="/Strategic_consulting/#new-industry" id="HandleCheck7">
               <p
                 class="ac-text hover:text-blue border-y-[0.1px] border-lightgray"
               >
-                NEW INDUSTRY INSIGHT
+                {Jsontext.header.Strategictext.NEWSINDUSTRY}
               </p></a
             >
             <a href="/Strategic_consulting#multi-media" id="HandleCheck8">
-              <p class="ac-text hover:text-blue">MULTI-MEDIA</p></a
+              <p class="ac-text hover:text-blue">
+                {Jsontext.header.Strategictext.MULTIMEDIA}
+              </p></a
             >
           </div>
         </div>
         <div class="ac">
           <h2 class="ac-header">
             <button type="button" class="ac-trigger hover:text-blue">
-              MEDIA TRAINING/COACHING</button
+              {Jsontext.header.MEDIATRAININGTEXT.MEDIATRAINING}</button
             >
           </h2>
           <div class="ac-panel">
@@ -208,18 +224,20 @@ import "../CustomNavbar/Accordian/accordion.css";
               ><p
                 class="ac-text hover:text-blue border-y-[0.1px] border-lightgray"
               >
-                FOR LEADERS
+                {Jsontext.header.MEDIATRAININGTEXT.FORLEADERTEXT}
               </p></a
             >
             <a href="/Media_training/#for-journalists" id="HandleCheck4">
-              <p class="ac-text hover:text-blue">FOR JOURNALISTS</p></a
+              <p class="ac-text hover:text-blue">
+                {Jsontext.header.MEDIATRAININGTEXT.FORJOURNALIST}
+              </p></a
             >
           </div>
         </div>
         <div class="ac">
           <h2 class="ac-header">
             <button type="button" class="ac-trigger hover:text-blue">
-              VIDEO PRODUCTION</button
+              {Jsontext.header.VIDEOPRODUCTIONTEXT.VIDEOPRODUCTIONTEXT}</button
             >
           </h2>
           <div class="ac-panel">
@@ -227,11 +245,13 @@ import "../CustomNavbar/Accordian/accordion.css";
               <p
                 class="ac-text hover:text-blue cursor-pointer border-y-[0.1px] border-lightgray"
               >
-                CORPORATE VIDEOS
+                {Jsontext.header.VIDEOPRODUCTIONTEXT.CORPORATETEXT}
               </p></a
             >
             <a href="/Video_production/#Legal" id="HandleCheck2">
-              <p class="ac-text hover:text-blue">LEGAL VIDEOS</p></a
+              <p class="ac-text hover:text-blue">
+                {Jsontext.header.VIDEOPRODUCTIONTEXT.LEGALTEXT}
+              </p></a
             >
           </div>
         </div>
@@ -239,7 +259,7 @@ import "../CustomNavbar/Accordian/accordion.css";
         <div class="ac">
           <h2 class="ac-header border-b-[0.1px] border-lightgray">
             <button type="button" class="ac-trigger hover:text-blue"
-              >CONTACT US</button
+              >{Jsontext.header.CONTACTUS.CONTACTTEXT}</button
             >
           </h2>
           <div class="ac-panel">
@@ -247,11 +267,13 @@ import "../CustomNavbar/Accordian/accordion.css";
               <p
                 class="ac-text hover:text-blue border-y-[0.1px] border-lightgray"
               >
-                BOOK A FREE CONSULTATION
+                {Jsontext.header.CONTACTUS.CONSULTATIONTEXT}
               </p></a
             >
             <a href="/Contact/#send-message" id="HandleCheck9">
-              <p class="ac-text hover:text-blue">SEND US A MESSAGE</p></a
+              <p class="ac-text hover:text-blue">
+                {Jsontext.header.CONTACTUS.SENDMESSAGE}
+              </p></a
             >
           </div>
         </div>

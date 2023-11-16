@@ -1,6 +1,7 @@
 ---
 import { MainLogo } from "@utils/images";
 import { Image } from "@utils/Components";
+import Jsontext from "../layouts/Heading/heading.json";
 ---
 
 <section class="text-black border-t-[0.1px] border-lightgray">
@@ -21,13 +22,16 @@ import { Image } from "@utils/Components";
       >
 
       <p class="space-x-4">
-        <a href="/terms-of-services" class="hover:text-blue">Terms of Service</a
+        <a href="/terms-of-services" class="hover:text-blue"
+          >{Jsontext.FOOTERTEXT.TERMSSERVICES}</a
         >
-        <a href="/private-policies" class="hover:text-blue">Privacy Policy</a>
+        <a href="/private-policies" class="hover:text-blue"
+          >{Jsontext.FOOTERTEXT.privatepolicy}</a
+        >
       </p>
       <div class="flex items-center space-x-1">
         <span>&copy</span>
-        <p>2023 Media Advisory Experts</p>
+        <p>{Jsontext.FOOTERTEXT.copyrighttext}</p>
       </div>
     </div>
     <div
@@ -37,53 +41,74 @@ import { Image } from "@utils/Components";
         class="space-y-5 space-x-1 lg:py-0 md:py-0 lg:mt-0 lg:pl-10 md:mt-0 sm:mt-10"
       >
         <li class="hover:text-blue">
-          <a href="/About">ABOUT US</a>
+          <a href="/About">{Jsontext.header.abouttext}</a>
         </li>
       </ul>
       <ul
         class="flex flex-col space-y-3 space-x-1 cursor-pointer hover:text-blue-500 lg:my-0 md:mt-0 sm:my-5"
       >
         <li class="hover:text-blue">
-          <a href="/Strategic_consulting">STRATEGIC CONSULTING</a>
-        </li>
-        <li class="text-semigray hover:text-blue">
-          <a href="/Strategic_consulting/#Earned">EARNED MEDIA</a>
-        </li>
-        <li class="text-semigray hover:text-blue">
-          <a href="/Strategic_consulting/#crisis">CRISIS COMMUNICATIONS</a>
-        </li>
-        <li class="text-semigray hover:text-blue">
-          <a href="/Strategic_consulting/#new-industry">NEWS INDUSTRY INSIGHT</a
+          <a href="/Strategic_consulting"
+            >{Jsontext.header.Strategictext.STRATEGICCONSULTING}</a
           >
         </li>
         <li class="text-semigray hover:text-blue">
-          <a href="/Strategic_consulting/#multi-media">MULTI MEDIA</a>
+          <a href="/Strategic_consulting/#Earned"
+            >{Jsontext.header.Strategictext.earnedmediatext}</a
+          >
+        </li>
+        <li class="text-semigray hover:text-blue">
+          <a href="/Strategic_consulting/#crisis"
+            >{Jsontext.header.Strategictext.crisiscommunication}</a
+          >
+        </li>
+        <li class="text-semigray hover:text-blue">
+          <a href="/Strategic_consulting/#new-industry"
+            >{Jsontext.header.Strategictext.NEWSINDUSTRY}</a
+          >
+        </li>
+        <li class="text-semigray hover:text-blue">
+          <a href="/Strategic_consulting/#multi-media"
+            >{Jsontext.header.Strategictext.MULTIMEDIA}</a
+          >
         </li>
       </ul>
       <ul
         class="flex flex-col space-y-3 space-x-1 cursor-pointer hover:text-blue-500 lg:my-0 md:mt-0 sm:my-5"
       >
         <li class="hover:text-blue">
-          <a href="/Media_training">MEDIA TRAINING/COACHING</a>
+          <a href="/Media_training"
+            >{Jsontext.header.MEDIATRAININGTEXT.MEDIATRAINING}</a
+          >
         </li>
         <li class="text-semigray hover:text-blue">
-          <a href="/Media_training/#for-leaders">FOR LEADERS</a>
+          <a href="/Media_training/#for-leaders"
+            >{Jsontext.header.MEDIATRAININGTEXT.FORLEADERTEXT}</a
+          >
         </li>
         <li class="text-semigray hover:text-blue">
-          <a href="/Media_training/#for-journalists">FOR JOURNALISTS</a>
+          <a href="/Media_training/#for-journalists"
+            >{Jsontext.header.MEDIATRAININGTEXT.FORJOURNALIST}</a
+          >
         </li>
       </ul>
       <ul
         class="space-y-3 space-x-1 cursor-pointer hover:text-blue-500 lg:my-0 md:mt-0 sm:my-5"
       >
         <li class="hover:text-blue">
-          <a href="/Video_production">VIDEO PRODUCTION</a>
+          <a href="/Video_production"
+            >{Jsontext.header.VIDEOPRODUCTIONTEXT.VIDEOPRODUCTIONTEXT}</a
+          >
         </li>
         <li class="text-semigray hover:text-blue">
-          <a href="/Video_production#CORPORATE">CORPORATE VIDEOS</a>
+          <a href="/Video_production#CORPORATE"
+            >{Jsontext.header.VIDEOPRODUCTIONTEXT.CORPORATETEXT}</a
+          >
         </li>
         <li class="text-semigray hover:text-blue">
-          <a href="/Video_production/#Legal">LEGAL VIDEOS</a>
+          <a href="/Video_production/#Legal"
+            >{Jsontext.header.VIDEOPRODUCTIONTEXT.LEGALTEXT}</a
+          >
         </li>
       </ul>
 
@@ -91,13 +116,17 @@ import { Image } from "@utils/Components";
         class="flex flex-col space-y-3 space-x-1 cursor-pointer hover:text-blue-500 lg:my-0 md:mt-0 sm:my-5"
       >
         <li class="hover:text-blue">
-          <a href="/Contact">CONTACT US</a>
+          <a href="/Contact">{Jsontext.header.CONTACTUS.CONTACTTEXT}</a>
         </li>
         <li class="text-semigray hover:text-blue">
-          <a href="/Contact/#contact-items">BOOK A FREE CONSULTATION</a>
+          <a href="/Contact/#contact-items"
+            >{Jsontext.header.CONTACTUS.CONSULTATIONTEXT}</a
+          >
         </li>
         <li class="text-semigray hover:text-blue">
-          <a href="/Contact/#contact-items">SEND US A MESSAGE</a>
+          <a href="/Contact/#contact-items"
+            >{Jsontext.header.CONTACTUS.SENDMESSAGE}</a
+          >
         </li>
       </ul>
     </div>

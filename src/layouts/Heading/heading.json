@@ -1,0 +1,75 @@
+{
+  "mainlogotext": {
+    "whitetext": "MEDIA ADVISORY",
+    "bluetext": " EXPERTS"
+  },
+  "header": {
+    "abouttext": "ABOUT US",
+    "Strategictext": {
+      "STRATEGICCONSULTING": "STRATEGIC CONSULTING",
+      "earnedmediatext": "EARNED MEDIA",
+      "crisiscommunication": "CRISIS COMMUNICATIONS",
+      "NEWSINDUSTRY": "NEWS INDUSTRY INSIGHT",
+      "MULTIMEDIA": "MULTI-MEDIA"
+    },
+    "MEDIATRAININGTEXT": {
+      "MEDIATRAINING": "MEDIA TRAINING/COACHING",
+      "FORLEADERTEXT": "FOR LEADERS",
+      "FORJOURNALIST": "FOR JOURNALISTS"
+    },
+    "VIDEOPRODUCTIONTEXT": {
+      "VIDEOPRODUCTIONTEXT": "VIDEO PRODUCTION",
+      "CORPORATETEXT": "CORPORATE VIDEOS",
+      "LEGALTEXT": "LEGAL VIDEOS"
+    },
+    "CONTACTUS": {
+      "CONTACTTEXT": "CONTACT US ",
+      "CONSULTATIONTEXT": "BOOK A FREE CONSULTATION",
+      "SENDMESSAGE": "SEND US A MESSAGE"
+    }
+  },
+  "FOOTERTEXT": {
+    "TERMSSERVICES": "Terms of Service",
+    "privatepolicy": "Privacy Policy",
+    "copyrighttext": "2023 Media Advisory Experts"
+  },
+  "ANIMATEDTEXT": {
+    "WHITETEXT": "WELCOME TO MEDIA ADVISORY",
+    "BLUETEXT": "EXPERTS"
+  },
+  "home": {
+    "OurServicesTitle": "Our Services",
+    "ClientFeedBackTitle": "Client Feedback",
+    "freeconsultationtitle": "Free Consultation",
+    "formtitle": "Send Us a Message"
+  },
+  "ServicesBoxesText": {
+    "box1": "Strategic Consulting",
+    "box2": "Media Training",
+    "box3": "Video Production"
+  },
+  "About": {
+    "MarkName": "Mark Albert",
+    "MarkDesignation": "Founder & CEO",
+    "Assseenon": "As Seen On",
+    "SpeakingEngagement": "Speaking Engagements"
+  },
+  "StrategicConsulting": {
+    "EarnedMediaTitle": "Earned Media",
+    "CrisisCommunicationTitle": "Crisis Communications",
+    "NewsIndustryTitle": "News Industry Insight",
+    "MultimediaTitle": "Multi-Media"
+  },
+  "MediaTraining": {
+    "forleaderstitle": "For Leaders",
+    "forjournalisttitle": "For Journalists"
+  },
+  "VideoProduction": {
+    "Corporatevideotitle": "Corporate Videos",
+    "legalvideotitle": "Legal Videos"
+  },
+  "Contactus": {
+    "freeconsultingtitle": "Free Consultation",
+    "sendmessagetitle": "Send Us a Message"
+  }
+}

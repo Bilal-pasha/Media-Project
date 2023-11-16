@@ -3,6 +3,7 @@ import { getFirestore, collection, getDocs } from "firebase/firestore";
 import AliceCarousel from "./AliceCarousel.astro";
 import { Heading } from "@utils/Components";
 import { app } from "@utils/Components";
+import JsonText from "../../layouts/Heading/heading.json";
 
 const db = getFirestore(app);
 const colRef = collection(db, "testimonials");
@@ -21,11 +22,11 @@ const data = await getDocs(colRef)
 ---
 
 <Fragment>
-  <section class="border-y-[0.1px] border-lightgray">
+  <section class="border-y-[0.1px] border-lightgray py-8">
     <div class="">
       <Heading
-        Heading="Client Feedback"
-        style="text-center pt-10"
+        Heading={JsonText.home.ClientFeedBackTitle}
+        style="text-center mb-2"
         id="testimonials"
       />
     </div>

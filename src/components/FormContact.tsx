@@ -28,7 +28,9 @@ const FormContact = () => {
       Email: event.email,
       Message: event.message,
     };
-    async function postData(url = "http://localhost:4321/api/data") {
+    async function postData(
+      url = "https://exuberant-slug-outfit.cyclic.app/send-email"
+    ) {
       // Default options are marked with *
 
       const payload = JSON.stringify(data);
@@ -46,8 +48,8 @@ const FormContact = () => {
         referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
         body: payload, // body data type must match "Content-Type" header
       });
-      const res = await response.json(); // parses JSON response into native JavaScript objects
-      alert(res.message);
+      const res = await response.text(); // parses JSON response into native JavaScript objects
+      alert(res);
     }
     await postData();
   };

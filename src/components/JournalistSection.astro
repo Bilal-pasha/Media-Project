@@ -3,11 +3,12 @@ import { Image, Heading } from "@utils/Components";
 import { JournalistImageData } from "@utils/Data";
 import { ForJournalistText } from "@utils/images";
 import ForJournalistImageSlider from "../components/ForJournalistImageSlider.astro";
+import Jsontext from "../layouts/Heading/heading.json";
 ---
 
 <section class="border-t-[0.1px] border-lightgray lg:mt-10">
   <Heading
-    Heading="For Journalists"
+    Heading={Jsontext.MediaTraining.forjournalisttitle}
     style="sm:text-center lg:pt-12 lg:pb-12 sm:py-10"
   />
   <section class="lg:container lg:mx-auto">

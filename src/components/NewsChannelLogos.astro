@@ -17,9 +17,15 @@ const ImageData = await getDocs(colRef)
   .catch((err) => {
     console.log(err.message);
   });
+const { JsonText } = Astro.props;
+console.log(JsonText.About.Assseenon);
 ---
 
-<Heading Heading="As Seen On" id="As-seen-on" style="text-center pb-10" />
+<Heading
+  Heading={JsonText.About.Assseenon}
+  id="As-seen-on"
+  style="text-center pb-10"
+/>
 <div
   class="flex gap-10 flex-wrap lg:mx-[60px] md:mx-[40px] sm:mx-6 justify-center items-center"
 >

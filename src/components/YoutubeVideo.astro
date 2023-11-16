@@ -1,12 +1,14 @@
 ---
 import { SpeakingEngagement } from "@utils/Components";
 import SpeakingEngagementText from "../layouts/MDX/About/SpeakingEngagementsText.md";
+
+import Jsontext from "../layouts/Heading/heading.json";
 ---
 
 <h2
   class="lg:text-4xl md:text-2xl sm:text-2xl font-[Poppins] font-black text-center"
 >
-  Speaking Engagements
+  {Jsontext.About.SpeakingEngagement}
 </h2>
 <div
   class="grid lg:grid-cols-11 lg:mx-[100px] md:mx-[40px] sm:mx-6 lg:justify-between lg:py-12 sm:py-10 lg:space-y-0 md:space-y-8 sm:space-y-8"

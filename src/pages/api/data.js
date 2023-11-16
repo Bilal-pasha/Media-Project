@@ -1,5 +1,6 @@
 import * as sgMail from "@sendgrid/mail";
 export const prerender = false;
+
 export const POST = async ({ request }) => {
   if (request.headers.get("Content-Type") === "application/json") {
     const body = await request.json();

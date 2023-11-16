@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ContentLoop({ data }) {
   return (
-    <div className="lg:space-y-4 sm:space-y-4 lg:text-center  sm:text-center  sm:whitespace-break-spaces			">
+    <div className="lg:space-y-4 sm:space-y-4 lg:text-center  sm:text-center  sm:whitespace-break-spaces">
       {data.Review && (
         <i className="leading-5 text-xl text-justify">{data.Review}</i>
       )}{" "}

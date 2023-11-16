@@ -1,4 +1,5 @@
 ---
+import JsonText from "../../layouts/Heading/heading.json";
 import {
   YoutubeVideo,
   BackGroundImage,
@@ -29,12 +30,12 @@ import { MarkPicture, HoldingHands, AboutPagebanner } from "@utils/images";
     <h2
       class="lg:text-4xl md:text-2xl sm:text-2xl font-[Poppins] font-black text-center"
     >
-      Mark Albert
+      {JsonText.About.MarkName}
     </h2>
     <p
       class="lg:text-xl md:text-base sm:text-base font-[Poppins] font-semibold text-center"
     >
-      Founder & CEO
+      {JsonText.About.MarkDesignation}
     </p>
     <div
       class="grid lg:grid-cols-8 md:grid-cols-2 sm:grid-cols-2 gap-4 lg:mx-[100px] md:mx-[40px] lg:pt-10 lg:pb-0 md:py-10 sm:py-10 sm:mx-6"
@@ -58,7 +59,7 @@ import { MarkPicture, HoldingHands, AboutPagebanner } from "@utils/images";
     class="lg:pt-12 md:pt-10 space-y-2 border-y-[0.1px] border-lightgray"
   >
     <div class="lg:container lg:mx-auto lg:pt-0 lg:pb-12 sm:py-10">
-      <NewsChannelLogos />
+      <NewsChannelLogos JsonText={JsonText} />
     </div>
   </section>
   <section class="lg:pt-12 md:pt-10 space-y-2">

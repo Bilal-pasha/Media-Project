@@ -1,6 +1,7 @@
 ---
 import { Image, LegalVideoText, Heading } from "@utils/Components";
 import { SupremeCourt } from "@utils/images";
+import Jsontext from "../layouts/Heading/heading.json";
 ---
 
 <section
@@ -8,7 +9,7 @@ import { SupremeCourt } from "@utils/images";
 >
   <div class="lg:container lg:mx-auto">
     <Heading
-      Heading="Legal Videos"
+      Heading={Jsontext.VideoProduction.legalvideotitle}
       id="legal-videos"
       style="lg:pt-0 md:pt-16 lg:pb-12 sm:pb-10 text-center"
     />
