@@ -73,8 +73,7 @@ const FormContact = () => {
           <form
             className="w-full max-w-[100rem] lg:px-0"
             id="form-data"
-            onSubmit={handleSubmit(saveHandler)}
-          >
+            onSubmit={handleSubmit(saveHandler)}>
             <div className="flex flex-wrap -mx-3 mb-2">
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
@@ -168,8 +167,7 @@ const FormContact = () => {
                       placeholder="Please type your Message"
                       value={value}
                       onChange={onChange}
-                      onBlur={onBlur}
-                    ></textarea>
+                      onBlur={onBlur}></textarea>
                   )}
                 />
                 {!!errors?.message ? (
