@@ -2,6 +2,8 @@ import { useForm, Controller } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { ContactUsSchema } from "../pages/Contact/schema";
 import type { IFormContact } from "../pages/Contact/types";
+import { useState } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const defaultValues: IFormContact = {
   firstName: "",
@@ -11,6 +13,9 @@ const defaultValues: IFormContact = {
 };
 
 const FormContact = () => {
+  const [recapthavalue, setrecapthavalue] = useState();
+  const [recapthatext, setrecapthatext] = useState(false);
+
   const {
     control,
     handleSubmit,
@@ -28,38 +33,46 @@ const FormContact = () => {
       Email: event.email,
       Message: event.message,
     };
-    async function postData(
-      url = "https://exuberant-slug-outfit.cyclic.app/send-email"
-    ) {
-      // Default options are marked with *
+    if (!recapthavalue) {
+      setrecapthatext(true);
+    } else {
+      setrecapthatext(false);
 
-      const payload = JSON.stringify(data);
+      async function postData(
+        url = "https://exuberant-slug-outfit.cyclic.app/send-email"
+      ) {
+        const payload = JSON.stringify(data);
 
-      const response = await fetch(url, {
-        method: "POST", // *GET, POST, PUT, DELETE, etc.
-        mode: "cors", // no-cors, *cors, same-origin
-        cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-        credentials: "same-origin", // include, *same-origin, omit
-        headers: {
-          "Content-Type": "application/json",
-          // 'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        redirect: "follow", // manual, *follow, error
-        referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-        body: payload, // body data type must match "Content-Type" header
-      });
-      const res = await response.text(); // parses JSON response into native JavaScript objects
-      alert(res);
+        try {
+          const response = await fetch(url, {
+            method: "POST",
+            mode: "cors",
+            cache: "no-cache",
+            credentials: "same-origin",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            redirect: "follow",
+            referrerPolicy: "no-referrer",
+            body: payload,
+          });
+
+          const res = response.text();
+          res.then((res) => alert(res)).catch((err) => console.log(err));
+        } catch (error) {
+          console.log(error);
+        }
+      }
+      await postData();
     }
-    await postData();
   };
-
   return (
     <>
       <section className="sm:pb-10 lg:mx-0 md:mx-10 sm:mx-3 sm:px-3">
         <div>
           <form
             className="w-full max-w-[100rem] lg:px-0"
+            id="form-data"
             onSubmit={handleSubmit(saveHandler)}
           >
             <div className="flex flex-wrap -mx-3 mb-2">
@@ -166,13 +179,16 @@ const FormContact = () => {
                 ) : null}
               </div>
             </div>
-            <div
-              className="g-recaptcha pb-2"
-              id="rcaptcha"
-              data-sitekey="6LdUxIUoAAAAAL9SEZiRTMSs6gfwk-QV2jRwfyr-"
-            ></div>
-            <span id="captcha" className="text-red"></span>
-            <div className="flex  justify-center">
+            <ReCAPTCHA
+              sitekey="6LdUxIUoAAAAAL9SEZiRTMSs6gfwk-QV2jRwfyr-"
+              onChange={(value: any) => setrecapthavalue(value)}
+            />
+            {recapthatext && (
+              <span id="captcha" className="text-red text-xs">
+                this field is also required
+              </span>
+            )}
+            <div className="flex justify-center">
               <input
                 type="submit"
                 disabled={!isValid}
