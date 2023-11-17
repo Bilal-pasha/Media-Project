@@ -154,7 +154,7 @@ const FormContact = () => {
                 ) : null}
               </div>
             </div>
-            <div className="flex flex-wrap -mx-3 mb-6">
+            <div className="flex flex-wrap -mx-3">
               <div className="w-full px-3">
                 <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
                   Message
@@ -182,6 +182,7 @@ const FormContact = () => {
             <ReCAPTCHA
               sitekey="6LdUxIUoAAAAAL9SEZiRTMSs6gfwk-QV2jRwfyr-"
               onChange={(value: any) => setrecapthavalue(value)}
+              className="my-4"
             />
             {recapthatext && (
               <span id="captcha" className="text-red text-xs">
