@@ -8,13 +8,12 @@ import Jsontext from "../layouts/Heading/heading.json";
     <FreeConsultation Jsontext={Jsontext} />
 
     <div
-      class="flex flex-col col-span-1 justify-between xl:px-[50px] lg:px-[40px] lg:mx-[0px] md:mx-0 sm:mx-0 lg:border-l-[0.1px] lg:border-t-0 md:border-t-[0.1px] sm:border-t-[0.1px] border-lightgray"
-    >
+      class="flex flex-col col-span-1 justify-between xl:px-[50px] lg:px-[40px] lg:mx-[0px] md:mx-0 sm:mx-0 lg:border-l-[0.1px] lg:border-t-0 md:border-t-[0.1px] sm:border-t-[0.1px] border-lightgray">
       <Heading
         Heading={Jsontext.Contactus.sendmessagetitle}
         style="text-center lg:pt-10 md:mb-10 md:pt-0 sm:pt-10 md:pb-0 lg:mt-0 md:mt-10 sm:pb-10"
       />
-      <FormContact client:only />
+      <FormContact client:only="react" />
     </div>
   </div>
 </div>

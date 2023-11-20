@@ -177,11 +177,11 @@ const FormContact = () => {
                 ) : null}
               </div>
             </div>
-            <ReCAPTCHA
+            {/* <ReCAPTCHA
               sitekey="6LdUxIUoAAAAAL9SEZiRTMSs6gfwk-QV2jRwfyr-"
               onChange={(value: any) => setrecapthavalue(value)}
               className="my-4"
-            />
+            /> */}
             {recapthatext && (
               <span id="captcha" className="text-red text-xs">
                 this field is also required

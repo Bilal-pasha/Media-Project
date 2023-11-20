@@ -26,14 +26,13 @@ const data = await getDocs(colRef)
     <div class="">
       <Heading
         Heading={JsonText.home.ClientFeedBackTitle}
-        style="text-center mb-2"
+        style="text-center lg:mb-2 sm:mb-5"
         id="testimonials"
       />
     </div>
     <div class="sm:my-0">
       <div
-        class="lg:container mx-auto flex flex-col justify-center items-center"
-      >
+        class="lg:container mx-auto flex flex-col justify-center items-center">
         <AliceCarousel data={data} />
       </div>
     </div>

@@ -5,19 +5,16 @@ const { Jsontext } = Astro.props;
 
 <Fragment>
   <div
-    class="flex flex-col col-span-1 xl:px-[50px] lg:px-[40px] lg:mx-0 justify-between md:mx-0 sm:mx-0 md:w-full sm:pb-0 sm:pt-10 lg:py-10 sm:mb-10 lg:pb-0 sm:w-full md:py-0 md:px-0 sm:px-0"
-  >
+    class="flex flex-col col-span-1 xl:px-[50px] lg:px-[40px] lg:mx-0 justify-between md:mx-0 sm:mx-0 md:w-full sm:pb-0 sm:pt-10 lg:py-10 sm:mb-10 lg:pb-0 sm:w-full md:py-0 md:px-0 sm:px-0">
     <Heading
       Heading={Jsontext.Contactus.freeconsultingtitle}
       style="text-center lg:pt-0 md:py-10"
     />
     <div
-      class="pb-10 lg:pt-0 sm:pt-10 lg:text-center sm:text-center text-2xl lg:px-0 md:px-10 sm:px-10"
-    >
+      class="pb-10 lg:pt-0 sm:pt-10 lg:text-center sm:text-center lg:text-xl md:text-base lg:px-0 md:px-10 sm:px-10">
       <p>
         Schedule a free, 30-minute consultation with <span
-          class="font-[Poppins] font-bold"
-        >
+          class="font-[Poppins] font-bold">
           Media Advisory <span class="text-blue"> Experts</span></span
         >
          today!
@@ -42,11 +39,9 @@ const { Jsontext } = Astro.props;
           url: `https://calendly.com/mediaadvisoryexperts/30min?back=1&hide_landing_page_details=1&month=${year}-${currentmonth}`,
         });
         return false;
-        "
-      >
+        ">
         <button
-          class="h-10 w-32 lg:mb-0 md:mb-10 sm:mb-0 text-lg bg-[#1E90FF] text-white rounded"
-        >
+          class="h-10 w-32 lg:mb-0 md:mb-10 sm:mb-0 text-lg bg-[#1E90FF] text-white rounded">
           BOOK NOW
         </button>
         <div id="message"></div>
