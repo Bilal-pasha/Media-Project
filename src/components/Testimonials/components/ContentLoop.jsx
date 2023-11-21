@@ -2,13 +2,13 @@ import React from "react";
 
 export default function ContentLoop({ data }) {
   return (
-    <div className="lg:space-y-0 sm:space-y-0 sm:pr-6 lg:text-center  sm:text-center  sm:whitespace-break-spaces">
+    <div className="lg:space-y-0 sm:space-y-0 sm:pr-7 text-center ">
       {data.Review && (
         <i className="leading-5 lg:text-xl md:text-lg sm:text-xs text-justify">
           {data.Review}
         </i>
       )}
-      <br />
+
       {data.Review1 && (
         <i className="leading-5 lg:text-xl md:text-lg sm:text-xs text-justify">
           {data.Review1}
@@ -25,8 +25,7 @@ export default function ContentLoop({ data }) {
           {data.Review3}
         </i>
       )}
-      <br />
-      <div className="flex flex-col items-end">
+      <div className="flex flex-col items-end pt-6">
         <h3 className="lg:text-2xl md:text-xl sm:text-lg font-[Poppins]">
           {data.Client}
         </h3>

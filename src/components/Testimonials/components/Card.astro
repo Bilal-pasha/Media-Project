@@ -16,8 +16,8 @@ const { data } = Astro.props;
     class="flex flex-col relative lg:container mx-auto justify-around items-center gap-4 lg:pb-6 md:py-10 sm:py-0 lg:h-[26rem] lg:w-[85%] sm:w-[90%] sm:h-auto sm:max-w-[80%] bg-white">
     <div class="flex justify-between lg:max-w-[75%]">
       <div class="flex flex-col space-y-0">
-        <div class="flex justify-center pb-6">
-          <Image src={TestimonialImage} width="70" alt="ddaa" />
+        <div class="flex justify-center lg:pb-6 sm:pb-4">
+          <Image src={TestimonialImage} alt="ddaa" class="lg:w-20 sm:w-14" />
         </div>
         <ContentLoop data={data} client:load />
       </div>

@@ -37,12 +37,10 @@ const FormContact = () => {
       setrecapthatext(true);
     } else {
       setrecapthatext(false);
-
       async function postData(
         url = "https://exuberant-slug-outfit.cyclic.app/send-email"
       ) {
         const payload = JSON.stringify(data);
-
         try {
           const response = await fetch(url, {
             method: "POST",
@@ -56,7 +54,6 @@ const FormContact = () => {
             referrerPolicy: "no-referrer",
             body: payload,
           });
-
           const res = response.text();
           res.then((res) => alert(res)).catch((err) => console.log(err));
         } catch (error) {
